@@ -12,7 +12,7 @@
     initialZoom: 15,
     minZoom: 11,
     maxZoom: 19,
-    storageKey: 'bomberos_decima_cbn_v5',
+    storageKey: 'bomberos_decima_cbn_v6',
     cachePrefix: 'geo_cache_la_florida_',
     campaignTarget: 50, // Meta de socios campaña actual
     sheetsUrl: 'https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/gviz/tq?tqx=out:csv&gid=132653492'
@@ -128,6 +128,8 @@
 
   // ================= INITIALIZATION =================
   function init() {
+    state.sectors = window.LA_FLORIDA_SECTORS || [];
+    state.stations = window.BOMBEROS_STATIONS || [];
     initData();
     initMap();
     populateSectorOptions();
@@ -161,9 +163,9 @@
       saveRecords();
     }
 
-    // Auto-asignar sector a los que no tengan
+    // Auto-asignar sector según los cuadrantes oficiales vigentes
     state.records.forEach(r => {
-      if (!r.sector && r.lat && r.lng) {
+      if (r.lat && r.lng) {
         r.sector = findSectorForCoordinate(r.lat, r.lng);
       }
     });
@@ -977,7 +979,7 @@
         direccion: fullDir,
         calle: calle,
         numero: numero,
-        sector: 'Villa O\'Higgins / Santa Amalia',
+        sector: (lat && lng) ? findSectorForCoordinate(lat, lng) : (state.sectors[0]?.name || 'Santa Raquel Sur / Villa O\'Higgins'),
         monto: monto,
         frecuencia: monto > 0 ? 'Mensual' : '-',
         metodoPago: folio ? `Mandato Folio #${folio}` : (estado === 'Socio Captado' ? 'Mandato PAC / Tarjeta' : '-'),
@@ -1005,17 +1007,34 @@
 
   // ================= ASIGNACIÓN DE SECTOR =================
   function findSectorForCoordinate(lat, lng) {
+    if (!lat || !lng) return state.sectors[0]?.name || 'Santa Raquel Sur / Villa O\'Higgins';
+
+    // 1. Verificar si está dentro de los límites del polígono/rectángulo
     for (const sec of state.sectors) {
-      const minLat = Math.min(sec.bounds[0][0], sec.bounds[2][0]);
-      const maxLat = Math.max(sec.bounds[0][0], sec.bounds[2][0]);
-      const minLng = Math.min(sec.bounds[0][1], sec.bounds[1][1]);
-      const maxLng = Math.max(sec.bounds[0][1], sec.bounds[1][1]);
+      if (!sec.bounds) continue;
+      const minLat = Math.min(sec.bounds[0][0], sec.bounds[1][0], sec.bounds[2][0], sec.bounds[3][0]);
+      const maxLat = Math.max(sec.bounds[0][0], sec.bounds[1][0], sec.bounds[2][0], sec.bounds[3][0]);
+      const minLng = Math.min(sec.bounds[0][1], sec.bounds[1][1], sec.bounds[2][1], sec.bounds[3][1]);
+      const maxLng = Math.max(sec.bounds[0][1], sec.bounds[1][1], sec.bounds[2][1], sec.bounds[3][1]);
 
       if (lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng) {
         return sec.name;
       }
     }
-    return 'La Florida Centro';
+
+    // 2. Si está en los bordes o cercano, asociar al sector con centro más próximo
+    let closestSec = state.sectors[0]?.name || 'Santa Raquel Sur / Villa O\'Higgins';
+    let minDist = Infinity;
+    for (const sec of state.sectors) {
+      if (sec.center) {
+        const d = Math.hypot(lat - sec.center[0], lng - sec.center[1]);
+        if (d < minDist) {
+          minDist = d;
+          closestSec = sec.name;
+        }
+      }
+    }
+    return closestSec;
   }
 
   // ================= FORMULARIO EN TERRENO (NUEVO REGISTRO) =================
