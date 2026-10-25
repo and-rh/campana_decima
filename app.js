@@ -14,7 +14,8 @@
     maxZoom: 19,
     storageKey: 'bomberos_decima_cbn_v4',
     cachePrefix: 'geo_cache_la_florida_',
-    campaignTarget: 50 // Meta de socios campaña actual
+    campaignTarget: 50, // Meta de socios campaña actual
+    sheetsUrl: 'https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/gviz/tq?tqx=out:csv&gid=132653492'
   };
 
   const state = {
@@ -122,7 +123,11 @@
     bindEvents();
     renderAll();
     refreshIcons();
-    showToast('Plataforma cargada: Centrado en La Florida, Santiago.', 'info');
+
+    // Sincronización automática silenciosa al abrir la plataforma
+    setTimeout(() => {
+      autoSyncGoogleSheets(false);
+    }, 1200);
   }
 
   // Cargar datos (guardados previamente o muestra)
@@ -743,6 +748,35 @@
   }
 
   // ================= SINCRONIZACIÓN GOOGLE SHEETS =================
+  // Sincronización automática directa con Google Sheets
+  function autoSyncGoogleSheets(isManual = false) {
+    const url = CONFIG.sheetsUrl;
+    const icon = document.getElementById('syncIcon');
+    if (icon) icon.style.animation = 'spin 1s linear infinite';
+    if (isManual) showToast('Conectando en vivo con Google Sheets...', 'info');
+
+    Papa.parse(url, {
+      download: true,
+      header: false,
+      skipEmptyLines: true,
+      complete: function (results) {
+        if (icon) icon.style.animation = '';
+        if (results && results.data && results.data.length > 0) {
+          processImportedRowsFlexible(results.data, 'Google Sheets (En Vivo)');
+          if (isManual) {
+            showToast('✅ Mapa actualizado en vivo desde Google Sheets.', 'success');
+          }
+        }
+      },
+      error: function (err) {
+        if (icon) icon.style.animation = '';
+        if (isManual) {
+          showToast('No se pudo sincronizar en vivo: ' + err.message, 'warning');
+        }
+      }
+    });
+  }
+
   async function loadGoogleSheetsCsv(csvUrl) {
     if (!csvUrl) {
       showToast('Por favor ingresa el enlace CSV de tu Google Sheet.', 'warning');
@@ -1289,8 +1323,8 @@
       showToast('Filtros restablecidos.', 'info');
     });
 
-    // Modals trigger
-    DOM.btnSyncSheets.addEventListener('click', () => openModal('modalSyncSheets'));
+    // Sincronización en vivo con 1 clic
+    DOM.btnSyncSheets.addEventListener('click', () => autoSyncGoogleSheets(true));
     DOM.btnNewRecord.addEventListener('click', () => openModal('modalNewRecord'));
     DOM.btnHelp.addEventListener('click', () => openModal('modalHelp'));
 
