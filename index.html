@@ -156,12 +156,11 @@
             <button class="pill-btn" data-status="No Estaba (Repasar)">Por Repasar</button>
           </div>
 
-          <!-- Sector Selector -->
+          <!-- Street / Calle Selector -->
           <div class="filter-row">
-            <label for="filterSector">Cuadrante / Sector de La Florida:</label>
-            <select id="filterSector" class="select-field">
-              <option value="all">📍 Todos los sectores de La Florida</option>
-              <!-- Filled dynamically by JS from sectors.js -->
+            <label for="filterCalle">Filtrar por Calle / Pasaje:</label>
+            <select id="filterCalle" class="select-field">
+              <option value="all">📍 Todas las calles y pasajes</option>
             </select>
           </div>
 
@@ -171,17 +170,6 @@
             <select id="filterSquad" class="select-field">
               <option value="all">🚒 Todas las escuadras</option>
             </select>
-          </div>
-        </section>
-
-        <!-- SECTOR COVERAGE PROGRESS -->
-        <section class="coverage-section">
-          <div class="section-title">
-            <span>Cobertura por Barrio</span>
-            <span class="count" id="countBarriosCubiertos">0 / 7</span>
-          </div>
-          <div class="sectors-list" id="sectorsCoverageList">
-            <!-- Dynamically populated -->
           </div>
         </section>
 
@@ -236,9 +224,6 @@
           </button>
           <button class="map-layer-btn active" id="btnToggleStations" title="Cuartel 10ª Compañía">
             <i data-lucide="shield"></i> Cuartel
-          </button>
-          <button class="map-layer-btn" id="btnToggleSectors" title="Límites de Cuadrantes">
-            <i data-lucide="layers"></i> Cuadrantes
           </button>
         </div>
       </div>

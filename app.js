@@ -12,7 +12,7 @@
     initialZoom: 15,
     minZoom: 11,
     maxZoom: 19,
-    storageKey: 'bomberos_decima_cbn_v6',
+    storageKey: 'bomberos_decima_cbn_v7',
     cachePrefix: 'geo_cache_la_florida_',
     campaignTarget: 50, // Meta de socios campaña actual
     sheetsUrl: 'https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/gviz/tq?tqx=out:csv&gid=132653492'
@@ -21,12 +21,10 @@
   const state = {
     records: [],
     filteredRecords: [],
-    sectors: window.LA_FLORIDA_SECTORS || [],
     stations: window.BOMBEROS_STATIONS || [],
     map: null,
     clusterGroup: null,
     heatLayer: null,
-    sectorsGroup: null,
     stationsGroup: null,
     userLocationMarker: null,
     activeBasemap: 'streets',
@@ -34,13 +32,12 @@
     visibleLayers: {
       clusters: true,
       heatmap: false,
-      sectors: false,
       stations: true
     },
     filters: {
       search: '',
       status: 'all',
-      sector: 'all',
+      calle: 'all',
       squad: 'all'
     },
     isGeocoding: false
@@ -77,13 +74,11 @@
     // Filters
     filterSearch: document.getElementById('filterSearch'),
     statusFilterPills: document.getElementById('statusFilterPills'),
-    filterSector: document.getElementById('filterSector'),
+    filterCalle: document.getElementById('filterCalle'),
     filterSquad: document.getElementById('filterSquad'),
     btnResetFilters: document.getElementById('btnResetFilters'),
 
     // Lists
-    sectorsCoverageList: document.getElementById('sectorsCoverageList'),
-    countBarriosCubiertos: document.getElementById('countBarriosCubiertos'),
     recentVisitsList: document.getElementById('recentVisitsList'),
     countRecentShown: document.getElementById('countRecentShown'),
 
@@ -91,7 +86,6 @@
     baseMapSelector: document.getElementById('baseMapSelector'),
     btnToggleClusters: document.getElementById('btnToggleClusters'),
     btnToggleHeatmap: document.getElementById('btnToggleHeatmap'),
-    btnToggleSectors: document.getElementById('btnToggleSectors'),
     btnToggleStations: document.getElementById('btnToggleStations'),
     btnLocateUser: document.getElementById('btnLocateUser'),
     btnCenterFlorida: document.getElementById('btnCenterFlorida'),
@@ -128,11 +122,10 @@
 
   // ================= INITIALIZATION =================
   function init() {
-    state.sectors = window.LA_FLORIDA_SECTORS || [];
     state.stations = window.BOMBEROS_STATIONS || [];
     initData();
     initMap();
-    populateSectorOptions();
+    populateStreetOptions();
     bindEvents();
     renderAll();
     refreshIcons();
@@ -163,14 +156,8 @@
       saveRecords();
     }
 
-    // Auto-asignar sector según los cuadrantes oficiales vigentes
-    state.records.forEach(r => {
-      if (r.lat && r.lng) {
-        r.sector = findSectorForCoordinate(r.lat, r.lng);
-      }
-    });
-
     populateSquadOptions();
+    populateStreetOptions();
   }
 
   function saveRecords() {
@@ -234,42 +221,13 @@
     });
     state.map.addLayer(state.clusterGroup);
 
-    state.sectorsGroup = L.featureGroup();
     state.stationsGroup = L.featureGroup().addTo(state.map);
 
-    // Dibujar sectores y cuarteles
-    renderSectorsPolygons();
+    // Dibujar cuarteles oficiales
     renderFireStations();
   }
 
-  // ================= CAPAS Y POLÍGONOS =================
-  function renderSectorsPolygons() {
-    state.sectorsGroup.clearLayers();
-
-    state.sectors.forEach(sec => {
-      const polygon = L.polygon(sec.bounds, {
-        color: sec.color,
-        weight: 1.5,
-        fillColor: sec.color,
-        fillOpacity: 0.08,
-        dashArray: '4, 6'
-      });
-
-      polygon.bindTooltip(`
-        <div style="font-weight: 700; color: ${sec.color};">Cuadrante: ${sec.name}</div>
-        <div style="font-size: 0.72rem; color: #94a3b8;">${sec.description}</div>
-      `, { sticky: true, opacity: 0.95 });
-
-      polygon.on('click', () => {
-        DOM.filterSector.value = sec.name;
-        state.filters.sector = sec.name;
-        applyFilters();
-      });
-
-      state.sectorsGroup.addLayer(polygon);
-    });
-  }
-
+  // ================= CAPAS Y MARCADORES =================
   function renderFireStations() {
     state.stationsGroup.clearLayers();
 
@@ -321,8 +279,8 @@
         return false;
       }
 
-      // Filtro de sector
-      if (state.filters.sector !== 'all' && r.sector !== state.filters.sector) {
+      // Filtro de calle / pasaje
+      if (state.filters.calle !== 'all' && (!r.calle || r.calle.trim() !== state.filters.calle)) {
         return false;
       }
 
@@ -331,9 +289,9 @@
         return false;
       }
 
-      // Búsqueda de texto libre (calle, nombre, notas, sector)
+      // Búsqueda de texto libre (calle, nombre, notas)
       if (sTerm) {
-        const text = `${r.nombre || ''} ${r.direccion || ''} ${r.sector || ''} ${r.voluntario || ''} ${r.notas || ''}`.toLowerCase();
+        const text = `${r.nombre || ''} ${r.direccion || ''} ${r.calle || ''} ${r.voluntario || ''} ${r.notas || ''}`.toLowerCase();
         if (!text.includes(sTerm)) {
           return false;
         }
@@ -345,7 +303,6 @@
     renderMapMarkers();
     renderHeatmap();
     renderStats();
-    renderSectorCoverage();
     renderRecentList();
     checkMissingCoordinates();
   }
@@ -393,10 +350,6 @@
             <div class="popup-row">
               <span>Dirección:</span>
               <strong>${escapeHtml(record.direccion)}</strong>
-            </div>
-            <div class="popup-row">
-              <span>Sector:</span>
-              <strong>${escapeHtml(record.sector || 'La Florida')}</strong>
             </div>
             ${record.monto > 0 ? `
               <div class="popup-row">
@@ -525,52 +478,6 @@
     DOM.campaignProgressFill.style.width = `${pct}%`;
   }
 
-  // Cobertura por Barrio
-  function renderSectorCoverage() {
-    DOM.sectorsCoverageList.innerHTML = '';
-    let barriosConVisitas = 0;
-
-    state.sectors.forEach(sec => {
-      const sociosEnSector = state.records.filter(r => r.sector === sec.name && r.estado === 'Socio Captado').length;
-      const repasarEnSector = state.records.filter(r => r.sector === sec.name && r.estado === 'No Estaba (Repasar)').length;
-      const totalEnSector = sociosEnSector + repasarEnSector;
-
-      if (totalEnSector > 0) barriosConVisitas++;
-
-      // Meta orientativa de 15 socios por sector
-      const sectorGoal = 15;
-      const pct = Math.min(100, Math.round((sociosEnSector / sectorGoal) * 100));
-
-      const item = document.createElement('div');
-      item.className = 'sector-item';
-      item.innerHTML = `
-        <div class="sector-top">
-          <div class="sector-name">
-            <span class="sector-dot" style="background: ${sec.color};"></span>
-            ${escapeHtml(sec.name)}
-          </div>
-          <div class="sector-count">
-            <strong>${sociosEnSector}</strong> socios <span style="font-size: 0.65rem; color: #94a3b8;">(${repasarEnSector} por repasar)</span>
-          </div>
-        </div>
-        <div class="sector-progress-track">
-          <div class="sector-progress-bar" style="width: ${pct}%; background: ${sec.color};"></div>
-        </div>
-      `;
-
-      item.addEventListener('click', () => {
-        state.map.flyTo(sec.center, 14, { duration: 1.2 });
-        DOM.filterSector.value = sec.name;
-        state.filters.sector = sec.name;
-        applyFilters();
-      });
-
-      DOM.sectorsCoverageList.appendChild(item);
-    });
-
-    DOM.countBarriosCubiertos.textContent = `${barriosConVisitas} / ${state.sectors.length}`;
-  }
-
   // Lista de registros recientes en el sidebar
   function renderRecentList() {
     DOM.recentVisitsList.innerHTML = '';
@@ -653,9 +560,6 @@
       if (coords) {
         record.lat = coords.lat;
         record.lng = coords.lng;
-        if (!record.sector) {
-          record.sector = findSectorForCoordinate(coords.lat, coords.lng);
-        }
         resolvedCount++;
       }
 
@@ -979,7 +883,7 @@
         direccion: fullDir,
         calle: calle,
         numero: numero,
-        sector: (lat && lng) ? findSectorForCoordinate(lat, lng) : (state.sectors[0]?.name || 'Santa Raquel Sur / Villa O\'Higgins'),
+        sector: 'La Florida',
         monto: monto,
         frecuencia: monto > 0 ? 'Mensual' : '-',
         metodoPago: folio ? `Mandato Folio #${folio}` : (estado === 'Socio Captado' ? 'Mandato PAC / Tarjeta' : '-'),
@@ -997,44 +901,13 @@
       state.records = newRecords;
       saveRecords();
       populateSquadOptions();
+      populateStreetOptions();
       applyFilters();
       showToast(`¡Éxito! Se sincronizaron ${newRecords.length} casas de la 10ª Compañía desde ${sourceName}.`, 'success');
       checkMissingCoordinates();
     } else {
       showToast('No se pudieron leer registros válidos de la planilla.', 'warning');
     }
-  }
-
-  // ================= ASIGNACIÓN DE SECTOR =================
-  function findSectorForCoordinate(lat, lng) {
-    if (!lat || !lng) return state.sectors[0]?.name || 'Santa Raquel Sur / Villa O\'Higgins';
-
-    // 1. Verificar si está dentro de los límites del polígono/rectángulo
-    for (const sec of state.sectors) {
-      if (!sec.bounds) continue;
-      const minLat = Math.min(sec.bounds[0][0], sec.bounds[1][0], sec.bounds[2][0], sec.bounds[3][0]);
-      const maxLat = Math.max(sec.bounds[0][0], sec.bounds[1][0], sec.bounds[2][0], sec.bounds[3][0]);
-      const minLng = Math.min(sec.bounds[0][1], sec.bounds[1][1], sec.bounds[2][1], sec.bounds[3][1]);
-      const maxLng = Math.max(sec.bounds[0][1], sec.bounds[1][1], sec.bounds[2][1], sec.bounds[3][1]);
-
-      if (lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng) {
-        return sec.name;
-      }
-    }
-
-    // 2. Si está en los bordes o cercano, asociar al sector con centro más próximo
-    let closestSec = state.sectors[0]?.name || 'Santa Raquel Sur / Villa O\'Higgins';
-    let minDist = Infinity;
-    for (const sec of state.sectors) {
-      if (sec.center) {
-        const d = Math.hypot(lat - sec.center[0], lng - sec.center[1]);
-        if (d < minDist) {
-          minDist = d;
-          closestSec = sec.name;
-        }
-      }
-    }
-    return closestSec;
   }
 
   // ================= FORMULARIO EN TERRENO (NUEVO REGISTRO) =================
@@ -1062,7 +935,7 @@
       }
     }
 
-    const sector = (lat && lng) ? findSectorForCoordinate(lat, lng) : 'La Florida Centro';
+    const sector = 'La Florida';
 
     const newRecord = {
       id: Date.now(),
@@ -1083,6 +956,7 @@
 
     state.records.unshift(newRecord);
     saveRecords();
+    populateStreetOptions();
     applyFilters();
 
     closeModal('modalNewRecord');
@@ -1186,13 +1060,22 @@
   }
 
   // ================= UI HELPERS & SELECTORS =================
-  function populateSectorOptions() {
-    DOM.filterSector.innerHTML = '<option value="all">📍 Todos los sectores de La Florida</option>';
-    state.sectors.forEach(sec => {
+  function populateStreetOptions() {
+    if (!DOM.filterCalle) return;
+    const calles = new Set();
+    state.records.forEach(r => {
+      if (r.calle && r.calle.trim()) {
+        calles.add(r.calle.trim());
+      }
+    });
+    const sorted = Array.from(calles).sort((a, b) => a.localeCompare(b, 'es'));
+    DOM.filterCalle.innerHTML = '<option value="all">📍 Todas las calles y pasajes</option>';
+    sorted.forEach(c => {
       const opt = document.createElement('option');
-      opt.value = sec.name;
-      opt.textContent = sec.name;
-      DOM.filterSector.appendChild(opt);
+      opt.value = c;
+      const count = state.records.filter(r => r.calle && r.calle.trim() === c).length;
+      opt.textContent = `${c} (${count} casas)`;
+      DOM.filterCalle.appendChild(opt);
     });
   }
 
@@ -1237,13 +1120,6 @@
     } else if (layerName === 'heatmap') {
       DOM.btnToggleHeatmap.classList.toggle('active', state.visibleLayers.heatmap);
       renderHeatmap();
-    } else if (layerName === 'sectors') {
-      if (state.visibleLayers.sectors) {
-        state.map.addLayer(state.sectorsGroup);
-      } else {
-        state.map.removeLayer(state.sectorsGroup);
-      }
-      DOM.btnToggleSectors.classList.toggle('active', state.visibleLayers.sectors);
     } else if (layerName === 'stations') {
       if (state.visibleLayers.stations) {
         state.map.addLayer(state.stationsGroup);
@@ -1414,7 +1290,6 @@
     // Layer toggles
     DOM.btnToggleClusters.addEventListener('click', () => toggleLayer('clusters'));
     DOM.btnToggleHeatmap.addEventListener('click', () => toggleLayer('heatmap'));
-    DOM.btnToggleSectors.addEventListener('click', () => toggleLayer('sectors'));
     DOM.btnToggleStations.addEventListener('click', () => toggleLayer('stations'));
 
     // Map tools
@@ -1443,14 +1318,20 @@
       }
     });
 
-    DOM.filterSector.addEventListener('change', (e) => {
-      state.filters.sector = e.target.value;
-      if (state.filters.sector !== 'all') {
-        const found = state.sectors.find(s => s.name === state.filters.sector);
-        if (found) state.map.flyTo(found.center, 14, { duration: 1 });
-      }
-      applyFilters();
-    });
+    if (DOM.filterCalle) {
+      DOM.filterCalle.addEventListener('change', (e) => {
+        state.filters.calle = e.target.value;
+        if (state.filters.calle !== 'all') {
+          // Centrar mapa en las casas de la calle seleccionada
+          const streetRecords = state.records.filter(r => r.calle && r.calle.trim() === state.filters.calle && r.lat && r.lng);
+          if (streetRecords.length > 0) {
+            const group = L.featureGroup(streetRecords.map(r => L.marker([r.lat, r.lng])));
+            state.map.fitBounds(group.getBounds().pad(0.2), { maxZoom: 17, duration: 1 });
+          }
+        }
+        applyFilters();
+      });
+    }
 
     DOM.filterSquad.addEventListener('change', (e) => {
       state.filters.squad = e.target.value;
@@ -1459,12 +1340,12 @@
 
     DOM.btnResetFilters.addEventListener('click', () => {
       DOM.filterSearch.value = '';
-      DOM.filterSector.value = 'all';
+      if (DOM.filterCalle) DOM.filterCalle.value = 'all';
       DOM.filterSquad.value = 'all';
       document.querySelectorAll('#statusFilterPills .pill-btn').forEach(b => b.classList.remove('active'));
       document.querySelector('#statusFilterPills .pill-btn[data-status="all"]').classList.add('active');
 
-      state.filters = { search: '', status: 'all', sector: 'all', squad: 'all' };
+      state.filters = { search: '', status: 'all', calle: 'all', squad: 'all' };
       applyFilters();
       showToast('Filtros restablecidos.', 'info');
     });
