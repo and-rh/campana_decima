@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bomberos La Florida | GeoSocios - Plataforma Territorial</title>
+  <meta name="description" content="Plataforma de mapeo y georreferenciación de socios cooperadores para la campaña de captación de Bomberos de La Florida.">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- Leaflet MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- PapaParse for CSV parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <!-- Leaflet Heatmap Plugin -->
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= TOP COMMAND HEADER ================= -->
+  <header class="app-header" id="mainHeader">
+    <div class="brand-section">
+      <img src="logo_decima.png" alt="Escudo Décima Compañía CBÑ" class="brand-badge" id="appLogo">
+      <div class="brand-titles">
+        <h1>
+          10ª COMPAÑÍA CBÑ
+        </h1>
+        <p>
+          <span class="pulse-dot"></span>
+          Cuerpo de Bomberos de Ñuñoa &bull; Campaña Económica Socios Cooperadores
+        </p>
+      </div>
+    </div>
+
+    <!-- Campaign Goal / Progress Bar -->
+    <div class="campaign-progress-bar" id="campaignBar">
+      <div class="cp-info">
+        <span class="cp-label">Meta de Socios</span>
+        <span class="cp-values"><strong id="kpiTargetCurrent">0</strong> / 100 <span id="kpiTargetPercent">(0%)</span></span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="campaignProgressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button class="btn btn-secondary" id="btnSyncSheets" title="Sincronizar o conectar con Google Sheets">
+        <i data-lucide="sheet"></i>
+        <span class="btn-text-hide">Conectar Google Sheets</span>
+      </button>
+
+      <button class="btn btn-secondary" id="btnUploadCsv" title="Subir archivo Excel/CSV">
+        <i data-lucide="upload"></i>
+        <span class="btn-text-hide">Importar CSV</span>
+      </button>
+
+      <button class="btn btn-primary" id="btnNewRecord">
+        <i data-lucide="plus-circle"></i>
+        <span>+ Registrar en Terreno</span>
+      </button>
+
+      <button class="btn btn-gold btn-icon-only" id="btnHelp" title="Instrucciones y Scripts para tu Excel">
+        <i data-lucide="help-circle"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN APP CONTAINER ================= -->
+  <main class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="appSidebar">
+      <div class="sidebar-scrollable">
+
+        <!-- STATS KPI GRID -->
+        <section class="stats-grid" id="statsGrid">
+          <div class="stat-card captados">
+            <div class="stat-header">
+              <span>Socios Captados</span>
+              <i data-lucide="user-check"></i>
+            </div>
+            <div class="stat-value" id="kpiTotalCaptados">0</div>
+            <div class="stat-sub" id="kpiAvgDonation">Promedio: $0 / mes</div>
+          </div>
+
+          <div class="stat-card recaudado">
+            <div class="stat-header">
+              <span>Aporte Mensual</span>
+              <i data-lucide="coins"></i>
+            </div>
+            <div class="stat-value" id="kpiTotalRecaudado">$0</div>
+            <div class="stat-sub">Compromiso mensual</div>
+          </div>
+
+          <div class="stat-card repasar">
+            <div class="stat-header">
+              <span>Por Repasar</span>
+              <i data-lucide="clock-alert"></i>
+            </div>
+            <div class="stat-value" id="kpiTotalRepasar">0</div>
+            <div class="stat-sub">No estaban en casa</div>
+          </div>
+
+          <div class="stat-card efectividad">
+            <div class="stat-header">
+              <span>Efectividad</span>
+              <i data-lucide="percent"></i>
+            </div>
+            <div class="stat-value" id="kpiEfectividad">0%</div>
+            <div class="stat-sub">Captados vs. Visitados</div>
+          </div>
+        </section>
+
+        <!-- TACTICAL FILTERS -->
+        <section class="filter-card" id="filterCard">
+          <div class="section-title">
+            <span>Filtros Operativos</span>
+            <button class="btn btn-secondary btn-icon-only" id="btnResetFilters" title="Restablecer filtros" style="padding: 2px 6px; font-size: 0.65rem;">
+              Limpiar
+            </button>
+          </div>
+
+          <!-- Live Search Input -->
+          <div class="search-input-wrapper">
+            <i data-lucide="search"></i>
+            <input type="text" id="filterSearch" class="input-field" placeholder="Buscar por calle, socio o voluntario...">
+          </div>
+
+          <!-- Status Pill Buttons -->
+          <div class="status-pill-group" id="statusFilterPills">
+            <button class="pill-btn active" data-status="all">Todos</button>
+            <button class="pill-btn" data-status="Socio Captado">Captados</button>
+            <button class="pill-btn" data-status="No Estaba (Repasar)">Por Repasar</button>
+          </div>
+
+          <!-- Sector Selector -->
+          <div class="filter-row">
+            <label for="filterSector">Cuadrante / Sector de La Florida:</label>
+            <select id="filterSector" class="select-field">
+              <option value="all">📍 Todos los sectores de La Florida</option>
+              <!-- Filled dynamically by JS from sectors.js -->
+            </select>
+          </div>
+
+          <!-- Volunteer / Squad Selector -->
+          <div class="filter-row">
+            <label for="filterSquad">Escuadra / Voluntario a cargo:</label>
+            <select id="filterSquad" class="select-field">
+              <option value="all">🚒 Todas las escuadras</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- SECTOR COVERAGE PROGRESS -->
+        <section class="coverage-section">
+          <div class="section-title">
+            <span>Cobertura por Barrio</span>
+            <span class="count" id="countBarriosCubiertos">0 / 7</span>
+          </div>
+          <div class="sectors-list" id="sectorsCoverageList">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- RECENT VISITS FEED -->
+        <section class="recent-section">
+          <div class="section-title">
+            <span>Últimos Registros</span>
+            <span class="count" id="countRecentShown">0</span>
+          </div>
+          <div class="recent-list" id="recentVisitsList">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+      </div>
+    </aside>
+
+    <!-- SIDEBAR TOGGLE BUTTON -->
+    <button class="sidebar-toggle-btn" id="btnToggleSidebar" title="Mostrar/Ocultar panel lateral">
+      <i data-lucide="panel-left-close" id="sidebarIcon"></i>
+    </button>
+
+    <!-- ================= MAP WRAPPER ================= -->
+    <div class="map-wrapper" id="mapWrapper">
+      <!-- Leaflet Canvas -->
+      <div id="map"></div>
+
+      <!-- MAP FLOATING CONTROL PANEL (TOP RIGHT) -->
+      <div class="map-floating-panel">
+        <!-- Base Map Selector -->
+        <div class="glass-box" id="baseMapSelector">
+          <button class="map-type-btn active" data-basemap="streets" id="btnBasemapStreets" title="Mapa de Calles Nítido">
+            <i data-lucide="map"></i> Calles
+          </button>
+          <button class="map-type-btn" data-basemap="satellite" id="btnBasemapSatellite" title="Vista Satélite Aérea con Calles">
+            <i data-lucide="globe"></i> Satélite
+          </button>
+          <button class="map-type-btn" data-basemap="dark" id="btnBasemapDark" title="Vista Nocturna Táctica">
+            <i data-lucide="moon"></i> Nocturno
+          </button>
+        </div>
+
+        <!-- Layer Toggles -->
+        <div class="glass-box" id="layerSelector">
+          <button class="map-layer-btn active" id="btnToggleClusters" title="Pines de Socios">
+            <i data-lucide="map-pin"></i> Socios
+          </button>
+          <button class="map-layer-btn" id="btnToggleHeatmap" title="Mapa de Calor / Densidad">
+            <i data-lucide="flame"></i> Calor
+          </button>
+          <button class="map-layer-btn active" id="btnToggleStations" title="Cuartel 10ª Compañía">
+            <i data-lucide="shield"></i> Cuartel
+          </button>
+          <button class="map-layer-btn" id="btnToggleSectors" title="Límites de Cuadrantes">
+            <i data-lucide="layers"></i> Cuadrantes
+          </button>
+        </div>
+      </div>
+
+      <!-- MAP QUICK ACTION TOOLS (BOTTOM RIGHT) -->
+      <div class="map-quick-tools">
+        <button class="tool-fab" id="btnLocateUser" title="Mi ubicación actual (GPS en terreno)">
+          <i data-lucide="navigation"></i>
+        </button>
+        <button class="tool-fab" id="btnCenterFlorida" title="Centrar mapa en La Florida">
+          <i data-lucide="crosshair"></i>
+        </button>
+        <button class="tool-fab" id="btnExportData" title="Descargar datos con coordenadas (Excel/CSV)">
+          <i data-lucide="download"></i>
+        </button>
+      </div>
+
+      <!-- GEOCODING ALERT BANNER (If addresses need coordinates) -->
+      <div class="geocoding-banner" id="geocodingBanner" style="display: none;">
+        <i data-lucide="sparkles" style="color: var(--fire-gold);"></i>
+        <span>Hay <strong id="geoMissingCount">0</strong> direcciones sin coordenadas.</span>
+        <button id="btnAutoGeocode">📍 Geocodificar en La Florida</button>
+      </div>
+
+      <!-- MAP LEGEND (BOTTOM LEFT) -->
+      <div class="map-legend">
+        <div class="legend-item">
+          <span class="legend-color" style="background: var(--emerald);"></span>
+          <span>Socio Captado (Aporte Activo)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: var(--amber);"></span>
+          <span>No Estaba (Visita por Repasar)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: var(--fire-red);"></span>
+          <span>No Interesado / Rechazado</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: var(--blue);"></span>
+          <span>Cuartel 10ª Compañía CBÑ</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. GOOGLE SHEETS SYNC MODAL -->
+  <div class="modal-overlay" id="modalSyncSheets">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2><i data-lucide="sheet" style="color: #10b981;"></i> Conectar con Google Sheets</h2>
+        <button class="close-btn" data-close="modalSyncSheets">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Conecta directamente tu planilla de Google Sheets para que el mapa lea a todos los socios captados por tu compañía de forma instantánea.
+        </p>
+
+        <div class="steps-container">
+          <div class="step-row">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <h4>Abre tu Google Sheets de la Campaña</h4>
+              <p>Ve a tu archivo de socios cooperadores en Google Drive.</p>
+            </div>
+          </div>
+
+          <div class="step-row">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <h4>Publicar en la Web como CSV</h4>
+              <p>En el menú superior haz clic en: <br>
+              <code>Archivo</code> &rarr; <code>Compartir</code> &rarr; <code>Publicar en la web</code>.<br>
+              Selecciona tu hoja y en formato elige <strong>Valores separados por comas (.csv)</strong>. Haz clic en <strong>Publicar</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-row">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <h4>Enlace de tu Planilla (Hoja "Registro"):</h4>
+              <input type="url" id="inputSheetsUrl" class="input-field" style="margin-top: 0.4rem;" value="https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/export?format=csv&gid=132653492">
+            </div>
+          </div>
+        </div>
+
+        <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid var(--emerald); padding: 0.85rem; border-radius: 8px; font-size: 0.78rem; color: #a7f3d0;">
+          <i data-lucide="check-circle" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i>
+          <strong>Planilla Oficial Detectada:</strong> Décima Compañía CBÑ (Hoja Registro &bull; 112 casas registradas). Al presionar el botón inferior se actualizan los datos directamente desde tu Google Drive.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-close="modalSyncSheets">Cancelar</button>
+        <button class="btn btn-primary" id="btnLoadSheetsUrl">
+          <i data-lucide="refresh-cw"></i> Sincronizar y Cargar Mapa
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. NUEVO REGISTRO EN TERRENO (MOBILE / FIELD) -->
+  <div class="modal-overlay" id="modalNewRecord">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2><i data-lucide="user-plus" style="color: var(--fire-red);"></i> Registrar Visita en Terreno</h2>
+        <button class="close-btn" data-close="modalNewRecord">&times;</button>
+      </div>
+      <form id="formNewRecord">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="newNombre">Nombre del Socio o Referencia de Casa: *</label>
+            <input type="text" id="newNombre" class="input-field" placeholder="Ej: Patricia Morales o Casa Portón Negro" required>
+          </div>
+
+          <div class="form-group">
+            <label for="newDireccion">Dirección en La Florida: *</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="text" id="newDireccion" class="input-field" placeholder="Ej: Walker Martínez 1450" required>
+              <button type="button" class="btn btn-secondary" id="btnGpsForForm" title="Obtener coordenadas de mi GPS actual" style="flex-shrink: 0;">
+                <i data-lucide="crosshair"></i> GPS
+              </button>
+            </div>
+            <small style="font-size: 0.7rem; color: var(--text-dim);" id="gpsStatusHint">
+              No es necesario escribir "La Florida", el sistema lo asume automáticamente.
+            </small>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="newEstado">Resultado de la Visita: *</label>
+              <select id="newEstado" class="select-field">
+                <option value="Socio Captado">✅ Socio Captado (Inscrito)</option>
+                <option value="No Estaba (Repasar)">⏳ No Había Nadie (Repasar)</option>
+                <option value="Rechazado">❌ No Desea Colaborar</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="newMonto">Aporte Mensual ($ CLP):</label>
+              <input type="number" id="newMonto" class="input-field" placeholder="Ej: 5000" value="5000" step="1000">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="newVoluntario">Escuadra / Voluntario:</label>
+              <input type="text" id="newVoluntario" class="input-field" placeholder="Ej: Escuadra 1 o Bombero Pérez" value="Escuadra 1">
+            </div>
+
+            <div class="form-group">
+              <label for="newMetodoPago">Método de Pago:</label>
+              <select id="newMetodoPago" class="select-field">
+                <option value="PAC / Tarjeta de Crédito">PAC / Tarjeta de Crédito</option>
+                <option value="Transferencia Automática">Transferencia Automática</option>
+                <option value="Efectivo">Efectivo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="newNotas">Observaciones (Opcional):</label>
+            <input type="text" id="newNotas" class="input-field" placeholder="Ej: Adulto mayor, pasar a dejar calcomanía...">
+          </div>
+
+          <!-- Hidden coordinates if GPS obtained -->
+          <input type="hidden" id="newLat">
+          <input type="hidden" id="newLng">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close="modalNewRecord">Cancelar</button>
+          <button type="submit" class="btn btn-primary">
+            <i data-lucide="check"></i> Guardar y Mostrar en Mapa
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. HELP & GOOGLE APPS SCRIPT MODAL -->
+  <div class="modal-overlay" id="modalHelp">
+    <div class="modal-card" style="max-width: 640px;">
+      <div class="modal-header">
+        <h2><i data-lucide="code" style="color: var(--fire-gold);"></i> Geocodificación Automática para tu Google Sheets</h2>
+        <button class="close-btn" data-close="modalHelp">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+          ¿Quieres que tu Google Sheets convierta automáticamente las direcciones de <strong>La Florida</strong> en coordenadas de Latitud y Longitud?
+          Puedes pegar este script gratuito en tu Google Sheets en 1 minuto:
+        </p>
+
+        <div class="steps-container">
+          <div class="step-row">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <h4>Abre el editor de scripts en Google Sheets</h4>
+              <p>En tu planilla haz clic en el menú: <code>Extensiones</code> &rarr; <code>Apps Script</code>.</p>
+            </div>
+          </div>
+
+          <div class="step-row">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <h4>Pega el siguiente código y presiona Guardar (💾):</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <button class="copy-code-btn" id="btnCopyScript">Copiar Código</button>
+          <pre id="scriptContent">/**
+ * Geocodificador Automático para Bomberos La Florida
+ * Agrega Coordenadas (Latitud y Longitud) a cada dirección de La Florida
+ */
+function GEOCODIFICAR_LA_FLORIDA(direccion) {
+  if (!direccion) return "";
+  try {
+    var query = direccion + ", La Florida, Región Metropolitana, Chile";
+    var response = Maps.newGeocoder().geocode(query);
+    if (response.status === 'OK' && response.results.length > 0) {
+      var loc = response.results[0].geometry.location;
+      return loc.lat + ", " + loc.lng;
+    }
+    return "No encontrado";
+  } catch(e) {
+    return "Error";
+  }
+}</pre>
+        </div>
+
+        <p style="font-size: 0.78rem; color: var(--text-dim);">
+          💡 <strong>Cómo usarlo en la celda:</strong> En una nueva columna de tu Google Sheet escribe: <br>
+          <code>=GEOCODIFICAR_LA_FLORIDA(C2)</code> (donde C2 es la celda de la dirección). ¡Google Sheets calculará las coordenadas exactas al instante!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-close="modalHelp">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILE INPUT (HIDDEN FOR CSV IMPORT) -->
+  <input type="file" id="fileCsvInput" accept=".csv, .txt" style="display: none;">
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Leaflet MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Application Data & Logic -->
+  <script src="sectors.js"></script>
+  <script src="sampleData.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
