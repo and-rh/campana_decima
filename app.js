@@ -12,7 +12,7 @@
     initialZoom: 15,
     minZoom: 11,
     maxZoom: 19,
-    storageKey: 'bomberos_decima_cbn_v4',
+    storageKey: 'bomberos_decima_cbn_v5',
     cachePrefix: 'geo_cache_la_florida_',
     campaignTarget: 50, // Meta de socios campaña actual
     sheetsUrl: 'https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/gviz/tq?tqx=out:csv&gid=132653492'
@@ -52,6 +52,17 @@
     appSidebar: document.getElementById('appSidebar'),
     btnToggleSidebar: document.getElementById('btnToggleSidebar'),
     sidebarIcon: document.getElementById('sidebarIcon'),
+    sidebarBackdrop: document.getElementById('sidebarBackdrop'),
+    btnMobileCloseSidebar: document.getElementById('btnMobileCloseSidebar'),
+
+    // Mobile Bottom Navigation
+    mobileBottomBar: document.getElementById('mobileBottomBar'),
+    btnNavMap: document.getElementById('btnNavMap'),
+    btnNavGps: document.getElementById('btnNavGps'),
+    btnNavSummary: document.getElementById('btnNavSummary'),
+    btnNavAdd: document.getElementById('btnNavAdd'),
+    btnNavSync: document.getElementById('btnNavSync'),
+    mobileSyncIcon: document.getElementById('mobileSyncIcon'),
 
     // KPIs
     kpiTotalCaptados: document.getElementById('kpiTotalCaptados'),
@@ -123,6 +134,12 @@
     bindEvents();
     renderAll();
     refreshIcons();
+
+    // En pantallas móviles (< 768px), el sidebar inicia cerrado para mostrar el mapa completo al voluntario
+    if (window.innerWidth <= 768) {
+      DOM.appSidebar.classList.add('collapsed');
+      if (DOM.sidebarIcon) DOM.sidebarIcon.setAttribute('data-lucide', 'panel-left-open');
+    }
 
     // Sincronización automática silenciosa al abrir la plataforma
     setTimeout(() => {
@@ -705,7 +722,8 @@
 
   function interpolateAlongStreet(calleName, numStr) {
     if (!calleName) return null;
-    const clean = calleName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    let clean = calleName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    clean = clean.replace(/marquez/g, 'marques');
     let model = STREET_MODELS[clean];
     if (!model) {
       for (const k in STREET_MODELS) {
@@ -752,7 +770,9 @@
   function autoSyncGoogleSheets(isManual = false) {
     const url = CONFIG.sheetsUrl;
     const icon = document.getElementById('syncIcon');
+    const mobileIcon = document.getElementById('mobileSyncIcon');
     if (icon) icon.style.animation = 'spin 1s linear infinite';
+    if (mobileIcon) mobileIcon.style.animation = 'spin 1s linear infinite';
     if (isManual) showToast('Conectando en vivo con Google Sheets...', 'info');
 
     Papa.parse(url, {
@@ -761,6 +781,7 @@
       skipEmptyLines: true,
       complete: function (results) {
         if (icon) icon.style.animation = '';
+        if (mobileIcon) mobileIcon.style.animation = '';
         if (results && results.data && results.data.length > 0) {
           processImportedRowsFlexible(results.data, 'Google Sheets (En Vivo)');
           if (isManual) {
@@ -770,6 +791,7 @@
       },
       error: function (err) {
         if (icon) icon.style.animation = '';
+        if (mobileIcon) mobileIcon.style.animation = '';
         if (isManual) {
           showToast('No se pudo sincronizar en vivo: ' + err.message, 'warning');
         }
@@ -848,7 +870,17 @@
     );
 
     const findCol = (candidates) => {
-      return headers.findIndex(h => candidates.some(c => h.includes(c)));
+      // 1. Coincidencia exacta de nombre de columna
+      for (const c of candidates) {
+        const idx = headers.findIndex(h => h === c);
+        if (idx !== -1) return idx;
+      }
+      // 2. Coincidencia por subcadena, omitiendo encabezados largos (> 35 caracteres) como títulos combinados
+      for (const c of candidates) {
+        const idx = headers.findIndex(h => h.length <= 35 && h.includes(c));
+        if (idx !== -1) return idx;
+      }
+      return -1;
     };
 
     const colDir = findCol(['direccion', 'calle', 'domicilio']);
@@ -901,7 +933,7 @@
         nombre = folio ? `Socio Mandato #${folio}` : `Socio Cooperador (${fullDir})`;
       }
 
-      // Coordenadas: Si vienen en la planilla, usarlas; sino, buscar en tabla conocida
+      // Coordenadas: Si vienen en la planilla, usarlas; sino, interpolar por trazado de calle
       let lat = colLat >= 0 && row[colLat] ? parseFloat(String(row[colLat]).replace(',', '.')) : null;
       let lng = colLng >= 0 && row[colLng] ? parseFloat(String(row[colLng]).replace(',', '.')) : null;
 
@@ -910,6 +942,13 @@
         if (coords) {
           lat = coords.lat;
           lng = coords.lng;
+        } else if (calle) {
+          // Fallback georreferenciador determinista en el cuadrante de la Décima
+          const hash = (calle + (numero || '')).split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+          const offsetLat = ((hash % 100) - 50) * 0.00004;
+          const offsetLng = (((hash * 7) % 100) - 50) * 0.00004;
+          lat = Number((-33.5450 + offsetLat).toFixed(6));
+          lng = Number((-70.5735 + offsetLng).toFixed(6));
         }
       }
 
@@ -1248,14 +1287,85 @@
 
   // ================= EVENT BINDINGS =================
   function bindEvents() {
-    // Sidebar toggle
+    // Sidebar toggle (desktop button)
     DOM.btnToggleSidebar.addEventListener('click', () => {
       DOM.appSidebar.classList.toggle('collapsed');
       const isCollapsed = DOM.appSidebar.classList.contains('collapsed');
       DOM.sidebarIcon.setAttribute('data-lucide', isCollapsed ? 'panel-left-open' : 'panel-left-close');
       refreshIcons();
-      setTimeout(() => state.map.invalidateSize(), 300);
+      setTimeout(() => state.map && state.map.invalidateSize(), 300);
     });
+
+    // Mobile Backdrop & Close Button
+    if (DOM.sidebarBackdrop) {
+      DOM.sidebarBackdrop.addEventListener('click', () => {
+        DOM.appSidebar.classList.add('collapsed');
+        if (DOM.sidebarIcon) DOM.sidebarIcon.setAttribute('data-lucide', 'panel-left-open');
+        refreshIcons();
+        setTimeout(() => state.map && state.map.invalidateSize(), 300);
+      });
+    }
+
+    if (DOM.btnMobileCloseSidebar) {
+      DOM.btnMobileCloseSidebar.addEventListener('click', () => {
+        DOM.appSidebar.classList.add('collapsed');
+        if (DOM.sidebarIcon) DOM.sidebarIcon.setAttribute('data-lucide', 'panel-left-open');
+        refreshIcons();
+        setTimeout(() => state.map && state.map.invalidateSize(), 300);
+      });
+    }
+
+    // Mobile Bottom Navigation Bar Actions
+    if (DOM.btnNavMap) {
+      DOM.btnNavMap.addEventListener('click', () => {
+        document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+        DOM.btnNavMap.classList.add('active');
+        DOM.appSidebar.classList.add('collapsed');
+        if (DOM.sidebarIcon) DOM.sidebarIcon.setAttribute('data-lucide', 'panel-left-open');
+        refreshIcons();
+        setTimeout(() => {
+          if (state.map) {
+            state.map.invalidateSize();
+            state.map.flyTo(CONFIG.initialCenter, CONFIG.initialZoom, { duration: 0.8 });
+          }
+        }, 100);
+      });
+    }
+
+    if (DOM.btnNavGps) {
+      DOM.btnNavGps.addEventListener('click', () => {
+        document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+        DOM.btnNavGps.classList.add('active');
+        DOM.appSidebar.classList.add('collapsed');
+        if (DOM.sidebarIcon) DOM.sidebarIcon.setAttribute('data-lucide', 'panel-left-open');
+        refreshIcons();
+        captureGpsLocation(false);
+      });
+    }
+
+    if (DOM.btnNavSummary) {
+      DOM.btnNavSummary.addEventListener('click', () => {
+        document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+        DOM.btnNavSummary.classList.add('active');
+        DOM.appSidebar.classList.toggle('collapsed');
+        const isCollapsed = DOM.appSidebar.classList.contains('collapsed');
+        if (DOM.sidebarIcon) DOM.sidebarIcon.setAttribute('data-lucide', isCollapsed ? 'panel-left-open' : 'panel-left-close');
+        refreshIcons();
+        setTimeout(() => state.map && state.map.invalidateSize(), 300);
+      });
+    }
+
+    if (DOM.btnNavAdd) {
+      DOM.btnNavAdd.addEventListener('click', () => {
+        openModal('modalNewRecord');
+      });
+    }
+
+    if (DOM.btnNavSync) {
+      DOM.btnNavSync.addEventListener('click', () => {
+        autoSyncGoogleSheets(true);
+      });
+    }
 
     // Basemaps switch
     document.querySelectorAll('#baseMapSelector .map-type-btn').forEach(btn => {

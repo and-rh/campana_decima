@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#070b14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>10ª Compañía CBÑ | GeoSocios - Plataforma Territorial</title>
   <meta name="description" content="Plataforma de mapeo y georreferenciación de socios cooperadores para la campaña de captación de la 10ª Compañía del Cuerpo de Bomberos de Ñuñoa.">
   <link rel="icon" type="image/jpeg" href="logo.jpg">
@@ -84,6 +87,15 @@
 
     <!-- ================= SIDEBAR ================= -->
     <aside class="sidebar" id="appSidebar">
+      <!-- Mobile Close Bar -->
+      <div class="sidebar-mobile-header">
+        <div class="mobile-brand-title">
+          <img src="logo_decima.png" alt="10ª CBÑ" class="mini-logo">
+          <span>Resumen de Campaña</span>
+        </div>
+        <button class="btn-close-sidebar-mobile" id="btnMobileCloseSidebar" aria-label="Cerrar panel">&times;</button>
+      </div>
+
       <div class="sidebar-scrollable">
 
         <!-- STATS KPI GRID -->
@@ -189,6 +201,8 @@
 
       </div>
     </aside>
+    <!-- MOBILE SIDEBAR BACKDROP -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
     <!-- SIDEBAR TOGGLE BUTTON -->
     <button class="sidebar-toggle-btn" id="btnToggleSidebar" title="Mostrar/Ocultar panel lateral">
@@ -274,6 +288,29 @@
 
     </div>
   </main>
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+  <nav class="mobile-bottom-bar" id="mobileBottomBar">
+    <button class="mobile-nav-btn active" id="btnNavMap" title="Ver Mapa">
+      <i data-lucide="map"></i>
+      <span>Mapa</span>
+    </button>
+    <button class="mobile-nav-btn" id="btnNavGps" title="Mi Ubicación GPS en Terreno">
+      <i data-lucide="crosshair"></i>
+      <span>Mi GPS</span>
+    </button>
+    <button class="mobile-nav-btn" id="btnNavSummary" title="Ver Resumen y Socios">
+      <i data-lucide="bar-chart-2"></i>
+      <span>Resumen</span>
+    </button>
+    <button class="mobile-nav-btn btn-highlight" id="btnNavAdd" title="Registrar Visita en Terreno">
+      <i data-lucide="plus"></i>
+      <span>+ Visita</span>
+    </button>
+    <button class="mobile-nav-btn" id="btnNavSync" title="Sincronizar en Vivo">
+      <i data-lucide="refresh-cw" id="mobileSyncIcon"></i>
+      <span>Sync</span>
+    </button>
+  </nav>
 
   <!-- ================= MODALS ================= -->
 
