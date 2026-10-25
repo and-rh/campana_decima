@@ -452,26 +452,43 @@
 
     if (!state.visibleLayers.heatmap) return;
 
-    // Solo socios captados para ver densidad de cooperadores
-    const heatPoints = state.filteredRecords
-      .filter(r => r.lat && r.lng && r.estado === 'Socio Captado')
+    if (typeof L.heatLayer !== 'function') {
+      console.warn('L.heatLayer no está disponible.');
+      return;
+    }
+
+    // Puntos con coordenadas válidas según filtros activos
+    const records = (state.filteredRecords && state.filteredRecords.length > 0)
+      ? state.filteredRecords
+      : state.records;
+
+    const heatPoints = records
+      .filter(r => r.lat && r.lng)
       .map(r => {
-        // Ponderar levemente por monto de aporte
-        const intensity = r.monto ? Math.min(1.0, Math.max(0.4, r.monto / 20000)) : 0.6;
+        // Mayor intensidad para socios captados con aporte, intensidad visible para visitas
+        let intensity = 0.5;
+        if (r.estado === 'Socio Captado') {
+          intensity = r.monto ? Math.min(1.0, Math.max(0.7, r.monto / 15000)) : 0.85;
+        } else if (r.estado === 'No Estaba (Repasar)') {
+          intensity = 0.55;
+        } else {
+          intensity = 0.35;
+        }
         return [r.lat, r.lng, intensity];
       });
 
     if (heatPoints.length > 0) {
       state.heatLayer = L.heatLayer(heatPoints, {
-        radius: 28,
-        blur: 20,
-        maxZoom: 17,
+        radius: 36,
+        blur: 22,
+        maxZoom: 18,
+        minOpacity: 0.45,
         gradient: {
-          0.2: '#06b6d4',
-          0.4: '#10b981',
-          0.6: '#f59e0b',
-          0.8: '#f97316',
-          1.0: '#ef4444'
+          0.15: '#06b6d4',
+          0.35: '#10b981',
+          0.60: '#f59e0b',
+          0.80: '#f97316',
+          1.00: '#ef4444'
         }
       }).addTo(state.map);
     }
