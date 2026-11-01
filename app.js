@@ -12,9 +12,9 @@
     initialZoom: 15,
     minZoom: 11,
     maxZoom: 19,
-    storageKey: 'bomberos_decima_cbn_v7',
+    storageKey: 'bomberos_decima_cbn_v8',
     cachePrefix: 'geo_cache_la_florida_',
-    campaignTarget: 50, // Meta de socios campaña actual
+    campaignTarget: 500, // Meta de socios campaña actual
     sheetsUrl: 'https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/gviz/tq?tqx=out:csv&gid=132653492'
   };
 
@@ -68,6 +68,7 @@
     kpiEfectividad: document.getElementById('kpiEfectividad'),
     kpiAvgDonation: document.getElementById('kpiAvgDonation'),
     kpiTargetCurrent: document.getElementById('kpiTargetCurrent'),
+    kpiTargetGoal: document.getElementById('kpiTargetGoal'),
     kpiTargetPercent: document.getElementById('kpiTargetPercent'),
     campaignProgressFill: document.getElementById('campaignProgressFill'),
 
@@ -280,8 +281,11 @@
       }
 
       // Filtro de calle / pasaje
-      if (state.filters.calle !== 'all' && (!r.calle || r.calle.trim() !== state.filters.calle)) {
-        return false;
+      if (state.filters.calle !== 'all') {
+        const normKey = normalizeStreetKey(r.calle);
+        if (normKey !== state.filters.calle) {
+          return false;
+        }
       }
 
       // Filtro de voluntario / escuadra
@@ -356,7 +360,12 @@
                 <span>Aporte:</span>
                 <strong style="color: var(--fire-gold); font-size: 0.9rem;">$ ${record.monto.toLocaleString('es-CL')} / ${record.frecuencia || 'mes'}</strong>
               </div>
-            ` : ''}
+            ` : (record.estado === 'Socio Captado' ? `
+              <div class="popup-row">
+                <span>Aporte:</span>
+                <span style="color: #94a3b8; font-size: 0.82rem;">Monto por confirmar en planilla</span>
+              </div>
+            ` : '')}
             ${record.metodoPago && record.metodoPago !== '-' ? `
               <div class="popup-row">
                 <span>Método Pago:</span>
@@ -460,7 +469,8 @@
       .filter(r => r.estado === 'Socio Captado')
       .reduce((acc, curr) => acc + (Number(curr.monto) || 0), 0);
 
-    const avgDonation = totalCaptados > 0 ? Math.round(totalRecaudado / totalCaptados) : 0;
+    const sociosConMonto = state.filteredRecords.filter(r => r.estado === 'Socio Captado' && Number(r.monto) > 0).length;
+    const avgDonation = sociosConMonto > 0 ? Math.round(totalRecaudado / sociosConMonto) : (totalCaptados > 0 ? Math.round(totalRecaudado / totalCaptados) : 0);
     const efectividad = totalVisitados > 0 ? Math.round((totalCaptados / totalVisitados) * 100) : 0;
 
     // Update KPIs
@@ -472,8 +482,10 @@
 
     // Campaign Goal bar
     const allCaptados = state.records.filter(r => r.estado === 'Socio Captado').length;
-    const pct = Math.min(100, Math.round((allCaptados / CONFIG.campaignTarget) * 100));
+    const target = CONFIG.campaignTarget || 500;
+    const pct = Math.min(100, Math.round((allCaptados / target) * 100));
     DOM.kpiTargetCurrent.textContent = allCaptados;
+    if (DOM.kpiTargetGoal) DOM.kpiTargetGoal.textContent = target;
     DOM.kpiTargetPercent.textContent = `(${pct}%)`;
     DOM.campaignProgressFill.style.width = `${pct}%`;
   }
@@ -620,6 +632,73 @@
     return null;
   }
 
+  // Coordenadas base de referencia en La Florida para calles detectadas
+  const STREET_COORDS = {
+    'tripoli': { lat: -33.546917, lng: -70.571133 },
+    'rodas': { lat: -33.546447, lng: -70.571558 },
+    'sinai': { lat: -33.545520, lng: -70.572242 },
+    'chipre': { lat: -33.545110, lng: -70.573198 },
+    'grecia': { lat: -33.544782, lng: -70.573423 },
+    'golan': { lat: -33.544450, lng: -70.573903 },
+    'atenas': { lat: -33.545420, lng: -70.572877 },
+    'albania': { lat: -33.546194, lng: -70.573320 },
+    'mexico': { lat: -33.533543, lng: -70.569370 },
+    'palermo': { lat: -33.544718, lng: -70.600691 },
+    'los canales': { lat: -33.544703, lng: -70.576135 },
+    'las vertientes': { lat: -33.545881, lng: -70.575833 },
+    'los lagos': { lat: -33.546537, lng: -70.574254 },
+    'la condesa': { lat: -33.544453, lng: -70.575760 },
+    'el marquez': { lat: -33.544215, lng: -70.575229 },
+    'el vizconde': { lat: -33.544570, lng: -70.575045 },
+    'la realeza': { lat: -33.545298, lng: -70.574666 },
+    'santa marta': { lat: -33.554765, lng: -70.566227 },
+    'cali': { lat: -33.545505, lng: -70.579602 },
+    'colombia': { lat: -33.528824, lng: -70.588252 },
+    'tineo': { lat: -33.545424, lng: -70.578518 },
+    'trinidad oriente': { lat: -33.546855, lng: -70.583759 },
+    'la duquesa': { lat: -33.544924, lng: -70.574857 },
+    'nariño': { lat: -33.546779, lng: -70.580251 },
+    'santa dolores': { lat: -33.548251, lng: -70.602155 },
+    'san andres': { lat: -33.546133, lng: -70.583969 },
+    'santa fe': { lat: -33.544446, lng: -70.581795 },
+    'agua viva norte': { lat: -33.546664, lng: -70.577542 },
+    'pimiento': { lat: -33.544347, lng: -70.578603 },
+    'litre': { lat: -33.544119, lng: -70.578714 },
+    'las termas': { lat: -33.550990, lng: -70.585964 },
+    'los fiordos': { lat: -33.546527, lng: -70.574764 },
+    'central oriente': { lat: -33.548299, lng: -70.578788 },
+    'barranquilla': { lat: -33.544917, lng: -70.581689 }
+  };
+
+  // Normalizador clave para agrupar calles independientemente de mayúsculas/minúsculas y tildes
+  function normalizeStreetKey(str) {
+    if (!str) return '';
+    return str.toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/^pje\.?\s+|^pasaje\s+/i, 'pasaje ')
+      .replace(/^avda\.?\s+|^av\.?\s+/i, 'av ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  // Formato estético y legible para nombres de calles en selectores
+  function formatStreetName(calle) {
+    if (!calle) return '';
+    let str = calle.trim();
+    str = str.replace(/^PJE\.?\s+/i, 'Pje. ')
+             .replace(/^PASAJE\s+/i, 'Pasaje ')
+             .replace(/^AVDA\.?\s+/i, 'Av. ')
+             .replace(/^AV\.?\s+/i, 'Av. ');
+
+    const lowerWords = ['de', 'del', 'la', 'las', 'el', 'los', 'en', 'y'];
+    return str.split(/\s+/).map((word, idx) => {
+      const wLower = word.toLowerCase();
+      if (idx > 0 && lowerWords.includes(wLower)) return wLower;
+      return wLower.charAt(0).toUpperCase() + wLower.slice(1);
+    }).join(' ');
+  }
+
   // Modelos vectoriales de calles para que los domicilios sigan el trazado real de cada calle
   const STREET_MODELS = {
     'el marquez': { pts: [[-33.54421, -70.57550], [-33.54408, -70.57385]], numRange: [1000, 1100], sideOffset: 0.00004 },
@@ -645,7 +724,7 @@
 
   function interpolateAlongStreet(calleName, numStr) {
     if (!calleName) return null;
-    let clean = calleName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    let clean = normalizeStreetKey(calleName).replace(/^pasaje\s+|^av\s+/i, '');
     clean = clean.replace(/marquez/g, 'marques');
     let model = STREET_MODELS[clean];
     if (!model) {
@@ -656,36 +735,54 @@
         }
       }
     }
-    if (!model) return null;
 
-    const pts = model.pts;
-    const [minNum, maxNum] = model.numRange;
-    let n = parseInt(String(numStr || '').replace(/\D/g, ''), 10);
-    if (isNaN(n) || n === 0) n = Math.floor((minNum + maxNum) / 2);
+    if (model) {
+      const pts = model.pts;
+      const [minNum, maxNum] = model.numRange;
+      let n = parseInt(String(numStr || '').replace(/\D/g, ''), 10);
+      if (isNaN(n) || n === 0) n = Math.floor((minNum + maxNum) / 2);
 
-    let t = (n - minNum) / Math.max(1, (maxNum - minNum));
-    t = Math.max(0.04, Math.min(0.96, t));
+      let t = (n - minNum) / Math.max(1, (maxNum - minNum));
+      t = Math.max(0.04, Math.min(0.96, t));
 
-    const numSegs = pts.length - 1;
-    const segIdx = Math.min(numSegs - 1, Math.floor(t * numSegs));
-    const segT = (t * numSegs) - segIdx;
+      const numSegs = pts.length - 1;
+      const segIdx = Math.min(numSegs - 1, Math.floor(t * numSegs));
+      const segT = (t * numSegs) - segIdx;
 
-    const p1 = pts[segIdx];
-    const p2 = pts[segIdx + 1];
+      const p1 = pts[segIdx];
+      const p2 = pts[segIdx + 1];
 
-    let lat = p1[0] + segT * (p2[0] - p1[0]);
-    let lng = p1[1] + segT * (p2[1] - p1[1]);
+      let lat = p1[0] + segT * (p2[0] - p1[0]);
+      let lng = p1[1] + segT * (p2[1] - p1[1]);
 
-    const side = (n % 2 === 0) ? 1 : -1;
-    const dlat = p2[0] - p1[0];
-    const dlng = p2[1] - p1[1];
-    const len = Math.sqrt(dlat * dlat + dlng * dlng);
-    if (len > 0) {
-      lat += -dlng / len * model.sideOffset * side;
-      lng += dlat / len * model.sideOffset * side;
+      const side = (n % 2 === 0) ? 1 : -1;
+      const dlat = p2[0] - p1[0];
+      const dlng = p2[1] - p1[1];
+      const len = Math.sqrt(dlat * dlat + dlng * dlng);
+      if (len > 0) {
+        lat += -dlng / len * model.sideOffset * side;
+        lng += dlat / len * model.sideOffset * side;
+      }
+
+      return { lat: Number(lat.toFixed(6)), lng: Number(lng.toFixed(6)) };
     }
 
-    return { lat: Number(lat.toFixed(6)), lng: Number(lng.toFixed(6)) };
+    // Si no tiene modelo poligonal, buscar en las coordenadas base conocidas de La Florida
+    for (const [k, v] of Object.entries(STREET_COORDS)) {
+      if (clean.includes(k) || k.includes(clean)) {
+        let n = parseInt(String(numStr || '').replace(/\D/g, ''), 10);
+        if (isNaN(n) || n === 0) n = 1;
+        const h = String(n).split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+        const offLat = ((h % 50) - 25) * 0.00002;
+        const offLng = (((h * 3) % 50) - 25) * 0.00002;
+        return {
+          lat: Number((v.lat + offLat).toFixed(6)),
+          lng: Number((v.lng + offLng).toFixed(6))
+        };
+      }
+    }
+
+    return null;
   }
 
   // ================= SINCRONIZACIÓN GOOGLE SHEETS =================
@@ -814,43 +911,76 @@
     const colFecha = findCol(['ultima visita', 'fecha', 'timestamp', 'dia']);
     const colProx = findCol(['proxima visita', 'proxima']);
     const colObs = findCol(['observaciones', 'observacion', 'notas', 'nota']);
+    const colMonto = findCol(['monto', 'aporte', 'valor', 'cuota', 'monto aporte', 'donacion', 'total']);
     const colLat = findCol(['latitud', 'lat']);
     const colLng = findCol(['longitud', 'lng', 'lon']);
 
+    // Función auxiliar para parsear montos en pesos chilenos ($ 5.000 -> 5000)
+    function parseMonto(raw) {
+      if (raw === null || raw === undefined) return 0;
+      if (typeof raw === 'number') return isNaN(raw) ? 0 : Math.round(raw);
+      const str = String(raw).trim();
+      if (!str) return 0;
+      const digitsOnly = str.replace(/[^0-9]/g, '');
+      if (!digitsOnly) return 0;
+      const num = parseInt(digitsOnly, 10);
+      return isNaN(num) ? 0 : num;
+    }
+
     const newRecords = [];
-    const streetCounts = {};
 
     for (let r = headerRowIdx + 1; r < rawRows.length; r++) {
       const row = rawRows[r];
       if (!row || row.length === 0) continue;
 
-      const calle = colDir >= 0 && row[colDir] ? String(row[colDir]).trim() : '';
-      const numero = colNum >= 0 && row[colNum] ? String(row[colNum]).trim() : '';
+      // 1. Omitir filas completamente vacías o compuestas sólo por espacios
+      const isEntirelyBlank = row.every(cell => !cell || String(cell).trim() === '');
+      if (isEntirelyBlank) continue;
+
+      let calle = colDir >= 0 && row[colDir] ? String(row[colDir]).trim() : '';
+      let numero = colNum >= 0 && row[colNum] ? String(row[colNum]).trim() : '';
       const resp = colResp >= 0 && row[colResp] ? String(row[colResp]).trim() : '';
       const folio = colFolio >= 0 && row[colFolio] ? String(row[colFolio]).trim() : '';
       const vol = colVol >= 0 && row[colVol] ? String(row[colVol]).trim() : '10ª Compañía';
       const fecha = colFecha >= 0 && row[colFecha] ? String(row[colFecha]).trim() : '';
       const prox = colProx >= 0 && row[colProx] ? String(row[colProx]).trim() : '';
       const obs = colObs >= 0 && row[colObs] ? String(row[colObs]).trim() : '';
+      const rawMonto = colMonto >= 0 && row[colMonto] !== undefined ? String(row[colMonto]).trim() : '';
 
-      if (!calle && !numero) continue;
-
-      // Estado
-      let estado = 'Socio Captado';
-      let monto = 0;
+      // Determinar Estado
+      let estado = 'No Estaba (Repasar)';
+      let isSocio = false;
       if (/socio|ya es socio/i.test(resp)) {
         estado = 'Socio Captado';
-        monto = 5000;
+        isSocio = true;
       } else if (/ausente|volver|repasar|nadie/i.test(resp)) {
         estado = 'No Estaba (Repasar)';
       } else if (/rechaz|no interesado|no quiere|negativ/i.test(resp)) {
         estado = 'Rechazado';
-      } else {
-        estado = 'No Estaba (Repasar)';
+      } else if (folio) {
+        estado = 'Socio Captado';
+        isSocio = true;
+      }
+
+      // 2. Si no tiene calle ni número
+      if (!calle && !numero) {
+        // Si no es socio y no tiene folio, descartar fila sin dirección (evitar registros fantasma)
+        if (!isSocio && !folio) {
+          continue;
+        }
+        // Si es socio con folio registrado pero la dirección quedó pendiente:
+        calle = 'Dirección Pendiente';
+        numero = folio ? `Folio #${folio}` : '';
+      }
+
+      // 3. Monto real del aporte
+      let monto = 0;
+      if (isSocio) {
+        monto = parseMonto(rawMonto);
       }
 
       // Nombre y Dirección Completa
-      const fullDir = numero ? `${calle} ${numero}` : calle;
+      const fullDir = numero ? `${calle} ${numero}`.trim() : calle;
       let nombre = `Casa ${fullDir}`;
       if (estado === 'Socio Captado') {
         nombre = folio ? `Socio Mandato #${folio}` : `Socio Cooperador (${fullDir})`;
@@ -865,7 +995,7 @@
         if (coords) {
           lat = coords.lat;
           lng = coords.lng;
-        } else if (calle) {
+        } else if (calle && calle !== 'Dirección Pendiente') {
           // Fallback georreferenciador determinista en el cuadrante de la Décima
           const hash = (calle + (numero || '')).split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
           const offsetLat = ((hash % 100) - 50) * 0.00004;
@@ -1062,19 +1192,28 @@
   // ================= UI HELPERS & SELECTORS =================
   function populateStreetOptions() {
     if (!DOM.filterCalle) return;
-    const calles = new Set();
+    const streetMap = new Map();
+
     state.records.forEach(r => {
-      if (r.calle && r.calle.trim()) {
-        calles.add(r.calle.trim());
+      if (!r.calle || !r.calle.trim()) return;
+      const key = normalizeStreetKey(r.calle);
+      if (!streetMap.has(key)) {
+        streetMap.set(key, {
+          key: key,
+          name: formatStreetName(r.calle),
+          count: 0
+        });
       }
+      streetMap.get(key).count++;
     });
-    const sorted = Array.from(calles).sort((a, b) => a.localeCompare(b, 'es'));
+
+    const sorted = Array.from(streetMap.values()).sort((a, b) => a.name.localeCompare(b.name, 'es'));
+
     DOM.filterCalle.innerHTML = '<option value="all">📍 Todas las calles y pasajes</option>';
-    sorted.forEach(c => {
+    sorted.forEach(item => {
       const opt = document.createElement('option');
-      opt.value = c;
-      const count = state.records.filter(r => r.calle && r.calle.trim() === c).length;
-      opt.textContent = `${c} (${count} casas)`;
+      opt.value = item.key;
+      opt.textContent = `${item.name} (${item.count} casas)`;
       DOM.filterCalle.appendChild(opt);
     });
   }
@@ -1323,7 +1462,7 @@
         state.filters.calle = e.target.value;
         if (state.filters.calle !== 'all') {
           // Centrar mapa en las casas de la calle seleccionada
-          const streetRecords = state.records.filter(r => r.calle && r.calle.trim() === state.filters.calle && r.lat && r.lng);
+          const streetRecords = state.records.filter(r => r.calle && normalizeStreetKey(r.calle) === state.filters.calle && r.lat && r.lng);
           if (streetRecords.length > 0) {
             const group = L.featureGroup(streetRecords.map(r => L.marker([r.lat, r.lng])));
             state.map.fitBounds(group.getBounds().pad(0.2), { maxZoom: 17, duration: 1 });
