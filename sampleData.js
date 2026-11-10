@@ -18,8 +18,8 @@ window.SAMPLE_DATA = [
     "folio": "3151",
     "proximaVisita": "",
     "notas": "Folio: 3151",
-    "lat": -33.54328,
-    "lng": -70.57346
+    "lat": -33.546713,
+    "lng": -70.571864
   },
   {
     "id": 2,
@@ -38,12 +38,12 @@ window.SAMPLE_DATA = [
     "folio": "3152",
     "proximaVisita": "",
     "notas": "Folio: 3152",
-    "lat": -33.54324,
-    "lng": -70.57318
+    "lat": -33.545528,
+    "lng": -70.572173
   },
   {
     "id": 3,
-    "nroFila": "",
+    "nroFila": "5",
     "fecha": "25/10/2026",
     "nombre": "Casa Dirección Pendiente Folio #3153",
     "direccion": "Dirección Pendiente Folio #3153",
@@ -58,8 +58,8 @@ window.SAMPLE_DATA = [
     "folio": "3153",
     "proximaVisita": "",
     "notas": "Folio: 3153",
-    "lat": -33.54396,
-    "lng": -70.57422
+    "lat": null,
+    "lng": null
   },
   {
     "id": 4,
@@ -158,8 +158,8 @@ window.SAMPLE_DATA = [
     "folio": "3158",
     "proximaVisita": "",
     "notas": "Folio: 3158",
-    "lat": -33.547077,
-    "lng": -70.571613
+    "lat": -33.546978,
+    "lng": -70.57083
   },
   {
     "id": 9,
@@ -178,8 +178,8 @@ window.SAMPLE_DATA = [
     "folio": "3159",
     "proximaVisita": "",
     "notas": "Folio: 3159",
-    "lat": -33.54344,
-    "lng": -70.57458
+    "lat": -33.546698,
+    "lng": -70.571785
   },
   {
     "id": 10,
@@ -218,8 +218,8 @@ window.SAMPLE_DATA = [
     "folio": "3161",
     "proximaVisita": "",
     "notas": "Folio: 3161",
-    "lat": -33.54332,
-    "lng": -70.57374
+    "lat": -33.545388,
+    "lng": -70.57221
   },
   {
     "id": 12,
@@ -238,8 +238,8 @@ window.SAMPLE_DATA = [
     "folio": "3162",
     "proximaVisita": "",
     "notas": "Folio: 3162",
-    "lat": -33.5432,
-    "lng": -70.5729
+    "lat": -33.546698,
+    "lng": -70.571785
   },
   {
     "id": 13,
@@ -258,8 +258,8 @@ window.SAMPLE_DATA = [
     "folio": "3165",
     "proximaVisita": "",
     "notas": "Folio: 3165",
-    "lat": -33.54316,
-    "lng": -70.57262
+    "lat": -33.546698,
+    "lng": -70.571785
   },
   {
     "id": 14,
@@ -298,8 +298,8 @@ window.SAMPLE_DATA = [
     "folio": "3167",
     "proximaVisita": "",
     "notas": "Folio: 3167",
-    "lat": -33.546847,
-    "lng": -70.571758
+    "lat": -33.546416,
+    "lng": -70.571752
   },
   {
     "id": 16,
@@ -318,8 +318,8 @@ window.SAMPLE_DATA = [
     "folio": "3168",
     "proximaVisita": "",
     "notas": "Folio: 3168",
-    "lat": -33.54332,
-    "lng": -70.57374
+    "lat": -33.546517,
+    "lng": -70.571915
   },
   {
     "id": 17,
@@ -338,8 +338,8 @@ window.SAMPLE_DATA = [
     "folio": "3169",
     "proximaVisita": "",
     "notas": "Folio: 3169",
-    "lat": -33.54324,
-    "lng": -70.57318
+    "lat": -33.545402,
+    "lng": -70.572206
   },
   {
     "id": 18,
@@ -378,12 +378,12 @@ window.SAMPLE_DATA = [
     "folio": "3171",
     "proximaVisita": "",
     "notas": "Folio: 3171",
-    "lat": -33.54368,
-    "lng": -70.57226
+    "lat": -33.544929,
+    "lng": -70.572247
   },
   {
     "id": 20,
-    "nroFila": "",
+    "nroFila": "22",
     "fecha": "25/10/2026",
     "nombre": "Casa Dirección Pendiente Folio #3172",
     "direccion": "Dirección Pendiente Folio #3172",
@@ -398,8 +398,8 @@ window.SAMPLE_DATA = [
     "folio": "3172",
     "proximaVisita": "",
     "notas": "Folio: 3172",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": null,
+    "lng": null
   },
   {
     "id": 21,
@@ -418,8 +418,8 @@ window.SAMPLE_DATA = [
     "folio": "3173",
     "proximaVisita": "",
     "notas": "Folio: 3173",
-    "lat": -33.54332,
-    "lng": -70.57374
+    "lat": -33.546058,
+    "lng": -70.571952
   },
   {
     "id": 22,
@@ -438,8 +438,8 @@ window.SAMPLE_DATA = [
     "folio": "3174",
     "proximaVisita": "",
     "notas": "Folio: 3174",
-    "lat": -33.54544,
-    "lng": -70.57258
+    "lat": -33.54586,
+    "lng": -70.57284
   },
   {
     "id": 23,
@@ -458,8 +458,8 @@ window.SAMPLE_DATA = [
     "folio": "3175",
     "proximaVisita": "",
     "notas": "Folio: 3175",
-    "lat": -33.546614,
-    "lng": -70.57358
+    "lat": -33.546211,
+    "lng": -70.573019
   },
   {
     "id": 24,
@@ -478,8 +478,8 @@ window.SAMPLE_DATA = [
     "folio": "3176",
     "proximaVisita": "",
     "notas": "Folio: 3176",
-    "lat": -33.546634,
-    "lng": -70.57364
+    "lat": -33.546211,
+    "lng": -70.573019
   },
   {
     "id": 25,
@@ -498,8 +498,8 @@ window.SAMPLE_DATA = [
     "folio": "3177",
     "proximaVisita": "",
     "notas": "Folio: 3177",
-    "lat": -33.54578,
-    "lng": -70.572957
+    "lat": -33.545432,
+    "lng": -70.572617
   },
   {
     "id": 26,
@@ -518,8 +518,8 @@ window.SAMPLE_DATA = [
     "folio": "3178",
     "proximaVisita": "",
     "notas": "Folio: 3178",
-    "lat": -33.54352,
-    "lng": -70.57514
+    "lat": -33.544789,
+    "lng": -70.572366
   },
   {
     "id": 27,
@@ -538,8 +538,8 @@ window.SAMPLE_DATA = [
     "folio": "3179",
     "proximaVisita": "",
     "notas": "Folio: 3179",
-    "lat": -33.54376,
-    "lng": -70.57282
+    "lat": -33.544873,
+    "lng": -70.572344
   },
   {
     "id": 28,
@@ -558,8 +558,8 @@ window.SAMPLE_DATA = [
     "folio": "3180",
     "proximaVisita": "",
     "notas": "Folio: 3180",
-    "lat": -33.54553,
-    "lng": -70.573458
+    "lat": -33.545124,
+    "lng": -70.572996
   },
   {
     "id": 29,
@@ -578,8 +578,8 @@ window.SAMPLE_DATA = [
     "folio": "3181",
     "proximaVisita": "",
     "notas": "Folio: 3181",
-    "lat": -33.54568,
-    "lng": -70.57426
+    "lat": -33.5459,
+    "lng": -70.57392
   },
   {
     "id": 30,
@@ -598,8 +598,8 @@ window.SAMPLE_DATA = [
     "folio": "3182",
     "proximaVisita": "",
     "notas": "Folio: 3182",
-    "lat": -33.54364,
-    "lng": -70.57198
+    "lat": -33.544602,
+    "lng": -70.572415
   },
   {
     "id": 31,
@@ -618,8 +618,8 @@ window.SAMPLE_DATA = [
     "folio": "3183",
     "proximaVisita": "",
     "notas": "Folio: 3183",
-    "lat": -33.5436,
-    "lng": -70.5717
+    "lat": -33.544602,
+    "lng": -70.572415
   },
   {
     "id": 32,
@@ -638,8 +638,8 @@ window.SAMPLE_DATA = [
     "folio": "3184",
     "proximaVisita": "",
     "notas": "Folio: 3184",
-    "lat": -33.544863,
-    "lng": -70.576615
+    "lat": -33.543407,
+    "lng": -70.576887
   },
   {
     "id": 33,
@@ -658,8 +658,8 @@ window.SAMPLE_DATA = [
     "folio": "3185",
     "proximaVisita": "",
     "notas": "Folio: 3185",
-    "lat": -33.5456,
-    "lng": -70.5737
+    "lat": -33.54586,
+    "lng": -70.5738
   },
   {
     "id": 34,
@@ -678,8 +678,8 @@ window.SAMPLE_DATA = [
     "folio": "3186",
     "proximaVisita": "",
     "notas": "Folio: 3186",
-    "lat": -33.546574,
-    "lng": -70.57346
+    "lat": -33.546211,
+    "lng": -70.573024
   },
   {
     "id": 35,
@@ -698,8 +698,8 @@ window.SAMPLE_DATA = [
     "folio": "3188",
     "proximaVisita": "",
     "notas": "Folio: 3188",
-    "lat": -33.54372,
-    "lng": -70.57254
+    "lat": -33.54414,
+    "lng": -70.5728
   },
   {
     "id": 36,
@@ -718,8 +718,8 @@ window.SAMPLE_DATA = [
     "folio": "3189",
     "proximaVisita": "",
     "notas": "Folio: 3189",
-    "lat": -33.5468,
-    "lng": -70.5741
+    "lat": -33.54716,
+    "lng": -70.57418
   },
   {
     "id": 37,
@@ -738,8 +738,8 @@ window.SAMPLE_DATA = [
     "folio": "3190",
     "proximaVisita": "",
     "notas": "Folio: 3190",
-    "lat": -33.54516,
-    "lng": -70.57462
+    "lat": -33.54724,
+    "lng": -70.57442
   },
   {
     "id": 38,
@@ -758,8 +758,8 @@ window.SAMPLE_DATA = [
     "folio": "3191",
     "proximaVisita": "",
     "notas": "Folio: 3191",
-    "lat": -33.54473,
-    "lng": -70.573743
+    "lat": -33.545541,
+    "lng": -70.572933
   },
   {
     "id": 39,
@@ -778,8 +778,8 @@ window.SAMPLE_DATA = [
     "folio": "3192",
     "proximaVisita": "",
     "notas": "Folio: 3192",
-    "lat": -33.54356,
-    "lng": -70.57542
+    "lat": -33.545264,
+    "lng": -70.572159
   },
   {
     "id": 40,
@@ -798,8 +798,8 @@ window.SAMPLE_DATA = [
     "folio": "3193",
     "proximaVisita": "",
     "notas": "Folio: 3193",
-    "lat": -33.54368,
-    "lng": -70.57226
+    "lat": -33.545556,
+    "lng": -70.572083
   },
   {
     "id": 41,
@@ -818,8 +818,8 @@ window.SAMPLE_DATA = [
     "folio": "3194",
     "proximaVisita": "",
     "notas": "Folio: 3194",
-    "lat": -33.54364,
-    "lng": -70.57198
+    "lat": -33.545124,
+    "lng": -70.572196
   },
   {
     "id": 42,
@@ -838,8 +838,8 @@ window.SAMPLE_DATA = [
     "folio": "3195",
     "proximaVisita": "",
     "notas": "Folio: 3195",
-    "lat": -33.54364,
-    "lng": -70.57198
+    "lat": -33.5441,
+    "lng": -70.57268
   },
   {
     "id": 43,
@@ -858,8 +858,8 @@ window.SAMPLE_DATA = [
     "folio": "3196",
     "proximaVisita": "",
     "notas": "Folio: 3196",
-    "lat": -33.54356,
-    "lng": -70.57542
+    "lat": -33.545013,
+    "lng": -70.572225
   },
   {
     "id": 44,
@@ -878,8 +878,8 @@ window.SAMPLE_DATA = [
     "folio": "3197",
     "proximaVisita": "",
     "notas": "Folio: 3197",
-    "lat": -33.546554,
-    "lng": -70.5734
+    "lat": -33.546211,
+    "lng": -70.573019
   },
   {
     "id": 45,
@@ -898,12 +898,12 @@ window.SAMPLE_DATA = [
     "folio": "3198",
     "proximaVisita": "",
     "notas": "Folio: 3198",
-    "lat": -33.544,
-    "lng": -70.5745
+    "lat": -33.54578,
+    "lng": -70.5726
   },
   {
     "id": 46,
-    "nroFila": "",
+    "nroFila": "48",
     "fecha": "25/10/2026",
     "nombre": "Casa Dirección Pendiente Folio #3199",
     "direccion": "Dirección Pendiente Folio #3199",
@@ -918,8 +918,8 @@ window.SAMPLE_DATA = [
     "folio": "3199",
     "proximaVisita": "",
     "notas": "Folio: 3199",
-    "lat": -33.54356,
-    "lng": -70.57542
+    "lat": null,
+    "lng": null
   },
   {
     "id": 47,
@@ -938,8 +938,8 @@ window.SAMPLE_DATA = [
     "folio": "3200",
     "proximaVisita": "",
     "notas": "Folio: 3200",
-    "lat": -33.54412,
-    "lng": -70.57534
+    "lat": -33.54584,
+    "lng": -70.57278
   },
   {
     "id": 48,
@@ -958,8 +958,8 @@ window.SAMPLE_DATA = [
     "folio": "3201",
     "proximaVisita": "",
     "notas": "Folio: 3201",
-    "lat": -33.5446,
-    "lng": -70.5747
+    "lat": -33.54486,
+    "lng": -70.57448
   },
   {
     "id": 49,
@@ -978,8 +978,8 @@ window.SAMPLE_DATA = [
     "folio": "3202",
     "proximaVisita": "",
     "notas": "Folio: 3202",
-    "lat": -33.5444,
-    "lng": -70.5733
+    "lat": -33.54476,
+    "lng": -70.57518
   },
   {
     "id": 50,
@@ -998,8 +998,8 @@ window.SAMPLE_DATA = [
     "folio": "3203",
     "proximaVisita": "",
     "notas": "Folio: 3203",
-    "lat": -33.546241,
-    "lng": -70.575913
+    "lat": -33.546349,
+    "lng": -70.573778
   },
   {
     "id": 51,
@@ -1078,8 +1078,8 @@ window.SAMPLE_DATA = [
     "folio": "3207",
     "proximaVisita": "",
     "notas": "Folio: 3207",
-    "lat": -33.546617,
-    "lng": -70.574494
+    "lat": -33.54698,
+    "lng": -70.573892
   },
   {
     "id": 55,
@@ -1098,8 +1098,8 @@ window.SAMPLE_DATA = [
     "folio": "3208",
     "proximaVisita": "",
     "notas": "Folio: 3208",
-    "lat": -33.546737,
-    "lng": -70.573854
+    "lat": -33.546072,
+    "lng": -70.57508
   },
   {
     "id": 56,
@@ -1118,8 +1118,8 @@ window.SAMPLE_DATA = [
     "folio": "3209",
     "proximaVisita": "",
     "notas": "Folio: 3209",
-    "lat": -33.546261,
-    "lng": -70.575973
+    "lat": -33.546314,
+    "lng": -70.574162
   },
   {
     "id": 57,
@@ -1138,8 +1138,8 @@ window.SAMPLE_DATA = [
     "folio": "3211",
     "proximaVisita": "",
     "notas": "Folio: 3211",
-    "lat": -33.544653,
-    "lng": -70.57536
+    "lat": -33.543791,
+    "lng": -70.575843
   },
   {
     "id": 58,
@@ -1158,8 +1158,8 @@ window.SAMPLE_DATA = [
     "folio": "3212",
     "proximaVisita": "",
     "notas": "Folio: 3212",
-    "lat": -33.544793,
-    "lng": -70.57578
+    "lat": -33.544392,
+    "lng": -70.575358
   },
   {
     "id": 59,
@@ -1198,8 +1198,8 @@ window.SAMPLE_DATA = [
     "folio": "3214",
     "proximaVisita": "",
     "notas": "Folio: 3214",
-    "lat": -33.54612,
-    "lng": -70.57334
+    "lat": -33.544234,
+    "lng": -70.575299
   },
   {
     "id": 61,
@@ -1218,8 +1218,8 @@ window.SAMPLE_DATA = [
     "folio": "3215",
     "proximaVisita": "",
     "notas": "Folio: 3215",
-    "lat": -33.54596,
-    "lng": -70.57222
+    "lat": -33.544159,
+    "lng": -70.574342
   },
   {
     "id": 62,
@@ -1238,14 +1238,14 @@ window.SAMPLE_DATA = [
     "folio": "3216",
     "proximaVisita": "",
     "notas": "Folio: 3216",
-    "lat": -33.54501,
-    "lng": -70.575365
+    "lat": -33.544621,
+    "lng": -70.57489
   },
   {
     "id": 63,
-    "nroFila": "",
+    "nroFila": "65",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3217",
+    "nombre": "Socio Mandato #3217",
     "direccion": "Dirección Pendiente Folio #3217",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3217",
@@ -1254,12 +1254,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3217",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3217",
     "proximaVisita": "",
     "notas": "Folio: 3217",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": null,
+    "lng": null
   },
   {
     "id": 64,
@@ -1298,8 +1298,8 @@ window.SAMPLE_DATA = [
     "folio": "3219",
     "proximaVisita": "",
     "notas": "Folio: 3219",
-    "lat": -33.544653,
-    "lng": -70.57536
+    "lat": -33.543913,
+    "lng": -70.575847
   },
   {
     "id": 66,
@@ -1318,8 +1318,8 @@ window.SAMPLE_DATA = [
     "folio": "3220",
     "proximaVisita": "",
     "notas": "Folio: 3220",
-    "lat": -33.544713,
-    "lng": -70.57554
+    "lat": -33.543983,
+    "lng": -70.575687
   },
   {
     "id": 67,
@@ -1338,8 +1338,8 @@ window.SAMPLE_DATA = [
     "folio": "3221",
     "proximaVisita": "",
     "notas": "Folio: 3221",
-    "lat": -33.544573,
-    "lng": -70.57612
+    "lat": -33.544255,
+    "lng": -70.575466
   },
   {
     "id": 68,
@@ -1358,8 +1358,8 @@ window.SAMPLE_DATA = [
     "folio": "3222",
     "proximaVisita": "",
     "notas": "Folio: 3222",
-    "lat": -33.544593,
-    "lng": -70.57618
+    "lat": -33.544319,
+    "lng": -70.575414
   },
   {
     "id": 69,
@@ -1378,14 +1378,14 @@ window.SAMPLE_DATA = [
     "folio": "3223",
     "proximaVisita": "",
     "notas": "Folio: 3223",
-    "lat": -33.54409,
-    "lng": -70.574605
+    "lat": -33.544576,
+    "lng": -70.574426
   },
   {
     "id": 70,
-    "nroFila": "",
+    "nroFila": "72",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3224",
+    "nombre": "Socio Mandato #3224",
     "direccion": "Dirección Pendiente Folio #3224",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3224",
@@ -1394,12 +1394,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3224",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3224",
     "proximaVisita": "",
     "notas": "Folio: 3224",
-    "lat": -33.544,
-    "lng": -70.5745
+    "lat": null,
+    "lng": null
   },
   {
     "id": 71,
@@ -1458,8 +1458,8 @@ window.SAMPLE_DATA = [
     "folio": "3230",
     "proximaVisita": "",
     "notas": "Folio: 3230",
-    "lat": -33.54516,
-    "lng": -70.57462
+    "lat": -33.547059,
+    "lng": -70.580091
   },
   {
     "id": 74,
@@ -1598,14 +1598,14 @@ window.SAMPLE_DATA = [
     "folio": "3239",
     "proximaVisita": "",
     "notas": "Folio: 3239",
-    "lat": -33.54508,
-    "lng": -70.57406
+    "lat": -33.547119,
+    "lng": -70.580271
   },
   {
     "id": 81,
-    "nroFila": "",
+    "nroFila": "83",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3240",
+    "nombre": "Socio Mandato #3240",
     "direccion": "Dirección Pendiente Folio #3240",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3240",
@@ -1614,12 +1614,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3240",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3240",
     "proximaVisita": "",
     "notas": "Folio: 3240",
-    "lat": -33.54408,
-    "lng": -70.57506
+    "lat": null,
+    "lng": null
   },
   {
     "id": 82,
@@ -1663,9 +1663,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 84,
-    "nroFila": "",
+    "nroFila": "86",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3243",
+    "nombre": "Socio Mandato #3243",
     "direccion": "Dirección Pendiente Folio #3243",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3243",
@@ -1674,12 +1674,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3243",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3243",
     "proximaVisita": "",
     "notas": "Folio: 3243",
-    "lat": -33.54396,
-    "lng": -70.57422
+    "lat": null,
+    "lng": null
   },
   {
     "id": 85,
@@ -1718,8 +1718,8 @@ window.SAMPLE_DATA = [
     "folio": "3245",
     "proximaVisita": "",
     "notas": "Folio: 3245",
-    "lat": -33.54436,
-    "lng": -70.57302
+    "lat": -33.54482,
+    "lng": -70.5734
   },
   {
     "id": 87,
@@ -1738,8 +1738,8 @@ window.SAMPLE_DATA = [
     "folio": "3247",
     "proximaVisita": "",
     "notas": "Folio: 3247",
-    "lat": -33.5444,
-    "lng": -70.5733
+    "lat": -33.54484,
+    "lng": -70.57346
   },
   {
     "id": 88,
@@ -1758,8 +1758,8 @@ window.SAMPLE_DATA = [
     "folio": "3248",
     "proximaVisita": "",
     "notas": "Folio: 3248",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": -33.54442,
+    "lng": -70.57444
   },
   {
     "id": 89,
@@ -1778,8 +1778,8 @@ window.SAMPLE_DATA = [
     "folio": "3249",
     "proximaVisita": "",
     "notas": "Folio: 3249",
-    "lat": -33.54356,
-    "lng": -70.57542
+    "lat": -33.5431,
+    "lng": -70.57504
   },
   {
     "id": 90,
@@ -1798,8 +1798,8 @@ window.SAMPLE_DATA = [
     "folio": "3250",
     "proximaVisita": "",
     "notas": "Folio: 3250",
-    "lat": -33.5454,
-    "lng": -70.5723
+    "lat": -33.5458,
+    "lng": -70.5725
   },
   {
     "id": 91,
@@ -1818,8 +1818,8 @@ window.SAMPLE_DATA = [
     "folio": "3251",
     "proximaVisita": "",
     "notas": "Folio: 3251",
-    "lat": -33.54578,
-    "lng": -70.572957
+    "lat": -33.545396,
+    "lng": -70.572865
   },
   {
     "id": 92,
@@ -1838,8 +1838,8 @@ window.SAMPLE_DATA = [
     "folio": "3253",
     "proximaVisita": "",
     "notas": "Folio: 3253",
-    "lat": -33.546654,
-    "lng": -70.5737
+    "lat": -33.546158,
+    "lng": -70.573189
   },
   {
     "id": 93,
@@ -1858,8 +1858,8 @@ window.SAMPLE_DATA = [
     "folio": "3254",
     "proximaVisita": "",
     "notas": "Folio: 3254",
-    "lat": -33.54424,
-    "lng": -70.57218
+    "lat": -33.544331,
+    "lng": -70.573871
   },
   {
     "id": 94,
@@ -1878,8 +1878,8 @@ window.SAMPLE_DATA = [
     "folio": "3255",
     "proximaVisita": "",
     "notas": "Folio: 3255",
-    "lat": -33.54452,
-    "lng": -70.57414
+    "lat": -33.54492,
+    "lng": -70.57434
   },
   {
     "id": 95,
@@ -1898,8 +1898,8 @@ window.SAMPLE_DATA = [
     "folio": "3260",
     "proximaVisita": "",
     "notas": "Folio: 3260",
-    "lat": -33.54504,
-    "lng": -70.57378
+    "lat": -33.544121,
+    "lng": -70.573874
   },
   {
     "id": 96,
@@ -1918,8 +1918,8 @@ window.SAMPLE_DATA = [
     "folio": "3261",
     "proximaVisita": "",
     "notas": "Folio: 3261",
-    "lat": -33.5442,
-    "lng": -70.5719
+    "lat": -33.543139,
+    "lng": -70.573808
   },
   {
     "id": 97,
@@ -1958,8 +1958,8 @@ window.SAMPLE_DATA = [
     "folio": "3269",
     "proximaVisita": "",
     "notas": "Folio: 3269",
-    "lat": -33.54469,
-    "lng": -70.573623
+    "lat": -33.544675,
+    "lng": -70.573106
   },
   {
     "id": 99,
@@ -1978,8 +1978,8 @@ window.SAMPLE_DATA = [
     "folio": "3270",
     "proximaVisita": "",
     "notas": "Folio: 3270",
-    "lat": -33.54465,
-    "lng": -70.573503
+    "lat": -33.544842,
+    "lng": -70.572991
   },
   {
     "id": 100,
@@ -1998,8 +1998,8 @@ window.SAMPLE_DATA = [
     "folio": "3277",
     "proximaVisita": "",
     "notas": "Folio: 3277",
-    "lat": -33.54417,
-    "lng": -70.574844
+    "lat": -33.544565,
+    "lng": -70.575144
   },
   {
     "id": 101,
@@ -2018,8 +2018,8 @@ window.SAMPLE_DATA = [
     "folio": "3278",
     "proximaVisita": "",
     "notas": "Folio: 3278",
-    "lat": -33.54491,
-    "lng": -70.575065
+    "lat": -33.544458,
+    "lng": -70.574042
   },
   {
     "id": 102,
@@ -2138,8 +2138,8 @@ window.SAMPLE_DATA = [
     "folio": "3284",
     "proximaVisita": "",
     "notas": "Folio: 3284",
-    "lat": -33.544673,
-    "lng": -70.57542
+    "lat": -33.544917,
+    "lng": -70.575043
   },
   {
     "id": 108,
@@ -2158,8 +2158,8 @@ window.SAMPLE_DATA = [
     "folio": "3285",
     "proximaVisita": "",
     "notas": "Folio: 3285",
-    "lat": -33.544553,
-    "lng": -70.57606
+    "lat": -33.545217,
+    "lng": -70.574863
   },
   {
     "id": 109,
@@ -2178,8 +2178,8 @@ window.SAMPLE_DATA = [
     "folio": "3286",
     "proximaVisita": "",
     "notas": "Folio: 3286",
-    "lat": -33.544593,
-    "lng": -70.57618
+    "lat": -33.545417,
+    "lng": -70.574743
   },
   {
     "id": 110,
@@ -2198,8 +2198,8 @@ window.SAMPLE_DATA = [
     "folio": "3287",
     "proximaVisita": "",
     "notas": "Folio: 3287",
-    "lat": -33.545778,
-    "lng": -70.575106
+    "lat": -33.545179,
+    "lng": -70.574761
   },
   {
     "id": 111,
@@ -2218,8 +2218,8 @@ window.SAMPLE_DATA = [
     "folio": "3288",
     "proximaVisita": "",
     "notas": "Folio: 3288",
-    "lat": -33.544818,
-    "lng": -70.574226
+    "lat": -33.545067,
+    "lng": -70.574508
   },
   {
     "id": 112,
@@ -2238,8 +2238,8 @@ window.SAMPLE_DATA = [
     "folio": "3289",
     "proximaVisita": "",
     "notas": "Folio: 3289",
-    "lat": -33.545658,
-    "lng": -70.574746
+    "lat": -33.545034,
+    "lng": -70.574235
   },
   {
     "id": 113,
@@ -2258,8 +2258,8 @@ window.SAMPLE_DATA = [
     "folio": "3290",
     "proximaVisita": "",
     "notas": "Folio: 3290",
-    "lat": -33.545758,
-    "lng": -70.575046
+    "lat": -33.545073,
+    "lng": -70.5739
   },
   {
     "id": 114,
@@ -2298,8 +2298,8 @@ window.SAMPLE_DATA = [
     "folio": "3297",
     "proximaVisita": "",
     "notas": "Folio: 3297",
-    "lat": -33.54472,
-    "lng": -70.57154
+    "lat": -33.543787,
+    "lng": -70.573799
   },
   {
     "id": 116,
@@ -2318,8 +2318,8 @@ window.SAMPLE_DATA = [
     "folio": "3304",
     "proximaVisita": "",
     "notas": "Folio: 3304",
-    "lat": -33.5448,
-    "lng": -70.5721
+    "lat": -33.5444,
+    "lng": -70.57438
   },
   {
     "id": 117,
@@ -2338,8 +2338,8 @@ window.SAMPLE_DATA = [
     "folio": "3305",
     "proximaVisita": "",
     "notas": "Folio: 3305",
-    "lat": -33.54468,
-    "lng": -70.57526
+    "lat": -33.54398,
+    "lng": -70.57288
   },
   {
     "id": 118,
@@ -2358,8 +2358,8 @@ window.SAMPLE_DATA = [
     "folio": "3306",
     "proximaVisita": "",
     "notas": "Folio: 3306",
-    "lat": -33.54452,
-    "lng": -70.57414
+    "lat": -33.5439,
+    "lng": -70.57264
   },
   {
     "id": 119,
@@ -2378,8 +2378,8 @@ window.SAMPLE_DATA = [
     "folio": "3307",
     "proximaVisita": "",
     "notas": "Folio: 3307",
-    "lat": -33.54472,
-    "lng": -70.57154
+    "lat": -33.544,
+    "lng": -70.57294
   },
   {
     "id": 120,
@@ -2418,8 +2418,8 @@ window.SAMPLE_DATA = [
     "folio": "3309",
     "proximaVisita": "",
     "notas": "Folio: 3309",
-    "lat": -33.54408,
-    "lng": -70.57506
+    "lat": -33.54468,
+    "lng": -70.57298
   },
   {
     "id": 122,
@@ -2438,8 +2438,8 @@ window.SAMPLE_DATA = [
     "folio": "3317",
     "proximaVisita": "",
     "notas": "Folio: 3317",
-    "lat": -33.54588,
-    "lng": -70.57166
+    "lat": -33.54614,
+    "lng": -70.57144
   },
   {
     "id": 123,
@@ -2458,8 +2458,8 @@ window.SAMPLE_DATA = [
     "folio": "3318",
     "proximaVisita": "",
     "notas": "Folio: 3318",
-    "lat": -33.54496,
-    "lng": -70.57322
+    "lat": -33.546,
+    "lng": -70.57202
   },
   {
     "id": 124,
@@ -2538,8 +2538,8 @@ window.SAMPLE_DATA = [
     "folio": "3322",
     "proximaVisita": "",
     "notas": "Folio: 3322",
-    "lat": -33.54368,
-    "lng": -70.57226
+    "lat": -33.54412,
+    "lng": -70.57274
   },
   {
     "id": 128,
@@ -2678,8 +2678,8 @@ window.SAMPLE_DATA = [
     "folio": "3330",
     "proximaVisita": "",
     "notas": "Folio: 3330",
-    "lat": -33.54572,
-    "lng": -70.57454
+    "lat": -33.54606,
+    "lng": -70.5712
   },
   {
     "id": 135,
@@ -2863,7 +2863,7 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 144,
-    "nroFila": "",
+    "nroFila": "146",
     "fecha": "25/10/2026",
     "nombre": "Casa Dirección Pendiente Folio #3340",
     "direccion": "Dirección Pendiente Folio #3340",
@@ -2878,8 +2878,8 @@ window.SAMPLE_DATA = [
     "folio": "3340",
     "proximaVisita": "",
     "notas": "Folio: 3340",
-    "lat": -33.54404,
-    "lng": -70.57478
+    "lat": null,
+    "lng": null
   },
   {
     "id": 145,
@@ -2898,8 +2898,8 @@ window.SAMPLE_DATA = [
     "folio": "3341",
     "proximaVisita": "",
     "notas": "Folio: 3341",
-    "lat": -33.544,
-    "lng": -70.5745
+    "lat": -33.54402,
+    "lng": -70.57456
   },
   {
     "id": 146,
@@ -3063,9 +3063,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 154,
-    "nroFila": "",
+    "nroFila": "156",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3350",
+    "nombre": "Socio Mandato #3350",
     "direccion": "Dirección Pendiente Folio #3350",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3350",
@@ -3074,12 +3074,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3350",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3350",
     "proximaVisita": "",
     "notas": "Folio: 3350",
-    "lat": -33.544,
-    "lng": -70.5745
+    "lat": null,
+    "lng": null
   },
   {
     "id": 155,
@@ -3103,7 +3103,7 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 156,
-    "nroFila": "",
+    "nroFila": "158",
     "fecha": "25/10/2026",
     "nombre": "Socio Mandato #3352",
     "direccion": "Dirección Pendiente Folio #3352",
@@ -3118,8 +3118,8 @@ window.SAMPLE_DATA = [
     "folio": "3352",
     "proximaVisita": "",
     "notas": "Folio: 3352",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": null,
+    "lng": null
   },
   {
     "id": 157,
@@ -3138,8 +3138,8 @@ window.SAMPLE_DATA = [
     "folio": "3353",
     "proximaVisita": "",
     "notas": "Folio: 3353",
-    "lat": -33.54348,
-    "lng": -70.57486
+    "lat": -33.54614,
+    "lng": -70.5716
   },
   {
     "id": 158,
@@ -3218,8 +3218,8 @@ window.SAMPLE_DATA = [
     "folio": "3358",
     "proximaVisita": "",
     "notas": "Folio: 3358",
-    "lat": -33.54592,
-    "lng": -70.57194
+    "lat": -33.54608,
+    "lng": -70.57242
   },
   {
     "id": 162,
@@ -3358,8 +3358,8 @@ window.SAMPLE_DATA = [
     "folio": "3367",
     "proximaVisita": "",
     "notas": "Folio: 3367",
-    "lat": -33.546061,
-    "lng": -70.575373
+    "lat": -33.546495,
+    "lng": -70.575978
   },
   {
     "id": 169,
@@ -3378,8 +3378,8 @@ window.SAMPLE_DATA = [
     "folio": "3369",
     "proximaVisita": "",
     "notas": "Folio: 3369",
-    "lat": -33.54304,
-    "lng": -70.57178
+    "lat": -33.54322,
+    "lng": -70.57132
   },
   {
     "id": 170,
@@ -3398,8 +3398,8 @@ window.SAMPLE_DATA = [
     "folio": "3370",
     "proximaVisita": "",
     "notas": "Folio: 3370",
-    "lat": -33.54308,
-    "lng": -70.57206
+    "lat": -33.54324,
+    "lng": -70.57138
   },
   {
     "id": 171,
@@ -3418,8 +3418,8 @@ window.SAMPLE_DATA = [
     "folio": "3371",
     "proximaVisita": "",
     "notas": "Folio: 3371",
-    "lat": -33.5432,
-    "lng": -70.5729
+    "lat": -33.5433,
+    "lng": -70.57156
   },
   {
     "id": 172,
@@ -3438,8 +3438,8 @@ window.SAMPLE_DATA = [
     "folio": "3372",
     "proximaVisita": "",
     "notas": "Folio: 3372",
-    "lat": -33.54624,
-    "lng": -70.57418
+    "lat": -33.54644,
+    "lng": -70.57378
   },
   {
     "id": 173,
@@ -3458,8 +3458,8 @@ window.SAMPLE_DATA = [
     "folio": "3373",
     "proximaVisita": "",
     "notas": "Folio: 3373",
-    "lat": -33.54512,
-    "lng": -70.57434
+    "lat": -33.54634,
+    "lng": -70.57448
   },
   {
     "id": 174,
@@ -3478,8 +3478,8 @@ window.SAMPLE_DATA = [
     "folio": "3374",
     "proximaVisita": "",
     "notas": "Folio: 3374",
-    "lat": -33.546101,
-    "lng": -70.575493
+    "lat": -33.546474,
+    "lng": -70.575658
   },
   {
     "id": 175,
@@ -3498,8 +3498,8 @@ window.SAMPLE_DATA = [
     "folio": "3375",
     "proximaVisita": "",
     "notas": "Folio: 3375",
-    "lat": -33.54432,
-    "lng": -70.57274
+    "lat": -33.54454,
+    "lng": -70.5724
   },
   {
     "id": 176,
@@ -3518,8 +3518,8 @@ window.SAMPLE_DATA = [
     "folio": "3376",
     "proximaVisita": "",
     "notas": "Folio: 3376",
-    "lat": -33.5442,
-    "lng": -70.5719
+    "lat": -33.54448,
+    "lng": -70.57322
   },
   {
     "id": 177,
@@ -3538,8 +3538,8 @@ window.SAMPLE_DATA = [
     "folio": "3378",
     "proximaVisita": "",
     "notas": "Folio: 3378",
-    "lat": -33.54688,
-    "lng": -70.57466
+    "lat": -33.54706,
+    "lng": -70.5742
   },
   {
     "id": 178,
@@ -3558,8 +3558,8 @@ window.SAMPLE_DATA = [
     "folio": "3379",
     "proximaVisita": "",
     "notas": "Folio: 3379",
-    "lat": -33.54473,
-    "lng": -70.573743
+    "lat": -33.543741,
+    "lng": -70.573293
   },
   {
     "id": 179,
@@ -3578,8 +3578,8 @@ window.SAMPLE_DATA = [
     "folio": "3379",
     "proximaVisita": "",
     "notas": "Folio: 3379",
-    "lat": -33.54473,
-    "lng": -70.573743
+    "lat": -33.543741,
+    "lng": -70.573293
   },
   {
     "id": 180,
@@ -3598,8 +3598,8 @@ window.SAMPLE_DATA = [
     "folio": "3380",
     "proximaVisita": "",
     "notas": "Folio: 3380",
-    "lat": -33.54504,
-    "lng": -70.57378
+    "lat": -33.54718,
+    "lng": -70.57424
   },
   {
     "id": 181,
@@ -3618,8 +3618,8 @@ window.SAMPLE_DATA = [
     "folio": "3381",
     "proximaVisita": "",
     "notas": "Folio: 3381",
-    "lat": -33.54636,
-    "lng": -70.57502
+    "lat": -33.544582,
+    "lng": -70.572337
   },
   {
     "id": 182,
@@ -3638,8 +3638,8 @@ window.SAMPLE_DATA = [
     "folio": "3381",
     "proximaVisita": "",
     "notas": "Folio: 3381",
-    "lat": -33.54348,
-    "lng": -70.57486
+    "lat": -33.544582,
+    "lng": -70.572337
   },
   {
     "id": 183,
@@ -3658,8 +3658,8 @@ window.SAMPLE_DATA = [
     "folio": "3382",
     "proximaVisita": "",
     "notas": "Folio: 3382",
-    "lat": -33.54524,
-    "lng": -70.57518
+    "lat": -33.54728,
+    "lng": -70.57454
   },
   {
     "id": 184,
@@ -3678,8 +3678,8 @@ window.SAMPLE_DATA = [
     "folio": "3383",
     "proximaVisita": "",
     "notas": "Folio: 3383",
-    "lat": -33.54596,
-    "lng": -70.57222
+    "lat": -33.5455,
+    "lng": -70.57184
   },
   {
     "id": 185,
@@ -3698,8 +3698,8 @@ window.SAMPLE_DATA = [
     "folio": "3384",
     "proximaVisita": "",
     "notas": "Folio: 3384",
-    "lat": -33.54467,
-    "lng": -70.573563
+    "lat": -33.543941,
+    "lng": -70.573253
   },
   {
     "id": 186,
@@ -3718,8 +3718,8 @@ window.SAMPLE_DATA = [
     "folio": "3385",
     "proximaVisita": "",
     "notas": "Folio: 3385",
-    "lat": -33.54471,
-    "lng": -70.573683
+    "lat": -33.545542,
+    "lng": -70.572851
   },
   {
     "id": 187,
@@ -3738,8 +3738,8 @@ window.SAMPLE_DATA = [
     "folio": "3386",
     "proximaVisita": "",
     "notas": "Folio: 3386",
-    "lat": -33.54463,
-    "lng": -70.573443
+    "lat": -33.545775,
+    "lng": -70.572886
   },
   {
     "id": 188,
@@ -3758,8 +3758,8 @@ window.SAMPLE_DATA = [
     "folio": "3386",
     "proximaVisita": "",
     "notas": "Folio: 3386",
-    "lat": -33.54463,
-    "lng": -70.573443
+    "lat": -33.545775,
+    "lng": -70.572886
   },
   {
     "id": 189,
@@ -3778,8 +3778,8 @@ window.SAMPLE_DATA = [
     "folio": "3387",
     "proximaVisita": "",
     "notas": "Folio: 3387",
-    "lat": -33.54465,
-    "lng": -70.573503
+    "lat": -33.544242,
+    "lng": -70.573111
   },
   {
     "id": 190,
@@ -3798,8 +3798,8 @@ window.SAMPLE_DATA = [
     "folio": "3388",
     "proximaVisita": "",
     "notas": "Folio: 3388",
-    "lat": -33.54471,
-    "lng": -70.573683
+    "lat": -33.545408,
+    "lng": -70.572959
   },
   {
     "id": 191,
@@ -3818,8 +3818,8 @@ window.SAMPLE_DATA = [
     "folio": "3389",
     "proximaVisita": "",
     "notas": "Folio: 3389",
-    "lat": -33.54471,
-    "lng": -70.573683
+    "lat": -33.544042,
+    "lng": -70.573151
   },
   {
     "id": 192,
@@ -3838,8 +3838,8 @@ window.SAMPLE_DATA = [
     "folio": "3390",
     "proximaVisita": "",
     "notas": "Folio: 3390",
-    "lat": -33.54672,
-    "lng": -70.57354
+    "lat": -33.54712,
+    "lng": -70.57406
   },
   {
     "id": 193,
@@ -3858,8 +3858,8 @@ window.SAMPLE_DATA = [
     "folio": "3391",
     "proximaVisita": "",
     "notas": "Folio: 3391",
-    "lat": -33.544958,
-    "lng": -70.600411
+    "lat": -33.544738,
+    "lng": -70.601101
   },
   {
     "id": 194,
@@ -3878,8 +3878,8 @@ window.SAMPLE_DATA = [
     "folio": "3392",
     "proximaVisita": "",
     "notas": "Folio: 3392",
-    "lat": -33.54465,
-    "lng": -70.572818
+    "lat": -33.545117,
+    "lng": -70.573384
   },
   {
     "id": 195,
@@ -3898,8 +3898,8 @@ window.SAMPLE_DATA = [
     "folio": "3393",
     "proximaVisita": "",
     "notas": "Folio: 3393",
-    "lat": -33.546614,
-    "lng": -70.57358
+    "lat": -33.546212,
+    "lng": -70.573049
   },
   {
     "id": 196,
@@ -3918,8 +3918,8 @@ window.SAMPLE_DATA = [
     "folio": "3394",
     "proximaVisita": "",
     "notas": "Folio: 3394",
-    "lat": -33.544918,
-    "lng": -70.600291
+    "lat": -33.544738,
+    "lng": -70.601081
   },
   {
     "id": 197,
@@ -3938,8 +3938,8 @@ window.SAMPLE_DATA = [
     "folio": "3395",
     "proximaVisita": "",
     "notas": "Folio: 3395",
-    "lat": -33.546867,
-    "lng": -70.571818
+    "lat": -33.546478,
+    "lng": -70.571774
   },
   {
     "id": 198,
@@ -3958,8 +3958,8 @@ window.SAMPLE_DATA = [
     "folio": "3396",
     "proximaVisita": "",
     "notas": "Folio: 3396",
-    "lat": -33.5452,
-    "lng": -70.5749
+    "lat": -33.54574,
+    "lng": -70.57248
   },
   {
     "id": 199,
@@ -3978,8 +3978,8 @@ window.SAMPLE_DATA = [
     "folio": "3397",
     "proximaVisita": "",
     "notas": "Folio: 3397",
-    "lat": -33.533763,
-    "lng": -70.56903
+    "lat": -33.545871,
+    "lng": -70.573849
   },
   {
     "id": 200,
@@ -3998,8 +3998,8 @@ window.SAMPLE_DATA = [
     "folio": "3397",
     "proximaVisita": "",
     "notas": "Folio: 3397",
-    "lat": -33.54432,
-    "lng": -70.57274
+    "lat": -33.545871,
+    "lng": -70.573849
   },
   {
     "id": 201,
@@ -4018,8 +4018,8 @@ window.SAMPLE_DATA = [
     "folio": "3398",
     "proximaVisita": "",
     "notas": "Folio: 3398",
-    "lat": -33.544,
-    "lng": -70.5745
+    "lat": -33.543647,
+    "lng": -70.573801
   },
   {
     "id": 202,
@@ -4038,8 +4038,8 @@ window.SAMPLE_DATA = [
     "folio": "3400",
     "proximaVisita": "",
     "notas": "Folio: 3400",
-    "lat": -33.544838,
-    "lng": -70.601051
+    "lat": -33.544681,
+    "lng": -70.600949
   },
   {
     "id": 203,
@@ -4258,8 +4258,8 @@ window.SAMPLE_DATA = [
     "folio": "3411",
     "proximaVisita": "",
     "notas": "Folio: 3411",
-    "lat": -33.54384,
-    "lng": -70.57338
+    "lat": -33.54424,
+    "lng": -70.57358
   },
   {
     "id": 214,
@@ -4323,9 +4323,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 217,
-    "nroFila": "",
+    "nroFila": "219",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3415",
+    "nombre": "Socio Mandato #3415",
     "direccion": "Dirección Pendiente Folio #3415",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3415",
@@ -4334,12 +4334,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3415",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3415",
     "proximaVisita": "",
     "notas": "Folio: 3415",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": null,
+    "lng": null
   },
   {
     "id": 218,
@@ -4398,8 +4398,8 @@ window.SAMPLE_DATA = [
     "folio": "3418",
     "proximaVisita": "",
     "notas": "Folio: 3418",
-    "lat": -33.54344,
-    "lng": -70.57458
+    "lat": -33.54388,
+    "lng": -70.5749
   },
   {
     "id": 221,
@@ -4418,8 +4418,8 @@ window.SAMPLE_DATA = [
     "folio": "3419",
     "proximaVisita": "",
     "notas": "Folio: 3419",
-    "lat": -33.54324,
-    "lng": -70.57318
+    "lat": -33.54378,
+    "lng": -70.5746
   },
   {
     "id": 222,
@@ -4458,8 +4458,8 @@ window.SAMPLE_DATA = [
     "folio": "3421",
     "proximaVisita": "",
     "notas": "Folio: 3421",
-    "lat": -33.54364,
-    "lng": -70.57198
+    "lat": -33.54414,
+    "lng": -70.57328
   },
   {
     "id": 224,
@@ -4503,9 +4503,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 226,
-    "nroFila": "",
+    "nroFila": "228",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3424",
+    "nombre": "Socio Mandato #3424",
     "direccion": "Dirección Pendiente Folio #3424",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3424",
@@ -4514,18 +4514,18 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3424",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3424",
     "proximaVisita": "",
     "notas": "Folio: 3424",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": null,
+    "lng": null
   },
   {
     "id": 227,
-    "nroFila": "",
+    "nroFila": "229",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3425",
+    "nombre": "Socio Mandato #3425",
     "direccion": "Dirección Pendiente Folio #3425",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3425",
@@ -4534,12 +4534,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3425",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3425",
     "proximaVisita": "",
     "notas": "Folio: 3425",
-    "lat": -33.54388,
-    "lng": -70.57366
+    "lat": null,
+    "lng": null
   },
   {
     "id": 228,
@@ -4558,8 +4558,8 @@ window.SAMPLE_DATA = [
     "folio": "3426",
     "proximaVisita": "",
     "notas": "Folio: 3426",
-    "lat": -33.54484,
-    "lng": -70.57238
+    "lat": -33.54494,
+    "lng": -70.57268
   },
   {
     "id": 229,
@@ -4578,8 +4578,8 @@ window.SAMPLE_DATA = [
     "folio": "3427",
     "proximaVisita": "",
     "notas": "Folio: 3427",
-    "lat": -33.54472,
-    "lng": -70.57154
+    "lat": -33.54514,
+    "lng": -70.5718
   },
   {
     "id": 230,
@@ -4598,14 +4598,14 @@ window.SAMPLE_DATA = [
     "folio": "3428",
     "proximaVisita": "",
     "notas": "Folio: 3428",
-    "lat": -33.54464,
-    "lng": -70.57498
+    "lat": -33.5451,
+    "lng": -70.57168
   },
   {
     "id": 231,
-    "nroFila": "",
+    "nroFila": "233",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3429",
+    "nombre": "Socio Mandato #3429",
     "direccion": "Dirección Pendiente Folio #3429",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3429",
@@ -4614,12 +4614,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3429",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3429",
     "proximaVisita": "",
     "notas": "Folio: 3429",
-    "lat": -33.54372,
-    "lng": -70.57254
+    "lat": null,
+    "lng": null
   },
   {
     "id": 232,
@@ -4658,8 +4658,8 @@ window.SAMPLE_DATA = [
     "folio": "3431",
     "proximaVisita": "",
     "notas": "Folio: 3431",
-    "lat": -33.54496,
-    "lng": -70.57322
+    "lat": -33.545,
+    "lng": -70.57286
   },
   {
     "id": 234,
@@ -4738,8 +4738,8 @@ window.SAMPLE_DATA = [
     "folio": "3435",
     "proximaVisita": "",
     "notas": "Folio: 3435",
-    "lat": -33.54316,
-    "lng": -70.57262
+    "lat": -33.54346,
+    "lng": -70.57252
   },
   {
     "id": 238,
@@ -4858,14 +4858,14 @@ window.SAMPLE_DATA = [
     "folio": "3441",
     "proximaVisita": "",
     "notas": "Folio: 3441",
-    "lat": -33.54672,
-    "lng": -70.57354
+    "lat": -33.54694,
+    "lng": -70.5732
   },
   {
     "id": 244,
-    "nroFila": "",
+    "nroFila": "246",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #3442",
+    "nombre": "Socio Mandato #3442",
     "direccion": "Dirección Pendiente Folio #3442",
     "calle": "Dirección Pendiente",
     "numero": "Folio #3442",
@@ -4874,12 +4874,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #3442",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "3442",
     "proximaVisita": "",
     "notas": "Folio: 3442",
-    "lat": -33.54392,
-    "lng": -70.57394
+    "lat": null,
+    "lng": null
   },
   {
     "id": 245,
@@ -4918,8 +4918,8 @@ window.SAMPLE_DATA = [
     "folio": "3444",
     "proximaVisita": "",
     "notas": "Folio: 3444",
-    "lat": -33.54328,
-    "lng": -70.57346
+    "lat": -33.54362,
+    "lng": -70.57348
   },
   {
     "id": 247,
@@ -4978,8 +4978,8 @@ window.SAMPLE_DATA = [
     "folio": "3447",
     "proximaVisita": "",
     "notas": "Folio: 3447",
-    "lat": -33.54464,
-    "lng": -70.57498
+    "lat": -33.54432,
+    "lng": -70.57414
   },
   {
     "id": 250,
@@ -4998,8 +4998,8 @@ window.SAMPLE_DATA = [
     "folio": "3448",
     "proximaVisita": "",
     "notas": "Folio: 3448",
-    "lat": -33.54616,
-    "lng": -70.57362
+    "lat": -33.54664,
+    "lng": -70.57406
   },
   {
     "id": 251,
@@ -5018,8 +5018,8 @@ window.SAMPLE_DATA = [
     "folio": "3449",
     "proximaVisita": "",
     "notas": "Folio: 3449",
-    "lat": -33.54368,
-    "lng": -70.57226
+    "lat": -33.54402,
+    "lng": -70.57228
   },
   {
     "id": 252,
@@ -5038,8 +5038,8 @@ window.SAMPLE_DATA = [
     "folio": "3450",
     "proximaVisita": "",
     "notas": "Folio: 3450",
-    "lat": -33.54372,
-    "lng": -70.57254
+    "lat": -33.54404,
+    "lng": -70.57234
   },
   {
     "id": 253,
@@ -5083,9 +5083,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 255,
-    "nroFila": "",
+    "nroFila": "257",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #17910",
+    "nombre": "Socio Mandato #17910",
     "direccion": "Dirección Pendiente Folio #17910",
     "calle": "Dirección Pendiente",
     "numero": "Folio #17910",
@@ -5094,12 +5094,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17910",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "17910",
     "proximaVisita": "",
     "notas": "Folio: 17910",
-    "lat": -33.5458,
-    "lng": -70.5751
+    "lat": null,
+    "lng": null
   },
   {
     "id": 256,
@@ -5118,8 +5118,8 @@ window.SAMPLE_DATA = [
     "folio": "17911",
     "proximaVisita": "",
     "notas": "Folio: 17911",
-    "lat": -33.5446,
-    "lng": -70.5747
+    "lat": -33.54394,
+    "lng": -70.57276
   },
   {
     "id": 257,
@@ -5163,9 +5163,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 259,
-    "nroFila": "",
+    "nroFila": "261",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #17920",
+    "nombre": "Socio Mandato #17920",
     "direccion": "Dirección Pendiente Folio #17920",
     "calle": "Dirección Pendiente",
     "numero": "Folio #17920",
@@ -5174,12 +5174,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17920",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "17920",
     "proximaVisita": "",
     "notas": "Folio: 17920",
-    "lat": -33.54576,
-    "lng": -70.57482
+    "lat": null,
+    "lng": null
   },
   {
     "id": 260,
@@ -5298,8 +5298,8 @@ window.SAMPLE_DATA = [
     "folio": "17926",
     "proximaVisita": "",
     "notas": "Folio: 17926",
-    "lat": -33.5452,
-    "lng": -70.5749
+    "lat": -33.54386,
+    "lng": -70.57484
   },
   {
     "id": 266,
@@ -5318,8 +5318,8 @@ window.SAMPLE_DATA = [
     "folio": "17927",
     "proximaVisita": "",
     "notas": "Folio: 17927",
-    "lat": -33.54528,
-    "lng": -70.57546
+    "lat": -33.547119,
+    "lng": -70.580271
   },
   {
     "id": 267,
@@ -5338,8 +5338,8 @@ window.SAMPLE_DATA = [
     "folio": "17928",
     "proximaVisita": "",
     "notas": "Folio: 17928",
-    "lat": -33.54384,
-    "lng": -70.57338
+    "lat": -33.54492,
+    "lng": -70.57186
   },
   {
     "id": 268,
@@ -5438,8 +5438,8 @@ window.SAMPLE_DATA = [
     "folio": "17933",
     "proximaVisita": "",
     "notas": "Folio: 17933",
-    "lat": -33.5462,
-    "lng": -70.5739
+    "lat": -33.5466,
+    "lng": -70.5741
   },
   {
     "id": 273,
@@ -5483,9 +5483,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 275,
-    "nroFila": "",
+    "nroFila": "277",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #17953",
+    "nombre": "Socio Mandato #17953",
     "direccion": "Dirección Pendiente Folio #17953",
     "calle": "Dirección Pendiente",
     "numero": "Folio #17953",
@@ -5494,12 +5494,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17953",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "17953",
     "proximaVisita": "",
     "notas": "Folio: 17953",
-    "lat": -33.54552,
-    "lng": -70.57314
+    "lat": null,
+    "lng": null
   },
   {
     "id": 276,
@@ -5723,9 +5723,9 @@ window.SAMPLE_DATA = [
   },
   {
     "id": 287,
-    "nroFila": "",
+    "nroFila": "289",
     "fecha": "25/10/2026",
-    "nombre": "Casa Dirección Pendiente Folio #17965",
+    "nombre": "Socio Mandato #17965",
     "direccion": "Dirección Pendiente Folio #17965",
     "calle": "Dirección Pendiente",
     "numero": "Folio #17965",
@@ -5734,12 +5734,12 @@ window.SAMPLE_DATA = [
     "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17965",
     "voluntario": "10ª Compañía",
-    "estado": "Rechazado",
+    "estado": "Socio Captado",
     "folio": "17965",
     "proximaVisita": "",
     "notas": "Folio: 17965",
-    "lat": -33.5454,
-    "lng": -70.5723
+    "lat": null,
+    "lng": null
   },
   {
     "id": 288,
@@ -5938,8 +5938,8 @@ window.SAMPLE_DATA = [
     "folio": "17978",
     "proximaVisita": "",
     "notas": "Folio: 17978",
-    "lat": -33.54544,
-    "lng": -70.57258
+    "lat": -33.54748,
+    "lng": -70.59464
   },
   {
     "id": 298,
@@ -5950,16 +5950,16 @@ window.SAMPLE_DATA = [
     "calle": "LAS NIEVES",
     "numero": "10023",
     "sector": "La Florida",
-    "monto": 0,
-    "frecuencia": "-",
+    "monto": 2000,
+    "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17979",
     "voluntario": "JORGE CORDOVA",
     "estado": "Socio Captado",
     "folio": "17979",
     "proximaVisita": "",
     "notas": "Folio: 17979",
-    "lat": -33.5446,
-    "lng": -70.5747
+    "lat": -33.54394,
+    "lng": -70.57276
   },
   {
     "id": 299,
@@ -5970,16 +5970,16 @@ window.SAMPLE_DATA = [
     "calle": "EL LLANO",
     "numero": "980",
     "sector": "La Florida",
-    "monto": 0,
-    "frecuencia": "-",
+    "monto": 1000,
+    "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17980",
     "voluntario": "JORGE CORDOVA",
     "estado": "Socio Captado",
     "folio": "17980",
     "proximaVisita": "",
     "notas": "Folio: 17980",
-    "lat": -33.54652,
-    "lng": -70.57214
+    "lat": -33.5468,
+    "lng": -70.57198
   },
   {
     "id": 300,
@@ -5990,16 +5990,16 @@ window.SAMPLE_DATA = [
     "calle": "EL LLANO",
     "numero": "983",
     "sector": "La Florida",
-    "monto": 0,
-    "frecuencia": "-",
+    "monto": 1000,
+    "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17981",
     "voluntario": "JORGE CORDOVA",
     "estado": "Socio Captado",
     "folio": "17981",
     "proximaVisita": "",
     "notas": "Folio: 17981",
-    "lat": -33.5464,
-    "lng": -70.5753
+    "lat": -33.54674,
+    "lng": -70.5718
   },
   {
     "id": 301,
@@ -6010,8 +6010,8 @@ window.SAMPLE_DATA = [
     "calle": "SAN ANDRES 5",
     "numero": "367",
     "sector": "La Florida",
-    "monto": 0,
-    "frecuencia": "-",
+    "monto": 2000,
+    "frecuencia": "Mensual",
     "metodoPago": "Mandato Folio #17987",
     "voluntario": "NICOLAS MEDINA",
     "estado": "Socio Captado",
@@ -6038,8 +6038,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "arrendatario",
-    "lat": -33.547057,
-    "lng": -70.571553
+    "lat": -33.546966,
+    "lng": -70.570998
   },
   {
     "id": 303,
@@ -6058,8 +6058,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "tripoli",
-    "lat": -33.546747,
-    "lng": -70.571458
+    "lat": -33.546457,
+    "lng": -70.571518
   },
   {
     "id": 304,
@@ -6078,8 +6078,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "prepotente",
-    "lat": -33.546787,
-    "lng": -70.571578
+    "lat": -33.546443,
+    "lng": -70.571358
   },
   {
     "id": 305,
@@ -6098,8 +6098,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "socio CBN",
-    "lat": -33.547077,
-    "lng": -70.571613
+    "lat": -33.546938,
+    "lng": -70.57139
   },
   {
     "id": 306,
@@ -6118,8 +6118,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54592,
-    "lng": -70.572442
+    "lat": -33.544582,
+    "lng": -70.572337
   },
   {
     "id": 307,
@@ -6138,8 +6138,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "Socio CBÑ",
-    "lat": -33.5456,
-    "lng": -70.572482
+    "lat": -33.546713,
+    "lng": -70.571864
   },
   {
     "id": 308,
@@ -6158,8 +6158,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54636,
-    "lng": -70.57502
+    "lat": -33.545817,
+    "lng": -70.572474
   },
   {
     "id": 309,
@@ -6178,8 +6178,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54636,
-    "lng": -70.57502
+    "lat": -33.545235,
+    "lng": -70.57225
   },
   {
     "id": 310,
@@ -6198,8 +6198,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54555,
-    "lng": -70.573518
+    "lat": -33.545147,
+    "lng": -70.573163
   },
   {
     "id": 311,
@@ -6218,8 +6218,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545222,
-    "lng": -70.573743
+    "lat": -33.544749,
+    "lng": -70.57343
   },
   {
     "id": 312,
@@ -6238,8 +6238,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54484,
-    "lng": -70.57238
+    "lat": -33.545528,
+    "lng": -70.572173
   },
   {
     "id": 313,
@@ -6258,8 +6258,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "ya es socio de bomberos",
-    "lat": -33.54461,
-    "lng": -70.574383
+    "lat": -33.544141,
+    "lng": -70.573213
   },
   {
     "id": 314,
@@ -6278,8 +6278,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54471,
-    "lng": -70.573683
+    "lat": -33.544208,
+    "lng": -70.573199
   },
   {
     "id": 315,
@@ -6298,8 +6298,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54465,
-    "lng": -70.573503
+    "lat": -33.544408,
+    "lng": -70.573159
   },
   {
     "id": 316,
@@ -6318,8 +6318,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54459,
-    "lng": -70.574323
+    "lat": -33.545042,
+    "lng": -70.572951
   },
   {
     "id": 317,
@@ -6338,8 +6338,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.5458,
-    "lng": -70.573017
+    "lat": -33.545457,
+    "lng": -70.572872
   },
   {
     "id": 318,
@@ -6358,8 +6358,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545714,
-    "lng": -70.57288
+    "lat": -33.546164,
+    "lng": -70.573339
   },
   {
     "id": 319,
@@ -6378,8 +6378,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.533623,
-    "lng": -70.56961
+    "lat": -33.545206,
+    "lng": -70.573858
   },
   {
     "id": 320,
@@ -6398,8 +6398,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544798,
-    "lng": -70.600931
+    "lat": -33.544689,
+    "lng": -70.600569
   },
   {
     "id": 321,
@@ -6418,8 +6418,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "ya es socio de bomberos",
-    "lat": -33.533683,
-    "lng": -70.56979
+    "lat": -33.545941,
+    "lng": -70.573848
   },
   {
     "id": 322,
@@ -6438,8 +6438,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.533723,
-    "lng": -70.56891
+    "lat": -33.545906,
+    "lng": -70.573848
   },
   {
     "id": 323,
@@ -6458,8 +6458,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544723,
-    "lng": -70.576195
+    "lat": -33.545625,
+    "lng": -70.575477
   },
   {
     "id": 324,
@@ -6478,8 +6478,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544803,
-    "lng": -70.576435
+    "lat": -33.545532,
+    "lng": -70.575535
   },
   {
     "id": 325,
@@ -6498,8 +6498,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544843,
-    "lng": -70.576555
+    "lat": -33.545737,
+    "lng": -70.575501
   },
   {
     "id": 326,
@@ -6518,8 +6518,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544903,
-    "lng": -70.575735
+    "lat": -33.54546,
+    "lng": -70.575676
   },
   {
     "id": 327,
@@ -6538,8 +6538,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544783,
-    "lng": -70.576375
+    "lat": -33.545183,
+    "lng": -70.575851
   },
   {
     "id": 328,
@@ -6558,8 +6558,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544863,
-    "lng": -70.576615
+    "lat": -33.544675,
+    "lng": -70.576173
   },
   {
     "id": 329,
@@ -6578,8 +6578,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544943,
-    "lng": -70.575855
+    "lat": -33.544233,
+    "lng": -70.576437
   },
   {
     "id": 330,
@@ -6598,8 +6598,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545003,
-    "lng": -70.576035
+    "lat": -33.54403,
+    "lng": -70.576547
   },
   {
     "id": 331,
@@ -6618,8 +6618,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545063,
-    "lng": -70.576215
+    "lat": -33.543827,
+    "lng": -70.576658
   },
   {
     "id": 332,
@@ -6638,8 +6638,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544983,
-    "lng": -70.575975
+    "lat": -33.544009,
+    "lng": -70.576468
   },
   {
     "id": 333,
@@ -6658,8 +6658,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544863,
-    "lng": -70.576615
+    "lat": -33.543691,
+    "lng": -70.576732
   },
   {
     "id": 334,
@@ -6678,8 +6678,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544783,
-    "lng": -70.576375
+    "lat": -33.543455,
+    "lng": -70.576861
   },
   {
     "id": 335,
@@ -6698,8 +6698,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544863,
-    "lng": -70.576615
+    "lat": -33.543407,
+    "lng": -70.576887
   },
   {
     "id": 336,
@@ -6718,8 +6718,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544943,
-    "lng": -70.575855
+    "lat": -33.543407,
+    "lng": -70.576887
   },
   {
     "id": 337,
@@ -6738,8 +6738,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "Quedó de consultar con el propietario del negocio.",
-    "lat": -33.545023,
-    "lng": -70.576095
+    "lat": -33.543407,
+    "lng": -70.576887
   },
   {
     "id": 338,
@@ -6758,8 +6758,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546261,
-    "lng": -70.575973
+    "lat": -33.546314,
+    "lng": -70.574162
   },
   {
     "id": 339,
@@ -6778,8 +6778,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546797,
-    "lng": -70.574034
+    "lat": -33.545798,
+    "lng": -70.575306
   },
   {
     "id": 340,
@@ -6798,8 +6798,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546737,
-    "lng": -70.573854
+    "lat": -33.545918,
+    "lng": -70.575149
   },
   {
     "id": 341,
@@ -6818,8 +6818,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546677,
-    "lng": -70.574674
+    "lat": -33.546038,
+    "lng": -70.574992
   },
   {
     "id": 342,
@@ -6838,8 +6838,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546737,
-    "lng": -70.573854
+    "lat": -33.546072,
+    "lng": -70.57508
   },
   {
     "id": 343,
@@ -6858,8 +6858,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546657,
-    "lng": -70.574614
+    "lat": -33.546292,
+    "lng": -70.574792
   },
   {
     "id": 344,
@@ -6878,8 +6878,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546777,
-    "lng": -70.573974
+    "lat": -33.546078,
+    "lng": -70.57494
   },
   {
     "id": 345,
@@ -6898,8 +6898,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546717,
-    "lng": -70.573794
+    "lat": -33.546198,
+    "lng": -70.574783
   },
   {
     "id": 346,
@@ -6918,8 +6918,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546577,
-    "lng": -70.574374
+    "lat": -33.546512,
+    "lng": -70.574504
   },
   {
     "id": 347,
@@ -6938,8 +6938,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546797,
-    "lng": -70.574034
+    "lat": -33.546878,
+    "lng": -70.573893
   },
   {
     "id": 348,
@@ -6958,8 +6958,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546717,
-    "lng": -70.573794
+    "lat": -33.546532,
+    "lng": -70.574478
   },
   {
     "id": 349,
@@ -6978,8 +6978,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546717,
-    "lng": -70.573794
+    "lat": -33.546916,
+    "lng": -70.573844
   },
   {
     "id": 350,
@@ -6998,8 +6998,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546817,
-    "lng": -70.574094
+    "lat": -33.546752,
+    "lng": -70.57419
   },
   {
     "id": 351,
@@ -7018,8 +7018,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546697,
-    "lng": -70.574734
+    "lat": -33.54698,
+    "lng": -70.573892
   },
   {
     "id": 352,
@@ -7038,8 +7038,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546657,
-    "lng": -70.574614
+    "lat": -33.546916,
+    "lng": -70.573844
   },
   {
     "id": 353,
@@ -7058,8 +7058,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546597,
-    "lng": -70.574434
+    "lat": -33.546916,
+    "lng": -70.573844
   },
   {
     "id": 354,
@@ -7078,8 +7078,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546697,
-    "lng": -70.574734
+    "lat": -33.546916,
+    "lng": -70.573844
   },
   {
     "id": 355,
@@ -7098,8 +7098,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546577,
-    "lng": -70.574374
+    "lat": -33.54698,
+    "lng": -70.573892
   },
   {
     "id": 356,
@@ -7118,8 +7118,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546677,
-    "lng": -70.574674
+    "lat": -33.54698,
+    "lng": -70.573892
   },
   {
     "id": 357,
@@ -7138,8 +7138,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546637,
-    "lng": -70.574554
+    "lat": -33.546916,
+    "lng": -70.573844
   },
   {
     "id": 358,
@@ -7158,8 +7158,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546617,
-    "lng": -70.574494
+    "lat": -33.54698,
+    "lng": -70.573892
   },
   {
     "id": 359,
@@ -7178,8 +7178,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544813,
-    "lng": -70.57584
+    "lat": -33.543639,
+    "lng": -70.575967
   },
   {
     "id": 360,
@@ -7198,8 +7198,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543775,
-    "lng": -70.574909
+    "lat": -33.544245,
+    "lng": -70.575431
   },
   {
     "id": 361,
@@ -7218,8 +7218,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543795,
-    "lng": -70.574969
+    "lat": -33.544234,
+    "lng": -70.575299
   },
   {
     "id": 362,
@@ -7238,8 +7238,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543815,
-    "lng": -70.575029
+    "lat": -33.544224,
+    "lng": -70.575167
   },
   {
     "id": 363,
@@ -7258,8 +7258,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544635,
-    "lng": -70.575489
+    "lat": -33.5442,
+    "lng": -70.57487
   },
   {
     "id": 364,
@@ -7278,8 +7278,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544655,
-    "lng": -70.575549
+    "lat": -33.54419,
+    "lng": -70.574738
   },
   {
     "id": 365,
@@ -7298,8 +7298,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544675,
-    "lng": -70.575609
+    "lat": -33.54418,
+    "lng": -70.574606
   },
   {
     "id": 366,
@@ -7318,8 +7318,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544695,
-    "lng": -70.575669
+    "lat": -33.544169,
+    "lng": -70.574474
   },
   {
     "id": 367,
@@ -7338,8 +7338,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544715,
-    "lng": -70.575729
+    "lat": -33.544159,
+    "lng": -70.574342
   },
   {
     "id": 368,
@@ -7358,8 +7358,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544535,
-    "lng": -70.575189
+    "lat": -33.544135,
+    "lng": -70.574045
   },
   {
     "id": 369,
@@ -7378,8 +7378,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544555,
-    "lng": -70.575249
+    "lat": -33.544125,
+    "lng": -70.573913
   },
   {
     "id": 370,
@@ -7398,8 +7398,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54493,
-    "lng": -70.575125
+    "lat": -33.544447,
+    "lng": -70.573926
   },
   {
     "id": 371,
@@ -7418,8 +7418,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54491,
-    "lng": -70.575065
+    "lat": -33.544458,
+    "lng": -70.574042
   },
   {
     "id": 372,
@@ -7438,8 +7438,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54489,
-    "lng": -70.575005
+    "lat": -33.54447,
+    "lng": -70.574158
   },
   {
     "id": 373,
@@ -7458,8 +7458,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54507,
-    "lng": -70.575545
+    "lat": -33.544495,
+    "lng": -70.574419
   },
   {
     "id": 374,
@@ -7478,8 +7478,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54505,
-    "lng": -70.575485
+    "lat": -33.544506,
+    "lng": -70.574535
   },
   {
     "id": 375,
@@ -7498,8 +7498,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54503,
-    "lng": -70.575425
+    "lat": -33.544517,
+    "lng": -70.574651
   },
   {
     "id": 376,
@@ -7518,8 +7518,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54501,
-    "lng": -70.575365
+    "lat": -33.544528,
+    "lng": -70.574767
   },
   {
     "id": 377,
@@ -7538,8 +7538,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54499,
-    "lng": -70.575305
+    "lat": -33.54454,
+    "lng": -70.574883
   },
   {
     "id": 378,
@@ -7558,8 +7558,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54417,
-    "lng": -70.574844
+    "lat": -33.544565,
+    "lng": -70.575144
   },
   {
     "id": 379,
@@ -7578,8 +7578,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54415,
-    "lng": -70.574785
+    "lat": -33.544575,
+    "lng": -70.575246
   },
   {
     "id": 380,
@@ -7598,8 +7598,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544673,
-    "lng": -70.57542
+    "lat": -33.544692,
+    "lng": -70.575178
   },
   {
     "id": 381,
@@ -7618,8 +7618,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544613,
-    "lng": -70.57624
+    "lat": -33.544842,
+    "lng": -70.575088
   },
   {
     "id": 382,
@@ -7638,8 +7638,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544673,
-    "lng": -70.57542
+    "lat": -33.544917,
+    "lng": -70.575043
   },
   {
     "id": 383,
@@ -7658,8 +7658,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544613,
-    "lng": -70.57624
+    "lat": -33.545067,
+    "lng": -70.574953
   },
   {
     "id": 384,
@@ -7678,8 +7678,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544553,
-    "lng": -70.57606
+    "lat": -33.545217,
+    "lng": -70.574863
   },
   {
     "id": 385,
@@ -7698,8 +7698,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544493,
-    "lng": -70.57588
+    "lat": -33.545367,
+    "lng": -70.574773
   },
   {
     "id": 386,
@@ -7718,8 +7718,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544633,
-    "lng": -70.5753
+    "lat": -33.545392,
+    "lng": -70.574758
   },
   {
     "id": 387,
@@ -7738,8 +7738,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544593,
-    "lng": -70.57618
+    "lat": -33.545417,
+    "lng": -70.574743
   },
   {
     "id": 388,
@@ -7758,8 +7758,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544533,
-    "lng": -70.576
+    "lat": -33.545529,
+    "lng": -70.574676
   },
   {
     "id": 389,
@@ -7778,8 +7778,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544493,
-    "lng": -70.57588
+    "lat": -33.545529,
+    "lng": -70.574676
   },
   {
     "id": 390,
@@ -7798,8 +7798,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544878,
-    "lng": -70.574406
+    "lat": -33.545105,
+    "lng": -70.574813
   },
   {
     "id": 391,
@@ -7818,8 +7818,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544838,
-    "lng": -70.574286
+    "lat": -33.545104,
+    "lng": -70.574802
   },
   {
     "id": 392,
@@ -7838,8 +7838,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545778,
-    "lng": -70.575106
+    "lat": -33.545179,
+    "lng": -70.574761
   },
   {
     "id": 393,
@@ -7858,8 +7858,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "Solicita que pasen nuevamente con posterioridad.",
-    "lat": -33.545798,
-    "lng": -70.575166
+    "lat": -33.545169,
+    "lng": -70.574677
   },
   {
     "id": 394,
@@ -7878,8 +7878,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545798,
-    "lng": -70.575166
+    "lat": -33.545078,
+    "lng": -70.574592
   },
   {
     "id": 395,
@@ -7898,8 +7898,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544818,
-    "lng": -70.574226
+    "lat": -33.545067,
+    "lng": -70.574508
   },
   {
     "id": 396,
@@ -7918,8 +7918,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544818,
-    "lng": -70.574226
+    "lat": -33.545158,
+    "lng": -70.574593
   },
   {
     "id": 397,
@@ -7938,8 +7938,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544838,
-    "lng": -70.574286
+    "lat": -33.545148,
+    "lng": -70.574509
   },
   {
     "id": 398,
@@ -7958,8 +7958,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544858,
-    "lng": -70.574346
+    "lat": -33.545138,
+    "lng": -70.574425
   },
   {
     "id": 399,
@@ -7978,8 +7978,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544838,
-    "lng": -70.574286
+    "lat": -33.545057,
+    "lng": -70.574424
   },
   {
     "id": 400,
@@ -7998,8 +7998,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545658,
-    "lng": -70.574746
+    "lat": -33.545034,
+    "lng": -70.574235
   },
   {
     "id": 401,
@@ -8018,8 +8018,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545678,
-    "lng": -70.574806
+    "lat": -33.545023,
+    "lng": -70.574151
   },
   {
     "id": 402,
@@ -8038,8 +8038,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545698,
-    "lng": -70.574866
+    "lat": -33.545104,
+    "lng": -70.574152
   },
   {
     "id": 403,
@@ -8058,8 +8058,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545718,
-    "lng": -70.574926
+    "lat": -33.545093,
+    "lng": -70.574068
   },
   {
     "id": 404,
@@ -8078,8 +8078,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545698,
-    "lng": -70.574866
+    "lat": -33.545013,
+    "lng": -70.574067
   },
   {
     "id": 405,
@@ -8098,8 +8098,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545738,
-    "lng": -70.574986
+    "lat": -33.545083,
+    "lng": -70.573984
   },
   {
     "id": 406,
@@ -8118,7 +8118,1527 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545758,
-    "lng": -70.575046
+    "lat": -33.545073,
+    "lng": -70.5739
+  },
+  {
+    "id": 407,
+    "nroFila": "18053",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #18053",
+    "direccion": "CERRO RETUMBADERO 803",
+    "calle": "CERRO RETUMBADERO",
+    "numero": "803",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18053",
+    "voluntario": "MARCELO VERA",
+    "estado": "Socio Captado",
+    "folio": "18053",
+    "proximaVisita": "",
+    "notas": "Folio: 18053",
+    "lat": -33.5502,
+    "lng": -70.599
+  },
+  {
+    "id": 408,
+    "nroFila": "18052",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #18052",
+    "direccion": "CERRO PROLANCIA 831",
+    "calle": "CERRO PROLANCIA",
+    "numero": "831",
+    "sector": "La Florida",
+    "monto": 3000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18052",
+    "voluntario": "MARCELO VERA",
+    "estado": "Socio Captado",
+    "folio": "18052",
+    "proximaVisita": "",
+    "notas": "Folio: 18052",
+    "lat": -33.54988,
+    "lng": -70.59834
+  },
+  {
+    "id": 409,
+    "nroFila": "18051",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #18051",
+    "direccion": "CERRO EL ALTAR 791",
+    "calle": "CERRO EL ALTAR",
+    "numero": "791",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18051",
+    "voluntario": "MARCELO VERA",
+    "estado": "Socio Captado",
+    "folio": "18051",
+    "proximaVisita": "",
+    "notas": "Folio: 18051",
+    "lat": -33.54948,
+    "lng": -70.59764
+  },
+  {
+    "id": 410,
+    "nroFila": "17989",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17989",
+    "direccion": "VALENTINA LEPPE 10146",
+    "calle": "VALENTINA LEPPE",
+    "numero": "10146",
+    "sector": "La Florida",
+    "monto": 5000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17989",
+    "voluntario": "FRANCISCO CERDA",
+    "estado": "Socio Captado",
+    "folio": "17989",
+    "proximaVisita": "",
+    "notas": "Folio: 17989",
+    "lat": -33.54916,
+    "lng": -70.59968
+  },
+  {
+    "id": 411,
+    "nroFila": "17977",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17977",
+    "direccion": "PJE CERRO EL ROBLE 777",
+    "calle": "PJE CERRO EL ROBLE",
+    "numero": "777",
+    "sector": "La Florida",
+    "monto": 5000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17977",
+    "voluntario": "FRANCISCO CERDA",
+    "estado": "Socio Captado",
+    "folio": "17977",
+    "proximaVisita": "",
+    "notas": "Folio: 17977",
+    "lat": -33.5493,
+    "lng": -70.5985
+  },
+  {
+    "id": 412,
+    "nroFila": "18061",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #18061",
+    "direccion": "CERRO CARACOL 772",
+    "calle": "CERRO CARACOL",
+    "numero": "772",
+    "sector": "La Florida",
+    "monto": 3000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18061",
+    "voluntario": "EDUARDO LAGOS",
+    "estado": "Socio Captado",
+    "folio": "18061",
+    "proximaVisita": "",
+    "notas": "Folio: 18061",
+    "lat": -33.5492,
+    "lng": -70.5984
+  },
+  {
+    "id": 413,
+    "nroFila": "3310",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3310",
+    "direccion": "Dirección Pendiente Folio #3310",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #3310",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #3310",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "3310",
+    "proximaVisita": "",
+    "notas": "Folio: 3310",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 414,
+    "nroFila": "3265",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3265",
+    "direccion": "CERRO CARACOL 770",
+    "calle": "CERRO CARACOL",
+    "numero": "770",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3265",
+    "voluntario": "CATALINA PAINEQUEO",
+    "estado": "Socio Captado",
+    "folio": "3265",
+    "proximaVisita": "",
+    "notas": "Folio: 3265",
+    "lat": -33.54924,
+    "lng": -70.59852
+  },
+  {
+    "id": 415,
+    "nroFila": "3256",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3256",
+    "direccion": "PJE CERRO FITZ ROY 10137",
+    "calle": "PJE CERRO FITZ ROY",
+    "numero": "10137",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3256",
+    "voluntario": "DIEGO DIAZ",
+    "estado": "Socio Captado",
+    "folio": "3256",
+    "proximaVisita": "",
+    "notas": "Folio: 3256",
+    "lat": -33.55006,
+    "lng": -70.59948
+  },
+  {
+    "id": 416,
+    "nroFila": "18064",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18064",
+    "direccion": "RAMON FREIRE 9977",
+    "calle": "RAMON FREIRE",
+    "numero": "9977",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18064",
+    "voluntario": "SOFIA BASCUÑAN",
+    "estado": "Socio Captado",
+    "folio": "18064",
+    "proximaVisita": "",
+    "notas": "Folio: 18064",
+    "lat": -33.54807,
+    "lng": -70.59751
+  },
+  {
+    "id": 417,
+    "nroFila": "18066",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18066",
+    "direccion": "RAMON FREIRE 9945",
+    "calle": "RAMON FREIRE",
+    "numero": "9945",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18066",
+    "voluntario": "SOFIA BASCUÑAN",
+    "estado": "Socio Captado",
+    "folio": "18066",
+    "proximaVisita": "",
+    "notas": "Folio: 18066",
+    "lat": -33.54817,
+    "lng": -70.59781
+  },
+  {
+    "id": 418,
+    "nroFila": "18068",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18068",
+    "direccion": "RAMON FREIRE 9815",
+    "calle": "RAMON FREIRE",
+    "numero": "9815",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18068",
+    "voluntario": "SOFIA BASCUÑAN",
+    "estado": "Socio Captado",
+    "folio": "18068",
+    "proximaVisita": "",
+    "notas": "Folio: 18068",
+    "lat": -33.54825,
+    "lng": -70.59705
+  },
+  {
+    "id": 419,
+    "nroFila": "3237",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3237",
+    "direccion": "PASAJE SAN ANDRES CUATRO 379",
+    "calle": "PASAJE SAN ANDRES CUATRO",
+    "numero": "379",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3237",
+    "voluntario": "JORGE CORDOVA",
+    "estado": "Socio Captado",
+    "folio": "3237",
+    "proximaVisita": "",
+    "notas": "Folio: 3237",
+    "lat": -33.546373,
+    "lng": -70.583689
+  },
+  {
+    "id": 420,
+    "nroFila": "17982",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17982",
+    "direccion": "SOCOROMA 10220",
+    "calle": "SOCOROMA",
+    "numero": "10220",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17982",
+    "voluntario": "FABIAN ORTIZ",
+    "estado": "Socio Captado",
+    "folio": "17982",
+    "proximaVisita": "",
+    "notas": "Folio: 17982",
+    "lat": -33.54645,
+    "lng": -70.60225
+  },
+  {
+    "id": 421,
+    "nroFila": "3323",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3323",
+    "direccion": "JOSE MIGUEL CARRERA 815",
+    "calle": "JOSE MIGUEL CARRERA",
+    "numero": "815",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3323",
+    "voluntario": "DIEGO DIAZ",
+    "estado": "Socio Captado",
+    "folio": "3323",
+    "proximaVisita": "",
+    "notas": "Folio: 3323",
+    "lat": -33.54954,
+    "lng": -70.58352
+  },
+  {
+    "id": 422,
+    "nroFila": "3313",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3313",
+    "direccion": "SOCOROMA 10196",
+    "calle": "SOCOROMA",
+    "numero": "10196",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3313",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3313",
+    "proximaVisita": "",
+    "notas": "Folio: 3313",
+    "lat": -33.54721,
+    "lng": -70.60253
+  },
+  {
+    "id": 423,
+    "nroFila": "3314",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3314",
+    "direccion": "CHAPIQUIÑA 1053",
+    "calle": "CHAPIQUIÑA",
+    "numero": "1053",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3314",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3314",
+    "proximaVisita": "",
+    "notas": "Folio: 3314",
+    "lat": -33.54688,
+    "lng": -70.60254
+  },
+  {
+    "id": 424,
+    "nroFila": "17994",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17994",
+    "direccion": "PASAJE CERRO CATEDRAL 836",
+    "calle": "PASAJE CERRO CATEDRAL",
+    "numero": "836",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17994",
+    "voluntario": "CATALINA TOLEDO",
+    "estado": "Socio Captado",
+    "folio": "17994",
+    "proximaVisita": "",
+    "notas": "Folio: 17994",
+    "lat": -33.54968,
+    "lng": -70.59844
+  },
+  {
+    "id": 425,
+    "nroFila": "17991",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17991",
+    "direccion": "PASAJE CERRO ALTAR 828",
+    "calle": "PASAJE CERRO ALTAR",
+    "numero": "828",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17991",
+    "voluntario": "CATALINA TOLEDO",
+    "estado": "Socio Captado",
+    "folio": "17991",
+    "proximaVisita": "",
+    "notas": "Folio: 17991",
+    "lat": -33.54946,
+    "lng": -70.59758
+  },
+  {
+    "id": 426,
+    "nroFila": "17935",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17935",
+    "direccion": "PASAJE CERRO ALTAR 827",
+    "calle": "PASAJE CERRO ALTAR",
+    "numero": "827",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17935",
+    "voluntario": "DIEGO DIAZ",
+    "estado": "Socio Captado",
+    "folio": "17935",
+    "proximaVisita": "",
+    "notas": "Folio: 17935",
+    "lat": -33.54948,
+    "lng": -70.59764
+  },
+  {
+    "id": 427,
+    "nroFila": "17934",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17934",
+    "direccion": "CERRO FITZ ROY 832",
+    "calle": "CERRO FITZ ROY",
+    "numero": "832",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17934",
+    "voluntario": "DIEGO DIAZ",
+    "estado": "Socio Captado",
+    "folio": "17934",
+    "proximaVisita": "",
+    "notas": "Folio: 17934",
+    "lat": -33.54996,
+    "lng": -70.59918
+  },
+  {
+    "id": 428,
+    "nroFila": "17946",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17946",
+    "direccion": "PJE CERRO CARACOL 777",
+    "calle": "PJE CERRO CARACOL",
+    "numero": "777",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17946",
+    "voluntario": "FRANCISCO CERDA",
+    "estado": "Socio Captado",
+    "folio": "17946",
+    "proximaVisita": "",
+    "notas": "Folio: 17946",
+    "lat": -33.5491,
+    "lng": -70.5981
+  },
+  {
+    "id": 429,
+    "nroFila": "17984",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17984",
+    "direccion": "SOCOROMA 10010",
+    "calle": "SOCOROMA",
+    "numero": "10010",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17984",
+    "voluntario": "FABIAN ORTIZ",
+    "estado": "Socio Captado",
+    "folio": "17984",
+    "proximaVisita": "",
+    "notas": "Folio: 17984",
+    "lat": -33.54651,
+    "lng": -70.60243
+  },
+  {
+    "id": 430,
+    "nroFila": "17938",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17938",
+    "direccion": "SOCOROMA 10015",
+    "calle": "SOCOROMA",
+    "numero": "10015",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17938",
+    "voluntario": "EDUARDO LAGOS",
+    "estado": "Socio Captado",
+    "folio": "17938",
+    "proximaVisita": "",
+    "notas": "Folio: 17938",
+    "lat": -33.54641,
+    "lng": -70.60213
+  },
+  {
+    "id": 431,
+    "nroFila": "3274",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3274",
+    "direccion": "PARINACOTA 10267",
+    "calle": "PARINACOTA",
+    "numero": "10267",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3274",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3274",
+    "proximaVisita": "",
+    "notas": "Folio: 3274",
+    "lat": -33.54723,
+    "lng": -70.60194
+  },
+  {
+    "id": 432,
+    "nroFila": "3275",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3275",
+    "direccion": "VALENTINA LEPPE 10147",
+    "calle": "VALENTINA LEPPE",
+    "numero": "10147",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3275",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3275",
+    "proximaVisita": "",
+    "notas": "Folio: 3275",
+    "lat": -33.54914,
+    "lng": -70.59962
+  },
+  {
+    "id": 433,
+    "nroFila": "3273",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3273",
+    "direccion": "PARINACOTA 10241",
+    "calle": "PARINACOTA",
+    "numero": "10241",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3273",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3273",
+    "proximaVisita": "",
+    "notas": "Folio: 3273",
+    "lat": -33.54639,
+    "lng": -70.60142
+  },
+  {
+    "id": 434,
+    "nroFila": "3315",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3315",
+    "direccion": "PARINACOTA 10049",
+    "calle": "PARINACOTA",
+    "numero": "10049",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3315",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3315",
+    "proximaVisita": "",
+    "notas": "Folio: 3315",
+    "lat": -33.54727,
+    "lng": -70.60206
+  },
+  {
+    "id": 435,
+    "nroFila": "3299",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3299",
+    "direccion": "PASAJE MAMIÑA 1044",
+    "calle": "PASAJE MAMIÑA",
+    "numero": "1044",
+    "sector": "La Florida",
+    "monto": 5000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3299",
+    "voluntario": "DIEGO DIAZ",
+    "estado": "Socio Captado",
+    "folio": "3299",
+    "proximaVisita": "",
+    "notas": "Folio: 3299",
+    "lat": -33.53398,
+    "lng": -70.56694
+  },
+  {
+    "id": 436,
+    "nroFila": "17983",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17983",
+    "direccion": "SOCOROMA 10055",
+    "calle": "SOCOROMA",
+    "numero": "10055",
+    "sector": "La Florida",
+    "monto": 10000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17983",
+    "voluntario": "FABIAN ORTIZ",
+    "estado": "Socio Captado",
+    "folio": "17983",
+    "proximaVisita": "",
+    "notas": "Folio: 17983",
+    "lat": -33.54733,
+    "lng": -70.60289
+  },
+  {
+    "id": 437,
+    "nroFila": "18069",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18069",
+    "direccion": "RAMON FREIRE 9751",
+    "calle": "RAMON FREIRE",
+    "numero": "9751",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18069",
+    "voluntario": "SOFIA BASCUÑAN",
+    "estado": "Socio Captado",
+    "folio": "18069",
+    "proximaVisita": "",
+    "notas": "Folio: 18069",
+    "lat": -33.54827,
+    "lng": -70.59711
+  },
+  {
+    "id": 438,
+    "nroFila": "3258",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3258",
+    "direccion": "CERRO PROVINCIA 795",
+    "calle": "CERRO PROVINCIA",
+    "numero": "795",
+    "sector": "La Florida",
+    "monto": 5000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3258",
+    "voluntario": "SOFIA BASCUÑAN",
+    "estado": "Socio Captado",
+    "folio": "3258",
+    "proximaVisita": "",
+    "notas": "Folio: 3258",
+    "lat": -33.5497,
+    "lng": -70.5978
+  },
+  {
+    "id": 439,
+    "nroFila": "17993",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17993",
+    "direccion": "PJE CERRO FITZ ROY 10157",
+    "calle": "PJE CERRO FITZ ROY",
+    "numero": "10157",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17993",
+    "voluntario": "CATALINA TOLEDO",
+    "estado": "Socio Captado",
+    "folio": "17993",
+    "proximaVisita": "",
+    "notas": "Folio: 17993",
+    "lat": -33.55002,
+    "lng": -70.59936
+  },
+  {
+    "id": 440,
+    "nroFila": "17992",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17992",
+    "direccion": "CERRO RETUMBADERO 10182",
+    "calle": "CERRO RETUMBADERO",
+    "numero": "10182",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17992",
+    "voluntario": "CATALINA TOLEDO",
+    "estado": "Socio Captado",
+    "folio": "17992",
+    "proximaVisita": "",
+    "notas": "Folio: 17992",
+    "lat": -33.55026,
+    "lng": -70.59918
+  },
+  {
+    "id": 441,
+    "nroFila": "17936",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17936",
+    "direccion": "PJE CERRO PROVINCIA 804",
+    "calle": "PJE CERRO PROVINCIA",
+    "numero": "804",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17936",
+    "voluntario": "DIEGO DIAZ",
+    "estado": "Socio Captado",
+    "folio": "17936",
+    "proximaVisita": "",
+    "notas": "Folio: 17936",
+    "lat": -33.54988,
+    "lng": -70.59834
+  },
+  {
+    "id": 442,
+    "nroFila": "17945",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17945",
+    "direccion": "PJE CERRO CARACOL 10160",
+    "calle": "PJE CERRO CARACOL",
+    "numero": "10160",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17945",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "17945",
+    "proximaVisita": "",
+    "notas": "Folio: 17945",
+    "lat": -33.54844,
+    "lng": -70.59812
+  },
+  {
+    "id": 443,
+    "nroFila": "3271",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3271",
+    "direccion": "PARINACOTA 10051",
+    "calle": "PARINACOTA",
+    "numero": "10051",
+    "sector": "La Florida",
+    "monto": 1500,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3271",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3271",
+    "proximaVisita": "",
+    "notas": "Folio: 3271",
+    "lat": -33.54641,
+    "lng": -70.60148
+  },
+  {
+    "id": 444,
+    "nroFila": "17988",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17988",
+    "direccion": "JOSE MIGUEL CARRERA 783",
+    "calle": "JOSE MIGUEL CARRERA",
+    "numero": "783",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17988",
+    "voluntario": "FABIAN ORTIZ",
+    "estado": "Socio Captado",
+    "folio": "17988",
+    "proximaVisita": "",
+    "notas": "Folio: 17988",
+    "lat": -33.54946,
+    "lng": -70.58328
+  },
+  {
+    "id": 445,
+    "nroFila": "3312",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3312",
+    "direccion": "SOCOROMA 10273",
+    "calle": "SOCOROMA",
+    "numero": "10273",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3312",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3312",
+    "proximaVisita": "",
+    "notas": "Folio: 3312",
+    "lat": -33.54729,
+    "lng": -70.60277
+  },
+  {
+    "id": 446,
+    "nroFila": "3272",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3272",
+    "direccion": "PARINACOTA 10183",
+    "calle": "PARINACOTA",
+    "numero": "10183",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3272",
+    "voluntario": "FRANCISCO SOTO E.",
+    "estado": "Socio Captado",
+    "folio": "3272",
+    "proximaVisita": "",
+    "notas": "Folio: 3272",
+    "lat": -33.54729,
+    "lng": -70.60212
+  },
+  {
+    "id": 447,
+    "nroFila": "17942",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17942",
+    "direccion": "VALENTINA LEPPE 10246",
+    "calle": "VALENTINA LEPPE",
+    "numero": "10246",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17942",
+    "voluntario": "EDUARDO LAGOS",
+    "estado": "Socio Captado",
+    "folio": "17942",
+    "proximaVisita": "",
+    "notas": "Folio: 17942",
+    "lat": -33.54914,
+    "lng": -70.59962
+  },
+  {
+    "id": 448,
+    "nroFila": "3262",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #3262",
+    "direccion": "SOCOROMA 10267",
+    "calle": "SOCOROMA",
+    "numero": "10267",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3262",
+    "voluntario": "EDUARDO LAGOS",
+    "estado": "Socio Captado",
+    "folio": "3262",
+    "proximaVisita": "",
+    "notas": "Folio: 3262",
+    "lat": -33.54723,
+    "lng": -70.60259
+  },
+  {
+    "id": 449,
+    "nroFila": "17940",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17940",
+    "direccion": "PARINACOTA 10174",
+    "calle": "PARINACOTA",
+    "numero": "10174",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17940",
+    "voluntario": "EDUARDO LAGOS",
+    "estado": "Socio Captado",
+    "folio": "17940",
+    "proximaVisita": "",
+    "notas": "Folio: 17940",
+    "lat": -33.54729,
+    "lng": -70.60212
+  },
+  {
+    "id": 450,
+    "nroFila": "17939",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17939",
+    "direccion": "PARINACOTA 10023",
+    "calle": "PARINACOTA",
+    "numero": "10023",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17939",
+    "voluntario": "EDUARDO LAGOS",
+    "estado": "Socio Captado",
+    "folio": "17939",
+    "proximaVisita": "",
+    "notas": "Folio: 17939",
+    "lat": -33.54643,
+    "lng": -70.60154
+  },
+  {
+    "id": 451,
+    "nroFila": "17986",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17986",
+    "direccion": "PARINACOTA 10236",
+    "calle": "PARINACOTA",
+    "numero": "10236",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #17986",
+    "voluntario": "FABIAN ORTIZ",
+    "estado": "Socio Captado",
+    "folio": "17986",
+    "proximaVisita": "",
+    "notas": "Folio: 17986",
+    "lat": -33.54731,
+    "lng": -70.60218
+  },
+  {
+    "id": 452,
+    "nroFila": "17985",
+    "fecha": "31/10/2026",
+    "nombre": "Socio Mandato #17985",
+    "direccion": "PARINACOTA 10022",
+    "calle": "PARINACOTA",
+    "numero": "10022",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #17985",
+    "voluntario": "FABIAN ORTIZ",
+    "estado": "Socio Captado",
+    "folio": "17985",
+    "proximaVisita": "",
+    "notas": "Folio: 17985",
+    "lat": -33.54645,
+    "lng": -70.6016
+  },
+  {
+    "id": 453,
+    "nroFila": "3310",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3310",
+    "direccion": "Dirección Pendiente Folio #3310",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #3310",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #3310",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "3310",
+    "proximaVisita": "",
+    "notas": "Folio: 3310",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 454,
+    "nroFila": "3257",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3257",
+    "direccion": "Dirección Pendiente Folio #3257",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #3257",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #3257",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "3257",
+    "proximaVisita": "",
+    "notas": "Folio: 3257",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 455,
+    "nroFila": "18070",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18070",
+    "direccion": "Dirección Pendiente Folio #18070",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #18070",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #18070",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "18070",
+    "proximaVisita": "",
+    "notas": "Folio: 18070",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 456,
+    "nroFila": "18067",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18067",
+    "direccion": "Dirección Pendiente Folio #18067",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #18067",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #18067",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "18067",
+    "proximaVisita": "",
+    "notas": "Folio: 18067",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 457,
+    "nroFila": "18065",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18065",
+    "direccion": "Dirección Pendiente Folio #18065",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #18065",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #18065",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "18065",
+    "proximaVisita": "",
+    "notas": "Folio: 18065",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 458,
+    "nroFila": "18063",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18063",
+    "direccion": "Dirección Pendiente Folio #18063",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #18063",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #18063",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "18063",
+    "proximaVisita": "",
+    "notas": "Folio: 18063",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 459,
+    "nroFila": "18062",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18062",
+    "direccion": "Dirección Pendiente Folio #18062",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #18062",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #18062",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "18062",
+    "proximaVisita": "",
+    "notas": "Folio: 18062",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 460,
+    "nroFila": "3236",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3236",
+    "direccion": "Dirección Pendiente Folio #3236",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #3236",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #3236",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "3236",
+    "proximaVisita": "",
+    "notas": "Folio: 3236",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 461,
+    "nroFila": "17937",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17937",
+    "direccion": "Dirección Pendiente Folio #17937",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #17937",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #17937",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "17937",
+    "proximaVisita": "",
+    "notas": "Folio: 17937",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 462,
+    "nroFila": "17941",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17941",
+    "direccion": "Dirección Pendiente Folio #17941",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #17941",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #17941",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "17941",
+    "proximaVisita": "",
+    "notas": "Folio: 17941",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 463,
+    "nroFila": "3276",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3276",
+    "direccion": "Dirección Pendiente Folio #3276",
+    "calle": "Dirección Pendiente",
+    "numero": "Folio #3276",
+    "sector": "La Florida",
+    "monto": 0,
+    "frecuencia": "-",
+    "metodoPago": "Mandato Folio #3276",
+    "voluntario": "10ª Compañía",
+    "estado": "Socio Captado",
+    "folio": "3276",
+    "proximaVisita": "",
+    "notas": "Folio: 3276",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": 464,
+    "nroFila": "17912",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17912",
+    "direccion": "PJE LAS FLORES 746",
+    "calle": "PJE LAS FLORES",
+    "numero": "746",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17912",
+    "voluntario": "MAURICIO REYES",
+    "estado": "Socio Captado",
+    "folio": "17912",
+    "proximaVisita": "",
+    "notas": "Folio: 17912",
+    "lat": -33.54858,
+    "lng": -70.59664
+  },
+  {
+    "id": 465,
+    "nroFila": "17913",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17913",
+    "direccion": "PJE LAS FLORES 754",
+    "calle": "PJE LAS FLORES",
+    "numero": "754",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17913",
+    "voluntario": "MAURICIO REYES",
+    "estado": "Socio Captado",
+    "folio": "17913",
+    "proximaVisita": "",
+    "notas": "Folio: 17913",
+    "lat": -33.5486,
+    "lng": -70.5967
+  },
+  {
+    "id": 466,
+    "nroFila": "17914",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17914",
+    "direccion": "RAMON FREIRE 9760",
+    "calle": "RAMON FREIRE",
+    "numero": "9760",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17914",
+    "voluntario": "MAURICIO REYES",
+    "estado": "Socio Captado",
+    "folio": "17914",
+    "proximaVisita": "",
+    "notas": "Folio: 17914",
+    "lat": -33.54827,
+    "lng": -70.59711
+  },
+  {
+    "id": 467,
+    "nroFila": "17915",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17915",
+    "direccion": "PJE PORTILLO 659",
+    "calle": "PJE PORTILLO",
+    "numero": "659",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17915",
+    "voluntario": "MAURICIO REYES",
+    "estado": "Socio Captado",
+    "folio": "17915",
+    "proximaVisita": "",
+    "notas": "Folio: 17915",
+    "lat": -33.54872,
+    "lng": -70.59606
+  },
+  {
+    "id": 468,
+    "nroFila": "17907",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17907",
+    "direccion": "LA PARVA 672",
+    "calle": "LA PARVA",
+    "numero": "672",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17907",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "17907",
+    "proximaVisita": "",
+    "notas": "Folio: 17907",
+    "lat": -33.54892,
+    "lng": -70.59606
+  },
+  {
+    "id": 469,
+    "nroFila": "17906",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17906",
+    "direccion": "LA PARVA 680",
+    "calle": "LA PARVA",
+    "numero": "680",
+    "sector": "La Florida",
+    "monto": 3000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17906",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "17906",
+    "proximaVisita": "",
+    "notas": "Folio: 17906",
+    "lat": -33.54894,
+    "lng": -70.59612
+  },
+  {
+    "id": 470,
+    "nroFila": "3316",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3316",
+    "direccion": "RAMON FREIRE 9963",
+    "calle": "RAMON FREIRE",
+    "numero": "9963",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3316",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "3316",
+    "proximaVisita": "",
+    "notas": "Folio: 3316",
+    "lat": -33.54817,
+    "lng": -70.59781
+  },
+  {
+    "id": 471,
+    "nroFila": "17902",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17902",
+    "direccion": "RAMON FREIRE 9957",
+    "calle": "RAMON FREIRE",
+    "numero": "9957",
+    "sector": "La Florida",
+    "monto": 3000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17902",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "17902",
+    "proximaVisita": "",
+    "notas": "Folio: 17902",
+    "lat": -33.54811,
+    "lng": -70.59763
+  },
+  {
+    "id": 472,
+    "nroFila": "17905",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17905",
+    "direccion": "RAMON FREIRE 9759",
+    "calle": "RAMON FREIRE",
+    "numero": "9759",
+    "sector": "La Florida",
+    "monto": 3000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17905",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "17905",
+    "proximaVisita": "",
+    "notas": "Folio: 17905",
+    "lat": -33.54811,
+    "lng": -70.59763
+  },
+  {
+    "id": 473,
+    "nroFila": "17904",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17904",
+    "direccion": "RAMON FREIRE 9807",
+    "calle": "RAMON FREIRE",
+    "numero": "9807",
+    "sector": "La Florida",
+    "monto": 2000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17904",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "17904",
+    "proximaVisita": "",
+    "notas": "Folio: 17904",
+    "lat": -33.54823,
+    "lng": -70.59699
+  },
+  {
+    "id": 474,
+    "nroFila": "17903",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17903",
+    "direccion": "RAMON FREIRE 9909",
+    "calle": "RAMON FREIRE",
+    "numero": "9909",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17903",
+    "voluntario": "DAVID ARAVENA",
+    "estado": "Socio Captado",
+    "folio": "17903",
+    "proximaVisita": "",
+    "notas": "Folio: 17903",
+    "lat": -33.54817,
+    "lng": -70.59781
+  },
+  {
+    "id": 475,
+    "nroFila": "17995",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17995",
+    "direccion": "PJE CERRO LA CAMPANA 780",
+    "calle": "PJE CERRO LA CAMPANA",
+    "numero": "780",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17995",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "17995",
+    "proximaVisita": "",
+    "notas": "Folio: 17995",
+    "lat": -33.54932,
+    "lng": -70.59806
+  },
+  {
+    "id": 476,
+    "nroFila": "17996",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17996",
+    "direccion": "RAMON FREIRE 9972",
+    "calle": "RAMON FREIRE",
+    "numero": "9972",
+    "sector": "La Florida",
+    "monto": 1500,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17996",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "17996",
+    "proximaVisita": "",
+    "notas": "Folio: 17996",
+    "lat": -33.54817,
+    "lng": -70.59781
+  },
+  {
+    "id": 477,
+    "nroFila": "17997",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17997",
+    "direccion": "RAMON FREIRE 9940",
+    "calle": "RAMON FREIRE",
+    "numero": "9940",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17997",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "17997",
+    "proximaVisita": "",
+    "notas": "Folio: 17997",
+    "lat": -33.54827,
+    "lng": -70.59711
+  },
+  {
+    "id": 478,
+    "nroFila": "17998",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17998",
+    "direccion": "RAMON FREIRE 10060",
+    "calle": "RAMON FREIRE",
+    "numero": "10060",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17998",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "17998",
+    "proximaVisita": "",
+    "notas": "Folio: 17998",
+    "lat": -33.54761,
+    "lng": -70.59713
+  },
+  {
+    "id": 479,
+    "nroFila": "17999",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #17999",
+    "direccion": "RAMON FREIRE 9820",
+    "calle": "RAMON FREIRE",
+    "numero": "9820",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #17999",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "17999",
+    "proximaVisita": "",
+    "notas": "Folio: 17999",
+    "lat": -33.54833,
+    "lng": -70.59729
+  },
+  {
+    "id": 480,
+    "nroFila": "18000",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #18000",
+    "direccion": "ANTUCO 679",
+    "calle": "ANTUCO",
+    "numero": "679",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #18000",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "18000",
+    "proximaVisita": "",
+    "notas": "Folio: 18000",
+    "lat": -33.54858,
+    "lng": -70.59534
+  },
+  {
+    "id": 481,
+    "nroFila": "3264",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3264",
+    "direccion": "RAMON FREIRE 9784",
+    "calle": "RAMON FREIRE",
+    "numero": "9784",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3264",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "3264",
+    "proximaVisita": "",
+    "notas": "Folio: 3264",
+    "lat": -33.54815,
+    "lng": -70.59775
+  },
+  {
+    "id": 482,
+    "nroFila": "3266",
+    "fecha": "1/11/2026",
+    "nombre": "Socio Mandato #3266",
+    "direccion": "PJE LA PARVA 664",
+    "calle": "PJE LA PARVA",
+    "numero": "664",
+    "sector": "La Florida",
+    "monto": 1000,
+    "frecuencia": "Mensual",
+    "metodoPago": "Mandato Folio #3266",
+    "voluntario": "SEBASTIAN SANTOS",
+    "estado": "Socio Captado",
+    "folio": "3266",
+    "proximaVisita": "",
+    "notas": "Folio: 3266",
+    "lat": -33.5489,
+    "lng": -70.596
   }
 ];

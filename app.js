@@ -12,7 +12,7 @@
     initialZoom: 15,
     minZoom: 11,
     maxZoom: 19,
-    storageKey: 'bomberos_decima_cbn_v8',
+    storageKey: 'bomberos_decima_cbn_v9',
     cachePrefix: 'geo_cache_la_florida_',
     campaignTarget: 500, // Meta de socios campaña actual
     sheetsUrl: 'https://docs.google.com/spreadsheets/d/14oLL6bsJLAw1evjAH6HDXe8gocrDvXdz/gviz/tq?tqx=out:csv&gid=132653492'
@@ -544,7 +544,7 @@
 
   // ================= VERIFICAR Y AUTO-GEOCODIFICAR =================
   function checkMissingCoordinates() {
-    const missing = state.records.filter(r => (!r.lat || !r.lng) && r.direccion);
+    const missing = state.records.filter(r => (!r.lat || !r.lng) && r.direccion && r.calle !== 'Dirección Pendiente');
     if (missing.length > 0) {
       DOM.geoMissingCount.textContent = missing.length;
       DOM.geocodingBanner.style.display = 'flex';
@@ -559,7 +559,7 @@
     DOM.btnAutoGeocode.disabled = true;
     DOM.btnAutoGeocode.textContent = 'Buscando en mapa...';
 
-    const missing = state.records.filter(r => (!r.lat || !r.lng) && r.direccion);
+    const missing = state.records.filter(r => (!r.lat || !r.lng) && r.direccion && r.calle !== 'Dirección Pendiente');
     let resolvedCount = 0;
 
     showToast(`Iniciando geocodificación de ${missing.length} direcciones en La Florida...`, 'info');
@@ -667,7 +667,63 @@
     'las termas': { lat: -33.550990, lng: -70.585964 },
     'los fiordos': { lat: -33.546527, lng: -70.574764 },
     'central oriente': { lat: -33.548299, lng: -70.578788 },
-    'barranquilla': { lat: -33.544917, lng: -70.581689 }
+    'barranquilla': { lat: -33.544917, lng: -70.581689 },
+    'malta': { lat: -33.545440, lng: -70.572580 },
+    'los esteros': { lat: -33.545680, lng: -70.574260 },
+    'santa amalia': { lat: -33.543720, lng: -70.572540 },
+    'el cairo': { lat: -33.546800, lng: -70.574100 },
+    'las vegas': { lat: -33.544600, lng: -70.574700 },
+    'marino': { lat: -33.546779, lng: -70.580251 },
+    'navino': { lat: -33.546779, lng: -70.580251 },
+    'narino': { lat: -33.546779, lng: -70.580251 },
+    'las nieves': { lat: -33.544360, lng: -70.573020 },
+    'algarrobal': { lat: -33.543920, lng: -70.573940 },
+    'jose h. wettlin': { lat: -33.543560, lng: -70.575420 },
+    'santa catalina': { lat: -33.545400, lng: -70.572300 },
+    'leon': { lat: -33.544520, lng: -70.574140 },
+    'peru': { lat: -33.545880, lng: -70.571660 },
+    'los abedules': { lat: -33.544000, lng: -70.574500 },
+    'palqui': { lat: -33.545920, lng: -70.571940 },
+    'palque': { lat: -33.545920, lng: -70.571940 },
+    'los maniantales': { lat: -33.543040, lng: -70.571780 },
+    'torrente': { lat: -33.546240, lng: -70.574180 },
+    'el arroyo': { lat: -33.544320, lng: -70.572740 },
+    'los rios': { lat: -33.546880, lng: -70.574660 },
+    'ines de suarez': { lat: -33.545960, lng: -70.572220 },
+    'caldas': { lat: -33.543840, lng: -70.573380 },
+    'popayan': { lat: -33.543440, lng: -70.574580 },
+    'magdalena': { lat: -33.544840, lng: -70.572380 },
+    'manio': { lat: -33.544720, lng: -70.571540 },
+    'medellin': { lat: -33.543160, lng: -70.572620 },
+    'horizonte astral': { lat: -33.546720, lng: -70.573540 },
+    'carlos meza': { lat: -33.543280, lng: -70.573460 },
+    'avila': { lat: -33.546160, lng: -70.573620 },
+    'badajoz': { lat: -33.543680, lng: -70.572260 },
+    'santa raquel': { lat: -33.546200, lng: -70.573900 },
+    'trinidad poniente': { lat: -33.547100, lng: -70.594500 },
+    'el llano': { lat: -33.546520, lng: -70.572140 },
+    'malvania': { lat: -33.545800, lng: -70.572550 },
+    'ramon freire': { lat: -33.548050, lng: -70.597450 },
+    'socoroma': { lat: -33.546850, lng: -70.602450 },
+    'parinacota': { lat: -33.546850, lng: -70.601800 },
+    'chapiquina': { lat: -33.546400, lng: -70.602100 },
+    'jose miguel carrera': { lat: -33.549200, lng: -70.583500 },
+    'mamina': { lat: -33.533500, lng: -70.566500 },
+    'cerro retumbadero': { lat: -33.549800, lng: -70.598800 },
+    'cerro provincia': { lat: -33.549500, lng: -70.598200 },
+    'cerro prolancia': { lat: -33.549500, lng: -70.598200 },
+    'cerro el altar': { lat: -33.549200, lng: -70.597800 },
+    'cerro altar': { lat: -33.549200, lng: -70.597800 },
+    'cerro caracol': { lat: -33.548900, lng: -70.598500 },
+    'cerro fitz roy': { lat: -33.549600, lng: -70.599100 },
+    'cerro el roble': { lat: -33.549100, lng: -70.598900 },
+    'cerro catedral': { lat: -33.549400, lng: -70.598600 },
+    'cerro la campana': { lat: -33.549000, lng: -70.598100 },
+    'valentina leppe': { lat: -33.548700, lng: -70.599300 },
+    'las flores': { lat: -33.548300, lng: -70.596800 },
+    'portillo': { lat: -33.548500, lng: -70.596400 },
+    'la parva': { lat: -33.548600, lng: -70.596100 },
+    'antuco': { lat: -33.548400, lng: -70.595800 }
   };
 
   // Normalizador clave para agrupar calles independientemente de mayúsculas/minúsculas y tildes
@@ -903,17 +959,34 @@
       return -1;
     };
 
-    const colDir = findCol(['direccion', 'calle', 'domicilio']);
-    const colNum = findCol(['n° casa', 'no casa', 'numero', 'nro', 'casa']);
-    const colResp = findCol(['respuesta', 'estado', 'resultado', 'condicion']);
-    const colFolio = findCol(['folio', 'mandato']);
-    const colVol = findCol(['voluntario', 'escuadra', 'bombero']);
-    const colFecha = findCol(['ultima visita', 'fecha', 'timestamp', 'dia']);
-    const colProx = findCol(['proxima visita', 'proxima']);
-    const colObs = findCol(['observaciones', 'observacion', 'notas', 'nota']);
-    const colMonto = findCol(['monto', 'aporte', 'valor', 'cuota', 'monto aporte', 'donacion', 'total']);
+    let colDir = findCol(['direccion', 'calle', 'domicilio']);
+    let colNum = findCol(['n° casa', 'no casa', 'numero', 'nro', 'casa']);
+    let colResp = findCol(['respuesta', 'estado', 'resultado', 'condicion']);
+    let colFolio = findCol(['folio', 'mandato']);
+    let colVol = findCol(['voluntario', 'escuadra', 'bombero']);
+    let colFecha = findCol(['ultima visita', 'fecha', 'timestamp', 'dia']);
+    let colProx = findCol(['proxima visita', 'proxima']);
+    let colObs = findCol(['observaciones', 'observacion', 'notas', 'nota']);
+    let colMonto = findCol(['monto', 'aporte', 'valor', 'cuota', 'monto aporte', 'donacion', 'total']);
     const colLat = findCol(['latitud', 'lat']);
     const colLng = findCol(['longitud', 'lng', 'lon']);
+
+    // Fallback para Google Visualization API (gviz/tq), que borra los encabezados de texto
+    // en columnas numéricas/fecha cuando hay un total numérico sobre la fila de encabezados (ej. 771.500 en J3)
+    if (colDir === 1 && colResp === 4) {
+      if (colNum === -1 && headers[2] === '') colNum = 2;
+      if (colFecha === -1 && headers[3] === '') colFecha = 3;
+      if (colFolio === -1 && headers[5] === '') colFolio = 5;
+      if (colMonto === -1 && headers.length > 9 && headers[9] === '') colMonto = 9;
+    }
+    if (colMonto === -1 && colObs >= 0) {
+      for (let c = colObs + 1; c < headers.length; c++) {
+        if (!headers[c]) {
+          colMonto = c;
+          break;
+        }
+      }
+    }
 
     // Función auxiliar para parsear montos en pesos chilenos ($ 5.000 -> 5000)
     function parseMonto(raw) {
@@ -940,17 +1013,22 @@
       let calle = colDir >= 0 && row[colDir] ? String(row[colDir]).trim() : '';
       let numero = colNum >= 0 && row[colNum] ? String(row[colNum]).trim() : '';
       const resp = colResp >= 0 && row[colResp] ? String(row[colResp]).trim() : '';
-      const folio = colFolio >= 0 && row[colFolio] ? String(row[colFolio]).trim() : '';
+      const rawFolioCell = colFolio >= 0 && row[colFolio] ? String(row[colFolio]).trim() : '';
+      const rowZeroDigits = row[0] ? String(row[0]).trim() : '';
+      const folio = rawFolioCell || (/^\d+$/.test(rowZeroDigits) && Number(rowZeroDigits) >= 3000 ? rowZeroDigits : '');
       const vol = colVol >= 0 && row[colVol] ? String(row[colVol]).trim() : '10ª Compañía';
       const fecha = colFecha >= 0 && row[colFecha] ? String(row[colFecha]).trim() : '';
       const prox = colProx >= 0 && row[colProx] ? String(row[colProx]).trim() : '';
       const obs = colObs >= 0 && row[colObs] ? String(row[colObs]).trim() : '';
       const rawMonto = colMonto >= 0 && row[colMonto] !== undefined ? String(row[colMonto]).trim() : '';
+      const parsedMonto = parseMonto(rawMonto);
 
-      // Determinar Estado
+      // Determinar Estado:
+      // Si la respuesta dice "Socio" o si tiene un monto de aporte > 0 registrado (mandatos cuya
+      // dirección está en blanco y la fórmula de Excel puso "No interesado" por defecto), es Socio Captado.
       let estado = 'No Estaba (Repasar)';
       let isSocio = false;
-      if (/socio|ya es socio/i.test(resp)) {
+      if (/socio|ya es socio/i.test(resp) || parsedMonto > 0) {
         estado = 'Socio Captado';
         isSocio = true;
       } else if (/ausente|volver|repasar|nadie/i.test(resp)) {
@@ -976,7 +1054,7 @@
       // 3. Monto real del aporte
       let monto = 0;
       if (isSocio) {
-        monto = parseMonto(rawMonto);
+        monto = parsedMonto;
       }
 
       // Nombre y Dirección Completa
