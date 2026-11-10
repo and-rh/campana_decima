@@ -18,8 +18,8 @@ window.SAMPLE_DATA = [
     "folio": "3151",
     "proximaVisita": "",
     "notas": "Folio: 3151",
-    "lat": -33.546713,
-    "lng": -70.571864
+    "lat": -33.546488,
+    "lng": -70.571907
   },
   {
     "id": 2,
@@ -38,8 +38,8 @@ window.SAMPLE_DATA = [
     "folio": "3152",
     "proximaVisita": "",
     "notas": "Folio: 3152",
-    "lat": -33.545528,
-    "lng": -70.572173
+    "lat": -33.544885,
+    "lng": -70.572247
   },
   {
     "id": 3,
@@ -98,8 +98,8 @@ window.SAMPLE_DATA = [
     "folio": "3155",
     "proximaVisita": "",
     "notas": "Folio: 3155",
-    "lat": -33.545644,
-    "lng": -70.578178
+    "lat": -33.545023,
+    "lng": -70.578478
   },
   {
     "id": 6,
@@ -138,8 +138,8 @@ window.SAMPLE_DATA = [
     "folio": "3157",
     "proximaVisita": "",
     "notas": "Folio: 3157",
-    "lat": -33.528884,
-    "lng": -70.588432
+    "lat": -33.545102,
+    "lng": -70.586851
   },
   {
     "id": 8,
@@ -158,8 +158,8 @@ window.SAMPLE_DATA = [
     "folio": "3158",
     "proximaVisita": "",
     "notas": "Folio: 3158",
-    "lat": -33.546978,
-    "lng": -70.57083
+    "lat": -33.546974,
+    "lng": -70.570882
   },
   {
     "id": 9,
@@ -178,8 +178,8 @@ window.SAMPLE_DATA = [
     "folio": "3159",
     "proximaVisita": "",
     "notas": "Folio: 3159",
-    "lat": -33.546698,
-    "lng": -70.571785
+    "lat": -33.546518,
+    "lng": -70.571819
   },
   {
     "id": 10,
@@ -198,8 +198,8 @@ window.SAMPLE_DATA = [
     "folio": "3160",
     "proximaVisita": "",
     "notas": "Folio: 3160",
-    "lat": -33.528984,
-    "lng": -70.588732
+    "lat": -33.546482,
+    "lng": -70.586811
   },
   {
     "id": 11,
@@ -218,8 +218,8 @@ window.SAMPLE_DATA = [
     "folio": "3161",
     "proximaVisita": "",
     "notas": "Folio: 3161",
-    "lat": -33.545388,
-    "lng": -70.57221
+    "lat": -33.544696,
+    "lng": -70.572287
   },
   {
     "id": 12,
@@ -238,8 +238,8 @@ window.SAMPLE_DATA = [
     "folio": "3162",
     "proximaVisita": "",
     "notas": "Folio: 3162",
-    "lat": -33.546698,
-    "lng": -70.571785
+    "lat": -33.54666,
+    "lng": -70.571789
   },
   {
     "id": 13,
@@ -258,8 +258,8 @@ window.SAMPLE_DATA = [
     "folio": "3165",
     "proximaVisita": "",
     "notas": "Folio: 3165",
-    "lat": -33.546698,
-    "lng": -70.571785
+    "lat": -33.546499,
+    "lng": -70.571823
   },
   {
     "id": 14,
@@ -298,8 +298,8 @@ window.SAMPLE_DATA = [
     "folio": "3167",
     "proximaVisita": "",
     "notas": "Folio: 3167",
-    "lat": -33.546416,
-    "lng": -70.571752
+    "lat": -33.546391,
+    "lng": -70.571456
   },
   {
     "id": 16,
@@ -318,8 +318,8 @@ window.SAMPLE_DATA = [
     "folio": "3168",
     "proximaVisita": "",
     "notas": "Folio: 3168",
-    "lat": -33.546517,
-    "lng": -70.571915
+    "lat": -33.546224,
+    "lng": -70.571963
   },
   {
     "id": 17,
@@ -338,8 +338,8 @@ window.SAMPLE_DATA = [
     "folio": "3169",
     "proximaVisita": "",
     "notas": "Folio: 3169",
-    "lat": -33.545402,
-    "lng": -70.572206
+    "lat": -33.544715,
+    "lng": -70.572283
   },
   {
     "id": 18,
@@ -378,8 +378,8 @@ window.SAMPLE_DATA = [
     "folio": "3171",
     "proximaVisita": "",
     "notas": "Folio: 3171",
-    "lat": -33.544929,
-    "lng": -70.572247
+    "lat": -33.544086,
+    "lng": -70.572335
   },
   {
     "id": 20,
@@ -418,8 +418,8 @@ window.SAMPLE_DATA = [
     "folio": "3173",
     "proximaVisita": "",
     "notas": "Folio: 3173",
-    "lat": -33.546058,
-    "lng": -70.571952
+    "lat": -33.545613,
+    "lng": -70.572011
   },
   {
     "id": 22,
@@ -438,8 +438,8 @@ window.SAMPLE_DATA = [
     "folio": "3174",
     "proximaVisita": "",
     "notas": "Folio: 3174",
-    "lat": -33.54586,
-    "lng": -70.57284
+    "lat": -33.545634,
+    "lng": -70.57226
   },
   {
     "id": 23,
@@ -458,8 +458,8 @@ window.SAMPLE_DATA = [
     "folio": "3175",
     "proximaVisita": "",
     "notas": "Folio: 3175",
-    "lat": -33.546211,
-    "lng": -70.573019
+    "lat": -33.546218,
+    "lng": -70.573139
   },
   {
     "id": 24,
@@ -478,8 +478,8 @@ window.SAMPLE_DATA = [
     "folio": "3176",
     "proximaVisita": "",
     "notas": "Folio: 3176",
-    "lat": -33.546211,
-    "lng": -70.573019
+    "lat": -33.546212,
+    "lng": -70.572966
   },
   {
     "id": 25,
@@ -498,8 +498,8 @@ window.SAMPLE_DATA = [
     "folio": "3177",
     "proximaVisita": "",
     "notas": "Folio: 3177",
-    "lat": -33.545432,
-    "lng": -70.572617
+    "lat": -33.545434,
+    "lng": -70.57264
   },
   {
     "id": 26,
@@ -518,8 +518,8 @@ window.SAMPLE_DATA = [
     "folio": "3178",
     "proximaVisita": "",
     "notas": "Folio: 3178",
-    "lat": -33.544789,
-    "lng": -70.572366
+    "lat": -33.543885,
+    "lng": -70.572459
   },
   {
     "id": 27,
@@ -538,8 +538,8 @@ window.SAMPLE_DATA = [
     "folio": "3179",
     "proximaVisita": "",
     "notas": "Folio: 3179",
-    "lat": -33.544873,
-    "lng": -70.572344
+    "lat": -33.543999,
+    "lng": -70.572435
   },
   {
     "id": 28,
@@ -558,8 +558,8 @@ window.SAMPLE_DATA = [
     "folio": "3180",
     "proximaVisita": "",
     "notas": "Folio: 3180",
-    "lat": -33.545124,
-    "lng": -70.572996
+    "lat": -33.545117,
+    "lng": -70.572946
   },
   {
     "id": 29,
@@ -598,8 +598,8 @@ window.SAMPLE_DATA = [
     "folio": "3182",
     "proximaVisita": "",
     "notas": "Folio: 3182",
-    "lat": -33.544602,
-    "lng": -70.572415
+    "lat": -33.54364,
+    "lng": -70.572511
   },
   {
     "id": 31,
@@ -618,8 +618,8 @@ window.SAMPLE_DATA = [
     "folio": "3183",
     "proximaVisita": "",
     "notas": "Folio: 3183",
-    "lat": -33.544602,
-    "lng": -70.572415
+    "lat": -33.54364,
+    "lng": -70.572511
   },
   {
     "id": 32,
@@ -638,8 +638,8 @@ window.SAMPLE_DATA = [
     "folio": "3184",
     "proximaVisita": "",
     "notas": "Folio: 3184",
-    "lat": -33.543407,
-    "lng": -70.576887
+    "lat": -33.543852,
+    "lng": -70.576645
   },
   {
     "id": 33,
@@ -678,8 +678,8 @@ window.SAMPLE_DATA = [
     "folio": "3186",
     "proximaVisita": "",
     "notas": "Folio: 3186",
-    "lat": -33.546211,
-    "lng": -70.573024
+    "lat": -33.546222,
+    "lng": -70.573246
   },
   {
     "id": 35,
@@ -718,8 +718,8 @@ window.SAMPLE_DATA = [
     "folio": "3189",
     "proximaVisita": "",
     "notas": "Folio: 3189",
-    "lat": -33.54716,
-    "lng": -70.57418
+    "lat": -33.546638,
+    "lng": -70.573018
   },
   {
     "id": 37,
@@ -738,8 +738,8 @@ window.SAMPLE_DATA = [
     "folio": "3190",
     "proximaVisita": "",
     "notas": "Folio: 3190",
-    "lat": -33.54724,
-    "lng": -70.57442
+    "lat": -33.546641,
+    "lng": -70.573058
   },
   {
     "id": 38,
@@ -778,8 +778,8 @@ window.SAMPLE_DATA = [
     "folio": "3192",
     "proximaVisita": "",
     "notas": "Folio: 3192",
-    "lat": -33.545264,
-    "lng": -70.572159
+    "lat": -33.544538,
+    "lng": -70.572239
   },
   {
     "id": 40,
@@ -798,8 +798,8 @@ window.SAMPLE_DATA = [
     "folio": "3193",
     "proximaVisita": "",
     "notas": "Folio: 3193",
-    "lat": -33.545556,
-    "lng": -70.572083
+    "lat": -33.544934,
+    "lng": -70.572155
   },
   {
     "id": 41,
@@ -818,8 +818,8 @@ window.SAMPLE_DATA = [
     "folio": "3194",
     "proximaVisita": "",
     "notas": "Folio: 3194",
-    "lat": -33.545124,
-    "lng": -70.572196
+    "lat": -33.54435,
+    "lng": -70.572279
   },
   {
     "id": 42,
@@ -858,8 +858,8 @@ window.SAMPLE_DATA = [
     "folio": "3196",
     "proximaVisita": "",
     "notas": "Folio: 3196",
-    "lat": -33.545013,
-    "lng": -70.572225
+    "lat": -33.544199,
+    "lng": -70.572311
   },
   {
     "id": 44,
@@ -878,8 +878,8 @@ window.SAMPLE_DATA = [
     "folio": "3197",
     "proximaVisita": "",
     "notas": "Folio: 3197",
-    "lat": -33.546211,
-    "lng": -70.573019
+    "lat": -33.546215,
+    "lng": -70.573059
   },
   {
     "id": 45,
@@ -898,8 +898,8 @@ window.SAMPLE_DATA = [
     "folio": "3198",
     "proximaVisita": "",
     "notas": "Folio: 3198",
-    "lat": -33.54578,
-    "lng": -70.5726
+    "lat": -33.545577,
+    "lng": -70.572303
   },
   {
     "id": 46,
@@ -938,8 +938,8 @@ window.SAMPLE_DATA = [
     "folio": "3200",
     "proximaVisita": "",
     "notas": "Folio: 3200",
-    "lat": -33.54584,
-    "lng": -70.57278
+    "lat": -33.545584,
+    "lng": -70.572397
   },
   {
     "id": 48,
@@ -1018,8 +1018,8 @@ window.SAMPLE_DATA = [
     "folio": "3204",
     "proximaVisita": "",
     "notas": "Folio: 3204",
-    "lat": -33.546767,
-    "lng": -70.574484
+    "lat": -33.546107,
+    "lng": -70.575071
   },
   {
     "id": 52,
@@ -1038,8 +1038,8 @@ window.SAMPLE_DATA = [
     "folio": "3205",
     "proximaVisita": "",
     "notas": "Folio: 3205",
-    "lat": -33.546767,
-    "lng": -70.574484
+    "lat": -33.546113,
+    "lng": -70.574967
   },
   {
     "id": 53,
@@ -1058,8 +1058,8 @@ window.SAMPLE_DATA = [
     "folio": "3206",
     "proximaVisita": "",
     "notas": "Folio: 3206",
-    "lat": -33.546627,
-    "lng": -70.575064
+    "lat": -33.546849,
+    "lng": -70.574425
   },
   {
     "id": 54,
@@ -1098,8 +1098,8 @@ window.SAMPLE_DATA = [
     "folio": "3208",
     "proximaVisita": "",
     "notas": "Folio: 3208",
-    "lat": -33.546072,
-    "lng": -70.57508
+    "lat": -33.545964,
+    "lng": -70.57522
   },
   {
     "id": 56,
@@ -1178,8 +1178,8 @@ window.SAMPLE_DATA = [
     "folio": "3213",
     "proximaVisita": "",
     "notas": "Folio: 3213",
-    "lat": -33.547831,
-    "lng": -70.601895
+    "lat": -33.547835,
+    "lng": -70.602182
   },
   {
     "id": 60,
@@ -1278,8 +1278,8 @@ window.SAMPLE_DATA = [
     "folio": "3218",
     "proximaVisita": "",
     "notas": "Folio: 3218",
-    "lat": -33.544564,
-    "lng": -70.574777
+    "lat": -33.544956,
+    "lng": -70.575143
   },
   {
     "id": 65,
@@ -1418,8 +1418,8 @@ window.SAMPLE_DATA = [
     "folio": "3225",
     "proximaVisita": "",
     "notas": "Folio: 3225",
-    "lat": -33.545384,
-    "lng": -70.575237
+    "lat": -33.544853,
+    "lng": -70.574838
   },
   {
     "id": 72,
@@ -1438,8 +1438,8 @@ window.SAMPLE_DATA = [
     "folio": "3229",
     "proximaVisita": "",
     "notas": "Folio: 3229",
-    "lat": -33.554825,
-    "lng": -70.566407
+    "lat": -33.54406,
+    "lng": -70.580872
   },
   {
     "id": 73,
@@ -1478,8 +1478,8 @@ window.SAMPLE_DATA = [
     "folio": "3231",
     "proximaVisita": "",
     "notas": "Folio: 3231",
-    "lat": -33.547135,
-    "lng": -70.583599
+    "lat": -33.546839,
+    "lng": -70.582991
   },
   {
     "id": 75,
@@ -1718,8 +1718,8 @@ window.SAMPLE_DATA = [
     "folio": "3245",
     "proximaVisita": "",
     "notas": "Folio: 3245",
-    "lat": -33.54482,
-    "lng": -70.5734
+    "lat": -33.549251,
+    "lng": -70.600549
   },
   {
     "id": 87,
@@ -1738,8 +1738,8 @@ window.SAMPLE_DATA = [
     "folio": "3247",
     "proximaVisita": "",
     "notas": "Folio: 3247",
-    "lat": -33.54484,
-    "lng": -70.57346
+    "lat": -33.549328,
+    "lng": -70.600546
   },
   {
     "id": 88,
@@ -1818,8 +1818,8 @@ window.SAMPLE_DATA = [
     "folio": "3251",
     "proximaVisita": "",
     "notas": "Folio: 3251",
-    "lat": -33.545396,
-    "lng": -70.572865
+    "lat": -33.545407,
+    "lng": -70.572967
   },
   {
     "id": 92,
@@ -1838,8 +1838,8 @@ window.SAMPLE_DATA = [
     "folio": "3253",
     "proximaVisita": "",
     "notas": "Folio: 3253",
-    "lat": -33.546158,
-    "lng": -70.573189
+    "lat": -33.546164,
+    "lng": -70.573334
   },
   {
     "id": 93,
@@ -1858,8 +1858,8 @@ window.SAMPLE_DATA = [
     "folio": "3254",
     "proximaVisita": "",
     "notas": "Folio: 3254",
-    "lat": -33.544331,
-    "lng": -70.573871
+    "lat": -33.544893,
+    "lng": -70.573863
   },
   {
     "id": 94,
@@ -1898,8 +1898,8 @@ window.SAMPLE_DATA = [
     "folio": "3260",
     "proximaVisita": "",
     "notas": "Folio: 3260",
-    "lat": -33.544121,
-    "lng": -70.573874
+    "lat": -33.544738,
+    "lng": -70.573865
   },
   {
     "id": 96,
@@ -1938,8 +1938,8 @@ window.SAMPLE_DATA = [
     "folio": "3268",
     "proximaVisita": "",
     "notas": "Folio: 3268",
-    "lat": -33.528844,
-    "lng": -70.588312
+    "lat": -33.545234,
+    "lng": -70.586747
   },
   {
     "id": 98,
@@ -2038,8 +2038,8 @@ window.SAMPLE_DATA = [
     "folio": "3279",
     "proximaVisita": "",
     "notas": "Folio: 3279",
-    "lat": -33.545284,
-    "lng": -70.574937
+    "lat": -33.544892,
+    "lng": -70.574279
   },
   {
     "id": 103,
@@ -2058,8 +2058,8 @@ window.SAMPLE_DATA = [
     "folio": "3280",
     "proximaVisita": "",
     "notas": "Folio: 3280",
-    "lat": -33.544444,
-    "lng": -70.574417
+    "lat": -33.544829,
+    "lng": -70.574514
   },
   {
     "id": 104,
@@ -2078,8 +2078,8 @@ window.SAMPLE_DATA = [
     "folio": "3281",
     "proximaVisita": "",
     "notas": "Folio: 3281",
-    "lat": -33.554985,
-    "lng": -70.565887
+    "lat": -33.543666,
+    "lng": -70.580884
   },
   {
     "id": 105,
@@ -2098,8 +2098,8 @@ window.SAMPLE_DATA = [
     "folio": "3282",
     "proximaVisita": "",
     "notas": "Folio: 3282",
-    "lat": -33.529124,
-    "lng": -70.588152
+    "lat": -33.544175,
+    "lng": -70.586778
   },
   {
     "id": 106,
@@ -2118,8 +2118,8 @@ window.SAMPLE_DATA = [
     "folio": "3283",
     "proximaVisita": "",
     "notas": "Folio: 3283",
-    "lat": -33.528984,
-    "lng": -70.588732
+    "lat": -33.544372,
+    "lng": -70.586772
   },
   {
     "id": 107,
@@ -2278,8 +2278,8 @@ window.SAMPLE_DATA = [
     "folio": "3296",
     "proximaVisita": "",
     "notas": "Folio: 3296",
-    "lat": -33.545324,
-    "lng": -70.575057
+    "lat": -33.544787,
+    "lng": -70.573947
   },
   {
     "id": 115,
@@ -2298,8 +2298,8 @@ window.SAMPLE_DATA = [
     "folio": "3297",
     "proximaVisita": "",
     "notas": "Folio: 3297",
-    "lat": -33.543787,
-    "lng": -70.573799
+    "lat": -33.54449,
+    "lng": -70.573789
   },
   {
     "id": 116,
@@ -2338,8 +2338,8 @@ window.SAMPLE_DATA = [
     "folio": "3305",
     "proximaVisita": "",
     "notas": "Folio: 3305",
-    "lat": -33.54398,
-    "lng": -70.57288
+    "lat": -33.546917,
+    "lng": -70.600636
   },
   {
     "id": 118,
@@ -2358,8 +2358,8 @@ window.SAMPLE_DATA = [
     "folio": "3306",
     "proximaVisita": "",
     "notas": "Folio: 3306",
-    "lat": -33.5439,
-    "lng": -70.57264
+    "lat": -33.546956,
+    "lng": -70.600634
   },
   {
     "id": 119,
@@ -2378,8 +2378,8 @@ window.SAMPLE_DATA = [
     "folio": "3307",
     "proximaVisita": "",
     "notas": "Folio: 3307",
-    "lat": -33.544,
-    "lng": -70.57294
+    "lat": -33.546994,
+    "lng": -70.600633
   },
   {
     "id": 120,
@@ -2418,8 +2418,8 @@ window.SAMPLE_DATA = [
     "folio": "3309",
     "proximaVisita": "",
     "notas": "Folio: 3309",
-    "lat": -33.54468,
-    "lng": -70.57298
+    "lat": -33.547753,
+    "lng": -70.600525
   },
   {
     "id": 122,
@@ -2498,8 +2498,8 @@ window.SAMPLE_DATA = [
     "folio": "3320",
     "proximaVisita": "",
     "notas": "Folio: 3320",
-    "lat": -33.554965,
-    "lng": -70.565827
+    "lat": -33.543594,
+    "lng": -70.580886
   },
   {
     "id": 126,
@@ -2518,8 +2518,8 @@ window.SAMPLE_DATA = [
     "folio": "3321",
     "proximaVisita": "",
     "notas": "Folio: 3321",
-    "lat": -33.529044,
-    "lng": -70.587912
+    "lat": -33.544668,
+    "lng": -70.586763
   },
   {
     "id": 127,
@@ -2558,8 +2558,8 @@ window.SAMPLE_DATA = [
     "folio": "3324",
     "proximaVisita": "",
     "notas": "Folio: 3324",
-    "lat": -33.554885,
-    "lng": -70.566587
+    "lat": -33.543791,
+    "lng": -70.58088
   },
   {
     "id": 129,
@@ -2578,8 +2578,8 @@ window.SAMPLE_DATA = [
     "folio": "3325",
     "proximaVisita": "",
     "notas": "Folio: 3325",
-    "lat": -33.529044,
-    "lng": -70.587912
+    "lat": -33.543559,
+    "lng": -70.586795
   },
   {
     "id": 130,
@@ -2598,8 +2598,8 @@ window.SAMPLE_DATA = [
     "folio": "3326",
     "proximaVisita": "",
     "notas": "Folio: 3326",
-    "lat": -33.528804,
-    "lng": -70.588192
+    "lat": -33.54659,
+    "lng": -70.586708
   },
   {
     "id": 131,
@@ -2618,8 +2618,8 @@ window.SAMPLE_DATA = [
     "folio": "3327",
     "proximaVisita": "",
     "notas": "Folio: 3327",
-    "lat": -33.529024,
-    "lng": -70.587852
+    "lat": -33.5459,
+    "lng": -70.586728
   },
   {
     "id": 132,
@@ -2658,8 +2658,8 @@ window.SAMPLE_DATA = [
     "folio": "3329",
     "proximaVisita": "",
     "notas": "Folio: 3329",
-    "lat": -33.528824,
-    "lng": -70.588252
+    "lat": -33.546467,
+    "lng": -70.586711
   },
   {
     "id": 134,
@@ -2698,8 +2698,8 @@ window.SAMPLE_DATA = [
     "folio": "3331",
     "proximaVisita": "",
     "notas": "Folio: 3331",
-    "lat": -33.547255,
-    "lng": -70.583959
+    "lat": -33.546866,
+    "lng": -70.586088
   },
   {
     "id": 136,
@@ -2718,8 +2718,8 @@ window.SAMPLE_DATA = [
     "folio": "3332",
     "proximaVisita": "",
     "notas": "Folio: 3332",
-    "lat": -33.554925,
-    "lng": -70.566707
+    "lat": -33.546672,
+    "lng": -70.580795
   },
   {
     "id": 137,
@@ -2738,8 +2738,8 @@ window.SAMPLE_DATA = [
     "folio": "3333",
     "proximaVisita": "",
     "notas": "Folio: 3333",
-    "lat": -33.554885,
-    "lng": -70.566587
+    "lat": -33.54669,
+    "lng": -70.580795
   },
   {
     "id": 138,
@@ -2758,8 +2758,8 @@ window.SAMPLE_DATA = [
     "folio": "3334",
     "proximaVisita": "",
     "notas": "Folio: 3334",
-    "lat": -33.554965,
-    "lng": -70.565827
+    "lat": -33.545527,
+    "lng": -70.580829
   },
   {
     "id": 139,
@@ -2778,8 +2778,8 @@ window.SAMPLE_DATA = [
     "folio": "3335",
     "proximaVisita": "",
     "notas": "Folio: 3335",
-    "lat": -33.554985,
-    "lng": -70.565887
+    "lat": -33.545599,
+    "lng": -70.580827
   },
   {
     "id": 140,
@@ -2798,8 +2798,8 @@ window.SAMPLE_DATA = [
     "folio": "3336",
     "proximaVisita": "",
     "notas": "Folio: 3336",
-    "lat": -33.545805,
-    "lng": -70.579502
+    "lat": -33.545477,
+    "lng": -70.582587
   },
   {
     "id": 141,
@@ -2818,8 +2818,8 @@ window.SAMPLE_DATA = [
     "folio": "3337",
     "proximaVisita": "",
     "notas": "Folio: 3337",
-    "lat": -33.554865,
-    "lng": -70.566527
+    "lat": -33.545008,
+    "lng": -70.580844
   },
   {
     "id": 142,
@@ -2838,8 +2838,8 @@ window.SAMPLE_DATA = [
     "folio": "3338",
     "proximaVisita": "",
     "notas": "Folio: 3338",
-    "lat": -33.554965,
-    "lng": -70.565827
+    "lat": -33.544722,
+    "lng": -70.580853
   },
   {
     "id": 143,
@@ -2858,8 +2858,8 @@ window.SAMPLE_DATA = [
     "folio": "3339",
     "proximaVisita": "",
     "notas": "Folio: 3339",
-    "lat": -33.555105,
-    "lng": -70.566247
+    "lat": -33.544174,
+    "lng": -70.580789
   },
   {
     "id": 144,
@@ -2918,8 +2918,8 @@ window.SAMPLE_DATA = [
     "folio": "3342",
     "proximaVisita": "",
     "notas": "Folio: 3342",
-    "lat": -33.554845,
-    "lng": -70.566467
+    "lat": -33.546547,
+    "lng": -70.580799
   },
   {
     "id": 147,
@@ -2938,8 +2938,8 @@ window.SAMPLE_DATA = [
     "folio": "3343",
     "proximaVisita": "",
     "notas": "Folio: 3343",
-    "lat": -33.554865,
-    "lng": -70.566527
+    "lat": -33.545813,
+    "lng": -70.580821
   },
   {
     "id": 148,
@@ -2958,8 +2958,8 @@ window.SAMPLE_DATA = [
     "folio": "3344",
     "proximaVisita": "",
     "notas": "Folio: 3344",
-    "lat": -33.554845,
-    "lng": -70.566467
+    "lat": -33.545742,
+    "lng": -70.580823
   },
   {
     "id": 149,
@@ -2978,8 +2978,8 @@ window.SAMPLE_DATA = [
     "folio": "3345",
     "proximaVisita": "",
     "notas": "Folio: 3345",
-    "lat": -33.545825,
-    "lng": -70.579562
+    "lat": -33.545557,
+    "lng": -70.582565
   },
   {
     "id": 150,
@@ -2998,8 +2998,8 @@ window.SAMPLE_DATA = [
     "folio": "3346",
     "proximaVisita": "",
     "notas": "Folio: 3346",
-    "lat": -33.545925,
-    "lng": -70.579862
+    "lat": -33.545559,
+    "lng": -70.583016
   },
   {
     "id": 151,
@@ -3018,8 +3018,8 @@ window.SAMPLE_DATA = [
     "folio": "3347",
     "proximaVisita": "",
     "notas": "Folio: 3347",
-    "lat": -33.554845,
-    "lng": -70.566467
+    "lat": -33.544936,
+    "lng": -70.580846
   },
   {
     "id": 152,
@@ -3038,8 +3038,8 @@ window.SAMPLE_DATA = [
     "folio": "3348",
     "proximaVisita": "",
     "notas": "Folio: 3348",
-    "lat": -33.554905,
-    "lng": -70.566647
+    "lat": -33.544829,
+    "lng": -70.580849
   },
   {
     "id": 153,
@@ -3058,8 +3058,8 @@ window.SAMPLE_DATA = [
     "folio": "3349",
     "proximaVisita": "",
     "notas": "Folio: 3349",
-    "lat": -33.555025,
-    "lng": -70.566007
+    "lat": -33.544292,
+    "lng": -70.580865
   },
   {
     "id": 154,
@@ -3098,8 +3098,8 @@ window.SAMPLE_DATA = [
     "folio": "3351",
     "proximaVisita": "",
     "notas": "Folio: 3351",
-    "lat": -33.528824,
-    "lng": -70.588252
+    "lat": -33.54658,
+    "lng": -70.586808
   },
   {
     "id": 156,
@@ -3158,8 +3158,8 @@ window.SAMPLE_DATA = [
     "folio": "3354",
     "proximaVisita": "",
     "notas": "Folio: 3354",
-    "lat": -33.528884,
-    "lng": -70.588432
+    "lat": -33.543993,
+    "lng": -70.586883
   },
   {
     "id": 159,
@@ -3178,8 +3178,8 @@ window.SAMPLE_DATA = [
     "folio": "3355",
     "proximaVisita": "",
     "notas": "Folio: 3355",
-    "lat": -33.529004,
-    "lng": -70.587792
+    "lat": -33.543919,
+    "lng": -70.586885
   },
   {
     "id": 160,
@@ -3198,8 +3198,8 @@ window.SAMPLE_DATA = [
     "folio": "3356",
     "proximaVisita": "",
     "notas": "Folio: 3356",
-    "lat": -33.545764,
-    "lng": -70.578538
+    "lat": -33.543658,
+    "lng": -70.578587
   },
   {
     "id": 161,
@@ -3238,8 +3238,8 @@ window.SAMPLE_DATA = [
     "folio": "3359",
     "proximaVisita": "",
     "notas": "Folio: 3359",
-    "lat": -33.545444,
-    "lng": -70.578578
+    "lat": -33.546312,
+    "lng": -70.57845
   },
   {
     "id": 163,
@@ -3258,8 +3258,8 @@ window.SAMPLE_DATA = [
     "folio": "3360",
     "proximaVisita": "",
     "notas": "Folio: 3360",
-    "lat": -33.545604,
-    "lng": -70.578058
+    "lat": -33.545764,
+    "lng": -70.578542
   },
   {
     "id": 164,
@@ -3278,8 +3278,8 @@ window.SAMPLE_DATA = [
     "folio": "3361",
     "proximaVisita": "",
     "notas": "Folio: 3361",
-    "lat": -33.545644,
-    "lng": -70.578178
+    "lat": -33.545449,
+    "lng": -70.578549
   },
   {
     "id": 165,
@@ -3298,8 +3298,8 @@ window.SAMPLE_DATA = [
     "folio": "3363",
     "proximaVisita": "",
     "notas": "Folio: 3363",
-    "lat": -33.545644,
-    "lng": -70.578178
+    "lat": -33.545872,
+    "lng": -70.57846
   },
   {
     "id": 166,
@@ -3318,8 +3318,8 @@ window.SAMPLE_DATA = [
     "folio": "3364",
     "proximaVisita": "",
     "notas": "Folio: 3364",
-    "lat": -33.529004,
-    "lng": -70.587792
+    "lat": -33.543919,
+    "lng": -70.586885
   },
   {
     "id": 167,
@@ -3338,8 +3338,8 @@ window.SAMPLE_DATA = [
     "folio": "3366",
     "proximaVisita": "",
     "notas": "Folio: 3366",
-    "lat": -33.545744,
-    "lng": -70.578478
+    "lat": -33.546501,
+    "lng": -70.578446
   },
   {
     "id": 168,
@@ -3598,8 +3598,8 @@ window.SAMPLE_DATA = [
     "folio": "3380",
     "proximaVisita": "",
     "notas": "Folio: 3380",
-    "lat": -33.54718,
-    "lng": -70.57424
+    "lat": -33.546579,
+    "lng": -70.573032
   },
   {
     "id": 181,
@@ -3618,8 +3618,8 @@ window.SAMPLE_DATA = [
     "folio": "3381",
     "proximaVisita": "",
     "notas": "Folio: 3381",
-    "lat": -33.544582,
-    "lng": -70.572337
+    "lat": -33.543624,
+    "lng": -70.572433
   },
   {
     "id": 182,
@@ -3638,8 +3638,8 @@ window.SAMPLE_DATA = [
     "folio": "3381",
     "proximaVisita": "",
     "notas": "Folio: 3381",
-    "lat": -33.544582,
-    "lng": -70.572337
+    "lat": -33.543624,
+    "lng": -70.572433
   },
   {
     "id": 183,
@@ -3658,8 +3658,8 @@ window.SAMPLE_DATA = [
     "folio": "3382",
     "proximaVisita": "",
     "notas": "Folio: 3382",
-    "lat": -33.54728,
-    "lng": -70.57454
+    "lat": -33.546656,
+    "lng": -70.573258
   },
   {
     "id": 184,
@@ -3838,8 +3838,8 @@ window.SAMPLE_DATA = [
     "folio": "3390",
     "proximaVisita": "",
     "notas": "Folio: 3390",
-    "lat": -33.54712,
-    "lng": -70.57406
+    "lat": -33.546676,
+    "lng": -70.573538
   },
   {
     "id": 193,
@@ -3879,7 +3879,7 @@ window.SAMPLE_DATA = [
     "proximaVisita": "",
     "notas": "Folio: 3392",
     "lat": -33.545117,
-    "lng": -70.573384
+    "lng": -70.573379
   },
   {
     "id": 195,
@@ -3898,8 +3898,8 @@ window.SAMPLE_DATA = [
     "folio": "3393",
     "proximaVisita": "",
     "notas": "Folio: 3393",
-    "lat": -33.546212,
-    "lng": -70.573049
+    "lat": -33.546222,
+    "lng": -70.573259
   },
   {
     "id": 196,
@@ -3958,8 +3958,8 @@ window.SAMPLE_DATA = [
     "folio": "3396",
     "proximaVisita": "",
     "notas": "Folio: 3396",
-    "lat": -33.54574,
-    "lng": -70.57248
+    "lat": -33.545616,
+    "lng": -70.572848
   },
   {
     "id": 199,
@@ -3978,8 +3978,8 @@ window.SAMPLE_DATA = [
     "folio": "3397",
     "proximaVisita": "",
     "notas": "Folio: 3397",
-    "lat": -33.545871,
-    "lng": -70.573849
+    "lat": -33.546034,
+    "lng": -70.573847
   },
   {
     "id": 200,
@@ -3998,8 +3998,8 @@ window.SAMPLE_DATA = [
     "folio": "3397",
     "proximaVisita": "",
     "notas": "Folio: 3397",
-    "lat": -33.545871,
-    "lng": -70.573849
+    "lat": -33.546034,
+    "lng": -70.573847
   },
   {
     "id": 201,
@@ -4018,8 +4018,8 @@ window.SAMPLE_DATA = [
     "folio": "3398",
     "proximaVisita": "",
     "notas": "Folio: 3398",
-    "lat": -33.543647,
-    "lng": -70.573801
+    "lat": -33.544386,
+    "lng": -70.57379
   },
   {
     "id": 202,
@@ -4058,8 +4058,8 @@ window.SAMPLE_DATA = [
     "folio": "3401",
     "proximaVisita": "",
     "notas": "Folio: 3401",
-    "lat": -33.547215,
-    "lng": -70.583839
+    "lat": -33.546867,
+    "lng": -70.586139
   },
   {
     "id": 204,
@@ -4078,8 +4078,8 @@ window.SAMPLE_DATA = [
     "folio": "3402",
     "proximaVisita": "",
     "notas": "Folio: 3402",
-    "lat": -33.547195,
-    "lng": -70.583779
+    "lat": -33.546857,
+    "lng": -70.585004
   },
   {
     "id": 205,
@@ -4098,8 +4098,8 @@ window.SAMPLE_DATA = [
     "folio": "3403",
     "proximaVisita": "",
     "notas": "Folio: 3403",
-    "lat": -33.554865,
-    "lng": -70.566527
+    "lat": -33.546715,
+    "lng": -70.580794
   },
   {
     "id": 206,
@@ -4118,8 +4118,8 @@ window.SAMPLE_DATA = [
     "folio": "3404",
     "proximaVisita": "",
     "notas": "Folio: 3404",
-    "lat": -33.554905,
-    "lng": -70.566647
+    "lat": -33.545634,
+    "lng": -70.580826
   },
   {
     "id": 207,
@@ -4138,8 +4138,8 @@ window.SAMPLE_DATA = [
     "folio": "3405",
     "proximaVisita": "",
     "notas": "Folio: 3405",
-    "lat": -33.554985,
-    "lng": -70.565887
+    "lat": -33.546404,
+    "lng": -70.580803
   },
   {
     "id": 208,
@@ -4158,8 +4158,8 @@ window.SAMPLE_DATA = [
     "folio": "3406",
     "proximaVisita": "",
     "notas": "Folio: 3406",
-    "lat": -33.554865,
-    "lng": -70.566527
+    "lat": -33.545652,
+    "lng": -70.580825
   },
   {
     "id": 209,
@@ -4178,8 +4178,8 @@ window.SAMPLE_DATA = [
     "folio": "3407",
     "proximaVisita": "",
     "notas": "Folio: 3407",
-    "lat": -33.554945,
-    "lng": -70.565767
+    "lat": -33.544972,
+    "lng": -70.580845
   },
   {
     "id": 210,
@@ -4198,8 +4198,8 @@ window.SAMPLE_DATA = [
     "folio": "3408",
     "proximaVisita": "",
     "notas": "Folio: 3408",
-    "lat": -33.554965,
-    "lng": -70.565827
+    "lat": -33.544561,
+    "lng": -70.580857
   },
   {
     "id": 211,
@@ -4218,8 +4218,8 @@ window.SAMPLE_DATA = [
     "folio": "3409",
     "proximaVisita": "",
     "notas": "Folio: 3409",
-    "lat": -33.554965,
-    "lng": -70.565827
+    "lat": -33.544239,
+    "lng": -70.580867
   },
   {
     "id": 212,
@@ -4238,8 +4238,8 @@ window.SAMPLE_DATA = [
     "folio": "3410",
     "proximaVisita": "",
     "notas": "Folio: 3410",
-    "lat": -33.554805,
-    "lng": -70.566347
+    "lat": -33.544149,
+    "lng": -70.580869
   },
   {
     "id": 213,
@@ -4278,8 +4278,8 @@ window.SAMPLE_DATA = [
     "folio": "3412",
     "proximaVisita": "",
     "notas": "Folio: 3412",
-    "lat": -33.545177,
-    "lng": -70.581469
+    "lat": -33.544902,
+    "lng": -70.582183
   },
   {
     "id": 215,
@@ -4298,8 +4298,8 @@ window.SAMPLE_DATA = [
     "folio": "3413",
     "proximaVisita": "",
     "notas": "Folio: 3413",
-    "lat": -33.545825,
-    "lng": -70.579562
+    "lat": -33.545471,
+    "lng": -70.581185
   },
   {
     "id": 216,
@@ -4318,8 +4318,8 @@ window.SAMPLE_DATA = [
     "folio": "3414",
     "proximaVisita": "",
     "notas": "Folio: 3414",
-    "lat": -33.545745,
-    "lng": -70.579322
+    "lat": -33.545468,
+    "lng": -70.580484
   },
   {
     "id": 217,
@@ -4358,8 +4358,8 @@ window.SAMPLE_DATA = [
     "folio": "3416",
     "proximaVisita": "",
     "notas": "Folio: 3416",
-    "lat": -33.545845,
-    "lng": -70.579622
+    "lat": -33.545465,
+    "lng": -70.579783
   },
   {
     "id": 219,
@@ -4378,8 +4378,8 @@ window.SAMPLE_DATA = [
     "folio": "3417",
     "proximaVisita": "",
     "notas": "Folio: 3417",
-    "lat": -33.545985,
-    "lng": -70.580042
+    "lat": -33.545461,
+    "lng": -70.578784
   },
   {
     "id": 220,
@@ -4438,8 +4438,8 @@ window.SAMPLE_DATA = [
     "folio": "3420",
     "proximaVisita": "",
     "notas": "Folio: 3420",
-    "lat": -33.547199,
-    "lng": -70.580511
+    "lat": -33.546412,
+    "lng": -70.579496
   },
   {
     "id": 223,
@@ -4478,8 +4478,8 @@ window.SAMPLE_DATA = [
     "folio": "3422",
     "proximaVisita": "",
     "notas": "Folio: 3422",
-    "lat": -33.554785,
-    "lng": -70.566287
+    "lat": -33.544961,
+    "lng": -70.580766
   },
   {
     "id": 225,
@@ -4498,8 +4498,8 @@ window.SAMPLE_DATA = [
     "folio": "3423",
     "proximaVisita": "",
     "notas": "Folio: 3423",
-    "lat": -33.545865,
-    "lng": -70.579682
+    "lat": -33.54555,
+    "lng": -70.580944
   },
   {
     "id": 226,
@@ -4558,8 +4558,8 @@ window.SAMPLE_DATA = [
     "folio": "3426",
     "proximaVisita": "",
     "notas": "Folio: 3426",
-    "lat": -33.54494,
-    "lng": -70.57268
+    "lat": -33.546141,
+    "lng": -70.58201
   },
   {
     "id": 229,
@@ -4638,8 +4638,8 @@ window.SAMPLE_DATA = [
     "folio": "3430",
     "proximaVisita": "",
     "notas": "Folio: 3430",
-    "lat": -33.547159,
-    "lng": -70.580391
+    "lat": -33.546515,
+    "lng": -70.582387
   },
   {
     "id": 233,
@@ -4658,8 +4658,8 @@ window.SAMPLE_DATA = [
     "folio": "3431",
     "proximaVisita": "",
     "notas": "Folio: 3431",
-    "lat": -33.545,
-    "lng": -70.57286
+    "lat": -33.543769,
+    "lng": -70.582002
   },
   {
     "id": 234,
@@ -4678,8 +4678,8 @@ window.SAMPLE_DATA = [
     "folio": "3432",
     "proximaVisita": "",
     "notas": "Folio: 3432",
-    "lat": -33.544706,
-    "lng": -70.581575
+    "lat": -33.544497,
+    "lng": -70.580363
   },
   {
     "id": 235,
@@ -4698,8 +4698,8 @@ window.SAMPLE_DATA = [
     "folio": "3433",
     "proximaVisita": "",
     "notas": "Folio: 3433",
-    "lat": -33.545237,
-    "lng": -70.581649
+    "lat": -33.5449,
+    "lng": -70.581905
   },
   {
     "id": 236,
@@ -4718,8 +4718,8 @@ window.SAMPLE_DATA = [
     "folio": "3434",
     "proximaVisita": "",
     "notas": "Folio: 3434",
-    "lat": -33.545197,
-    "lng": -70.581529
+    "lat": -33.544985,
+    "lng": -70.582575
   },
   {
     "id": 237,
@@ -4758,8 +4758,8 @@ window.SAMPLE_DATA = [
     "folio": "3436",
     "proximaVisita": "",
     "notas": "Folio: 3436",
-    "lat": -33.547199,
-    "lng": -70.580511
+    "lat": -33.546512,
+    "lng": -70.581965
   },
   {
     "id": 239,
@@ -4778,8 +4778,8 @@ window.SAMPLE_DATA = [
     "folio": "3437",
     "proximaVisita": "",
     "notas": "Folio: 3437",
-    "lat": -33.547179,
-    "lng": -70.580451
+    "lat": -33.546498,
+    "lng": -70.580276
   },
   {
     "id": 240,
@@ -4798,8 +4798,8 @@ window.SAMPLE_DATA = [
     "folio": "3438",
     "proximaVisita": "",
     "notas": "Folio: 3438",
-    "lat": -33.547139,
-    "lng": -70.580331
+    "lat": -33.546496,
+    "lng": -70.579939
   },
   {
     "id": 241,
@@ -5058,8 +5058,8 @@ window.SAMPLE_DATA = [
     "folio": "17908",
     "proximaVisita": "",
     "notas": "Folio: 17908",
-    "lat": -33.547851,
-    "lng": -70.601955
+    "lat": -33.547815,
+    "lng": -70.602103
   },
   {
     "id": 254,
@@ -5078,8 +5078,8 @@ window.SAMPLE_DATA = [
     "folio": "17909",
     "proximaVisita": "",
     "notas": "Folio: 17909",
-    "lat": -33.548671,
-    "lng": -70.602415
+    "lat": -33.548415,
+    "lng": -70.602083
   },
   {
     "id": 255,
@@ -5118,8 +5118,8 @@ window.SAMPLE_DATA = [
     "folio": "17911",
     "proximaVisita": "",
     "notas": "Folio: 17911",
-    "lat": -33.54394,
-    "lng": -70.57276
+    "lat": -33.548756,
+    "lng": -70.600488
   },
   {
     "id": 257,
@@ -5138,8 +5138,8 @@ window.SAMPLE_DATA = [
     "folio": "17918",
     "proximaVisita": "",
     "notas": "Folio: 17918",
-    "lat": -33.544926,
-    "lng": -70.582235
+    "lat": -33.5445,
+    "lng": -70.580758
   },
   {
     "id": 258,
@@ -5158,8 +5158,8 @@ window.SAMPLE_DATA = [
     "folio": "17919",
     "proximaVisita": "",
     "notas": "Folio: 17919",
-    "lat": -33.544846,
-    "lng": -70.581995
+    "lat": -33.544423,
+    "lng": -70.581079
   },
   {
     "id": 259,
@@ -5198,8 +5198,8 @@ window.SAMPLE_DATA = [
     "folio": "17921",
     "proximaVisita": "",
     "notas": "Folio: 17921",
-    "lat": -33.544666,
-    "lng": -70.581455
+    "lat": -33.544434,
+    "lng": -70.582411
   },
   {
     "id": 261,
@@ -5218,8 +5218,8 @@ window.SAMPLE_DATA = [
     "folio": "17922",
     "proximaVisita": "",
     "notas": "Folio: 17922",
-    "lat": -33.545885,
-    "lng": -70.579742
+    "lat": -33.545474,
+    "lng": -70.581711
   },
   {
     "id": 262,
@@ -5238,8 +5238,8 @@ window.SAMPLE_DATA = [
     "folio": "17923",
     "proximaVisita": "",
     "notas": "Folio: 17923",
-    "lat": -33.545905,
-    "lng": -70.579802
+    "lat": -33.545552,
+    "lng": -70.581294
   },
   {
     "id": 263,
@@ -5258,8 +5258,8 @@ window.SAMPLE_DATA = [
     "folio": "17924",
     "proximaVisita": "",
     "notas": "Folio: 17924",
-    "lat": -33.545865,
-    "lng": -70.579682
+    "lat": -33.545468,
+    "lng": -70.580353
   },
   {
     "id": 264,
@@ -5278,8 +5278,8 @@ window.SAMPLE_DATA = [
     "folio": "17925",
     "proximaVisita": "",
     "notas": "Folio: 17925",
-    "lat": -33.545805,
-    "lng": -70.579502
+    "lat": -33.545464,
+    "lng": -70.579433
   },
   {
     "id": 265,
@@ -5358,8 +5358,8 @@ window.SAMPLE_DATA = [
     "folio": "17929",
     "proximaVisita": "",
     "notas": "Folio: 17929",
-    "lat": -33.547831,
-    "lng": -70.601895
+    "lat": -33.548435,
+    "lng": -70.602162
   },
   {
     "id": 269,
@@ -5378,8 +5378,8 @@ window.SAMPLE_DATA = [
     "folio": "17930",
     "proximaVisita": "",
     "notas": "Folio: 17930",
-    "lat": -33.548711,
-    "lng": -70.602535
+    "lat": -33.548835,
+    "lng": -70.602149
   },
   {
     "id": 270,
@@ -5418,8 +5418,8 @@ window.SAMPLE_DATA = [
     "folio": "17932",
     "proximaVisita": "",
     "notas": "Folio: 17932",
-    "lat": -33.548731,
-    "lng": -70.602595
+    "lat": -33.548815,
+    "lng": -70.602069
   },
   {
     "id": 272,
@@ -5478,8 +5478,8 @@ window.SAMPLE_DATA = [
     "folio": "17952",
     "proximaVisita": "",
     "notas": "Folio: 17952",
-    "lat": -33.547295,
-    "lng": -70.584079
+    "lat": -33.546825,
+    "lng": -70.581391
   },
   {
     "id": 275,
@@ -5518,8 +5518,8 @@ window.SAMPLE_DATA = [
     "folio": "17954",
     "proximaVisita": "",
     "notas": "Folio: 17954",
-    "lat": -33.546927,
-    "lng": -70.574964
+    "lat": -33.546014,
+    "lng": -70.57504
   },
   {
     "id": 277,
@@ -5538,8 +5538,8 @@ window.SAMPLE_DATA = [
     "folio": "17955",
     "proximaVisita": "",
     "notas": "Folio: 17955",
-    "lat": -33.546867,
-    "lng": -70.574784
+    "lat": -33.546014,
+    "lng": -70.57504
   },
   {
     "id": 278,
@@ -5558,8 +5558,8 @@ window.SAMPLE_DATA = [
     "folio": "17956",
     "proximaVisita": "",
     "notas": "Folio: 17956",
-    "lat": -33.546927,
-    "lng": -70.574964
+    "lat": -33.546014,
+    "lng": -70.57504
   },
   {
     "id": 279,
@@ -5598,8 +5598,8 @@ window.SAMPLE_DATA = [
     "folio": "17958",
     "proximaVisita": "",
     "notas": "Folio: 17958",
-    "lat": -33.547295,
-    "lng": -70.584079
+    "lat": -33.546805,
+    "lng": -70.579068
   },
   {
     "id": 281,
@@ -5618,8 +5618,8 @@ window.SAMPLE_DATA = [
     "folio": "17959",
     "proximaVisita": "",
     "notas": "Folio: 17959",
-    "lat": -33.547195,
-    "lng": -70.583779
+    "lat": -33.546804,
+    "lng": -70.578965
   },
   {
     "id": 282,
@@ -5638,8 +5638,8 @@ window.SAMPLE_DATA = [
     "folio": "17960",
     "proximaVisita": "",
     "notas": "Folio: 17960",
-    "lat": -33.547235,
-    "lng": -70.583899
+    "lat": -33.546808,
+    "lng": -70.579378
   },
   {
     "id": 283,
@@ -5958,8 +5958,8 @@ window.SAMPLE_DATA = [
     "folio": "17979",
     "proximaVisita": "",
     "notas": "Folio: 17979",
-    "lat": -33.54394,
-    "lng": -70.57276
+    "lat": -33.54702,
+    "lng": -70.600552
   },
   {
     "id": 299,
@@ -6038,8 +6038,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "arrendatario",
-    "lat": -33.546966,
-    "lng": -70.570998
+    "lat": -33.546956,
+    "lng": -70.571142
   },
   {
     "id": 303,
@@ -6058,8 +6058,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "tripoli",
-    "lat": -33.546457,
-    "lng": -70.571518
+    "lat": -33.546442,
+    "lng": -70.571345
   },
   {
     "id": 304,
@@ -6078,8 +6078,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "prepotente",
-    "lat": -33.546443,
-    "lng": -70.571358
+    "lat": -33.546436,
+    "lng": -70.571271
   },
   {
     "id": 305,
@@ -6098,8 +6098,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "socio CBN",
-    "lat": -33.546938,
-    "lng": -70.57139
+    "lat": -33.546936,
+    "lng": -70.571422
   },
   {
     "id": 306,
@@ -6118,8 +6118,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544582,
-    "lng": -70.572337
+    "lat": -33.543624,
+    "lng": -70.572433
   },
   {
     "id": 307,
@@ -6138,8 +6138,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "Socio CBÑ",
-    "lat": -33.546713,
-    "lng": -70.571864
+    "lat": -33.546488,
+    "lng": -70.571907
   },
   {
     "id": 308,
@@ -6178,8 +6178,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545235,
-    "lng": -70.57225
+    "lat": -33.544489,
+    "lng": -70.572331
   },
   {
     "id": 310,
@@ -6198,8 +6198,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545147,
-    "lng": -70.573163
+    "lat": -33.545128,
+    "lng": -70.573029
   },
   {
     "id": 311,
@@ -6238,8 +6238,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545528,
-    "lng": -70.572173
+    "lat": -33.544885,
+    "lng": -70.572247
   },
   {
     "id": 313,
@@ -6338,8 +6338,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545457,
-    "lng": -70.572872
+    "lat": -33.545467,
+    "lng": -70.572968
   },
   {
     "id": 318,
@@ -6358,8 +6358,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546164,
-    "lng": -70.573339
+    "lat": -33.546167,
+    "lng": -70.573414
   },
   {
     "id": 319,
@@ -6378,8 +6378,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545206,
-    "lng": -70.573858
+    "lat": -33.545541,
+    "lng": -70.573854
   },
   {
     "id": 320,
@@ -6418,8 +6418,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "ya es socio de bomberos",
-    "lat": -33.545941,
-    "lng": -70.573848
+    "lat": -33.546086,
+    "lng": -70.573846
   },
   {
     "id": 322,
@@ -6438,8 +6438,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545906,
-    "lng": -70.573848
+    "lat": -33.54606,
+    "lng": -70.573846
   },
   {
     "id": 323,
@@ -6458,8 +6458,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545625,
-    "lng": -70.575477
+    "lat": -33.545705,
+    "lng": -70.575426
   },
   {
     "id": 324,
@@ -6478,8 +6478,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545532,
-    "lng": -70.575535
+    "lat": -33.545642,
+    "lng": -70.575466
   },
   {
     "id": 325,
@@ -6498,8 +6498,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545737,
-    "lng": -70.575501
+    "lat": -33.545795,
+    "lng": -70.575464
   },
   {
     "id": 326,
@@ -6518,8 +6518,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54546,
-    "lng": -70.575676
+    "lat": -33.545606,
+    "lng": -70.575584
   },
   {
     "id": 327,
@@ -6538,8 +6538,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545183,
-    "lng": -70.575851
+    "lat": -33.545416,
+    "lng": -70.575704
   },
   {
     "id": 328,
@@ -6558,8 +6558,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544675,
-    "lng": -70.576173
+    "lat": -33.545069,
+    "lng": -70.575924
   },
   {
     "id": 329,
@@ -6578,8 +6578,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544233,
-    "lng": -70.576437
+    "lat": -33.544721,
+    "lng": -70.576144
   },
   {
     "id": 330,
@@ -6598,8 +6598,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54403,
-    "lng": -70.576547
+    "lat": -33.544532,
+    "lng": -70.576264
   },
   {
     "id": 331,
@@ -6618,8 +6618,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543827,
-    "lng": -70.576658
+    "lat": -33.544361,
+    "lng": -70.576367
   },
   {
     "id": 332,
@@ -6638,8 +6638,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.544009,
-    "lng": -70.576468
+    "lat": -33.544505,
+    "lng": -70.576186
   },
   {
     "id": 333,
@@ -6658,8 +6658,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543691,
-    "lng": -70.576732
+    "lat": -33.544269,
+    "lng": -70.576417
   },
   {
     "id": 334,
@@ -6678,8 +6678,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543455,
-    "lng": -70.576861
+    "lat": -33.544107,
+    "lng": -70.576506
   },
   {
     "id": 335,
@@ -6698,8 +6698,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543407,
-    "lng": -70.576887
+    "lat": -33.543852,
+    "lng": -70.576645
   },
   {
     "id": 336,
@@ -6718,8 +6718,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.543407,
-    "lng": -70.576887
+    "lat": -33.543597,
+    "lng": -70.576784
   },
   {
     "id": 337,
@@ -6778,8 +6778,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545798,
-    "lng": -70.575306
+    "lat": -33.545757,
+    "lng": -70.575359
   },
   {
     "id": 340,
@@ -6798,8 +6798,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.545918,
-    "lng": -70.575149
+    "lat": -33.545839,
+    "lng": -70.575252
   },
   {
     "id": 341,
@@ -6818,8 +6818,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546038,
-    "lng": -70.574992
+    "lat": -33.545921,
+    "lng": -70.575145
   },
   {
     "id": 342,
@@ -6838,8 +6838,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546072,
-    "lng": -70.57508
+    "lat": -33.545964,
+    "lng": -70.57522
   },
   {
     "id": 343,
@@ -6858,8 +6858,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546292,
-    "lng": -70.574792
+    "lat": -33.546115,
+    "lng": -70.575023
   },
   {
     "id": 344,
@@ -6878,8 +6878,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546078,
-    "lng": -70.57494
+    "lat": -33.545949,
+    "lng": -70.575109
   },
   {
     "id": 345,
@@ -6898,8 +6898,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546198,
-    "lng": -70.574783
+    "lat": -33.546031,
+    "lng": -70.575001
   },
   {
     "id": 346,
@@ -6918,8 +6918,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546512,
-    "lng": -70.574504
+    "lat": -33.546265,
+    "lng": -70.574826
   },
   {
     "id": 347,
@@ -6938,8 +6938,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546878,
-    "lng": -70.573893
+    "lat": -33.546496,
+    "lng": -70.574393
   },
   {
     "id": 348,
@@ -6958,8 +6958,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546532,
-    "lng": -70.574478
+    "lat": -33.546279,
+    "lng": -70.574809
   },
   {
     "id": 349,
@@ -6978,8 +6978,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546916,
-    "lng": -70.573844
+    "lat": -33.546647,
+    "lng": -70.574196
   },
   {
     "id": 350,
@@ -6998,8 +6998,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546752,
-    "lng": -70.57419
+    "lat": -33.54643,
+    "lng": -70.574612
   },
   {
     "id": 351,
@@ -7018,8 +7018,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54698,
-    "lng": -70.573892
+    "lat": -33.546717,
+    "lng": -70.574236
   },
   {
     "id": 352,
@@ -7038,8 +7038,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546916,
-    "lng": -70.573844
+    "lat": -33.546729,
+    "lng": -70.574089
   },
   {
     "id": 353,
@@ -7058,8 +7058,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546916,
-    "lng": -70.573844
+    "lat": -33.546811,
+    "lng": -70.573981
   },
   {
     "id": 354,
@@ -7078,8 +7078,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.546916,
-    "lng": -70.573844
+    "lat": -33.546838,
+    "lng": -70.573946
   },
   {
     "id": 355,
@@ -7098,8 +7098,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54698,
-    "lng": -70.573892
+    "lat": -33.546881,
+    "lng": -70.574021
   },
   {
     "id": 356,
@@ -7118,8 +7118,8 @@ window.SAMPLE_DATA = [
     "folio": "",
     "proximaVisita": "",
     "notas": "",
-    "lat": -33.54698,
-    "lng": -70.573892
+    "lat": -33.546909,
+    "lng": -70.573985
   },
   {
     "id": 357,
@@ -8318,8 +8318,8 @@ window.SAMPLE_DATA = [
     "folio": "18064",
     "proximaVisita": "",
     "notas": "Folio: 18064",
-    "lat": -33.54807,
-    "lng": -70.59751
+    "lat": -33.548196,
+    "lng": -70.59739
   },
   {
     "id": 417,
@@ -8338,8 +8338,8 @@ window.SAMPLE_DATA = [
     "folio": "18066",
     "proximaVisita": "",
     "notas": "Folio: 18066",
-    "lat": -33.54817,
-    "lng": -70.59781
+    "lat": -33.547792,
+    "lng": -70.5974
   },
   {
     "id": 418,
@@ -8358,8 +8358,8 @@ window.SAMPLE_DATA = [
     "folio": "18068",
     "proximaVisita": "",
     "notas": "Folio: 18068",
-    "lat": -33.54825,
-    "lng": -70.59705
+    "lat": -33.546148,
+    "lng": -70.597438
   },
   {
     "id": 419,
@@ -8398,8 +8398,8 @@ window.SAMPLE_DATA = [
     "folio": "17982",
     "proximaVisita": "",
     "notas": "Folio: 17982",
-    "lat": -33.54645,
-    "lng": -70.60225
+    "lat": -33.549001,
+    "lng": -70.602361
   },
   {
     "id": 421,
@@ -8438,8 +8438,8 @@ window.SAMPLE_DATA = [
     "folio": "3313",
     "proximaVisita": "",
     "notas": "Folio: 3313",
-    "lat": -33.54721,
-    "lng": -70.60253
+    "lat": -33.548761,
+    "lng": -70.60237
   },
   {
     "id": 423,
@@ -8578,8 +8578,8 @@ window.SAMPLE_DATA = [
     "folio": "17984",
     "proximaVisita": "",
     "notas": "Folio: 17984",
-    "lat": -33.54651,
-    "lng": -70.60243
+    "lat": -33.546913,
+    "lng": -70.602436
   },
   {
     "id": 430,
@@ -8598,8 +8598,8 @@ window.SAMPLE_DATA = [
     "folio": "17938",
     "proximaVisita": "",
     "notas": "Folio: 17938",
-    "lat": -33.54641,
-    "lng": -70.60213
+    "lat": -33.546949,
+    "lng": -70.602355
   },
   {
     "id": 431,
@@ -8618,8 +8618,8 @@ window.SAMPLE_DATA = [
     "folio": "3274",
     "proximaVisita": "",
     "notas": "Folio: 3274",
-    "lat": -33.54723,
-    "lng": -70.60194
+    "lat": -33.549464,
+    "lng": -70.601365
   },
   {
     "id": 432,
@@ -8658,8 +8658,8 @@ window.SAMPLE_DATA = [
     "folio": "3273",
     "proximaVisita": "",
     "notas": "Folio: 3273",
-    "lat": -33.54639,
-    "lng": -70.60142
+    "lat": -33.549194,
+    "lng": -70.601374
   },
   {
     "id": 434,
@@ -8678,8 +8678,8 @@ window.SAMPLE_DATA = [
     "folio": "3315",
     "proximaVisita": "",
     "notas": "Folio: 3315",
-    "lat": -33.54727,
-    "lng": -70.60206
+    "lat": -33.547203,
+    "lng": -70.601446
   },
   {
     "id": 435,
@@ -8718,8 +8718,8 @@ window.SAMPLE_DATA = [
     "folio": "17983",
     "proximaVisita": "",
     "notas": "Folio: 17983",
-    "lat": -33.54733,
-    "lng": -70.60289
+    "lat": -33.547349,
+    "lng": -70.60234
   },
   {
     "id": 437,
@@ -8738,8 +8738,8 @@ window.SAMPLE_DATA = [
     "folio": "18069",
     "proximaVisita": "",
     "notas": "Folio: 18069",
-    "lat": -33.54827,
-    "lng": -70.59711
+    "lat": -33.545371,
+    "lng": -70.597456
   },
   {
     "id": 438,
@@ -8858,8 +8858,8 @@ window.SAMPLE_DATA = [
     "folio": "3271",
     "proximaVisita": "",
     "notas": "Folio: 3271",
-    "lat": -33.54641,
-    "lng": -70.60148
+    "lat": -33.547224,
+    "lng": -70.601445
   },
   {
     "id": 444,
@@ -8898,8 +8898,8 @@ window.SAMPLE_DATA = [
     "folio": "3312",
     "proximaVisita": "",
     "notas": "Folio: 3312",
-    "lat": -33.54729,
-    "lng": -70.60277
+    "lat": -33.549487,
+    "lng": -70.602264
   },
   {
     "id": 446,
@@ -8918,8 +8918,8 @@ window.SAMPLE_DATA = [
     "folio": "3272",
     "proximaVisita": "",
     "notas": "Folio: 3272",
-    "lat": -33.54729,
-    "lng": -70.60212
+    "lat": -33.548593,
+    "lng": -70.601396
   },
   {
     "id": 447,
@@ -8958,8 +8958,8 @@ window.SAMPLE_DATA = [
     "folio": "3262",
     "proximaVisita": "",
     "notas": "Folio: 3262",
-    "lat": -33.54723,
-    "lng": -70.60259
+    "lat": -33.549469,
+    "lng": -70.602265
   },
   {
     "id": 449,
@@ -8978,8 +8978,8 @@ window.SAMPLE_DATA = [
     "folio": "17940",
     "proximaVisita": "",
     "notas": "Folio: 17940",
-    "lat": -33.54729,
-    "lng": -70.60212
+    "lat": -33.548502,
+    "lng": -70.601479
   },
   {
     "id": 450,
@@ -8998,8 +8998,8 @@ window.SAMPLE_DATA = [
     "folio": "17939",
     "proximaVisita": "",
     "notas": "Folio: 17939",
-    "lat": -33.54643,
-    "lng": -70.60154
+    "lat": -33.546933,
+    "lng": -70.601455
   },
   {
     "id": 451,
@@ -9018,8 +9018,8 @@ window.SAMPLE_DATA = [
     "folio": "17986",
     "proximaVisita": "",
     "notas": "Folio: 17986",
-    "lat": -33.54731,
-    "lng": -70.60218
+    "lat": -33.549145,
+    "lng": -70.601456
   },
   {
     "id": 452,
@@ -9038,8 +9038,8 @@ window.SAMPLE_DATA = [
     "folio": "17985",
     "proximaVisita": "",
     "notas": "Folio: 17985",
-    "lat": -33.54645,
-    "lng": -70.6016
+    "lat": -33.546926,
+    "lng": -70.601536
   },
   {
     "id": 453,
@@ -9318,8 +9318,8 @@ window.SAMPLE_DATA = [
     "folio": "17914",
     "proximaVisita": "",
     "notas": "Folio: 17914",
-    "lat": -33.54827,
-    "lng": -70.59711
+    "lat": -33.545454,
+    "lng": -70.597534
   },
   {
     "id": 467,
@@ -9398,8 +9398,8 @@ window.SAMPLE_DATA = [
     "folio": "3316",
     "proximaVisita": "",
     "notas": "Folio: 3316",
-    "lat": -33.54817,
-    "lng": -70.59781
+    "lat": -33.548019,
+    "lng": -70.597394
   },
   {
     "id": 471,
@@ -9418,8 +9418,8 @@ window.SAMPLE_DATA = [
     "folio": "17902",
     "proximaVisita": "",
     "notas": "Folio: 17902",
-    "lat": -33.54811,
-    "lng": -70.59763
+    "lat": -33.547943,
+    "lng": -70.597396
   },
   {
     "id": 472,
@@ -9438,8 +9438,8 @@ window.SAMPLE_DATA = [
     "folio": "17905",
     "proximaVisita": "",
     "notas": "Folio: 17905",
-    "lat": -33.54811,
-    "lng": -70.59763
+    "lat": -33.545439,
+    "lng": -70.597454
   },
   {
     "id": 473,
@@ -9458,8 +9458,8 @@ window.SAMPLE_DATA = [
     "folio": "17904",
     "proximaVisita": "",
     "notas": "Folio: 17904",
-    "lat": -33.54823,
-    "lng": -70.59699
+    "lat": -33.546046,
+    "lng": -70.59744
   },
   {
     "id": 474,
@@ -9478,8 +9478,8 @@ window.SAMPLE_DATA = [
     "folio": "17903",
     "proximaVisita": "",
     "notas": "Folio: 17903",
-    "lat": -33.54817,
-    "lng": -70.59781
+    "lat": -33.547336,
+    "lng": -70.59741
   },
   {
     "id": 475,
@@ -9518,8 +9518,8 @@ window.SAMPLE_DATA = [
     "folio": "17996",
     "proximaVisita": "",
     "notas": "Folio: 17996",
-    "lat": -33.54817,
-    "lng": -70.59781
+    "lat": -33.548135,
+    "lng": -70.597472
   },
   {
     "id": 477,
@@ -9538,8 +9538,8 @@ window.SAMPLE_DATA = [
     "folio": "17997",
     "proximaVisita": "",
     "notas": "Folio: 17997",
-    "lat": -33.54827,
-    "lng": -70.59711
+    "lat": -33.54773,
+    "lng": -70.597481
   },
   {
     "id": 478,
@@ -9558,8 +9558,8 @@ window.SAMPLE_DATA = [
     "folio": "17998",
     "proximaVisita": "",
     "notas": "Folio: 17998",
-    "lat": -33.54761,
-    "lng": -70.59713
+    "lat": -33.549248,
+    "lng": -70.597446
   },
   {
     "id": 479,
@@ -9578,8 +9578,8 @@ window.SAMPLE_DATA = [
     "folio": "17999",
     "proximaVisita": "",
     "notas": "Folio: 17999",
-    "lat": -33.54833,
-    "lng": -70.59729
+    "lat": -33.546213,
+    "lng": -70.597516
   },
   {
     "id": 480,
@@ -9618,8 +9618,8 @@ window.SAMPLE_DATA = [
     "folio": "3264",
     "proximaVisita": "",
     "notas": "Folio: 3264",
-    "lat": -33.54815,
-    "lng": -70.59775
+    "lat": -33.545757,
+    "lng": -70.597527
   },
   {
     "id": 482,
